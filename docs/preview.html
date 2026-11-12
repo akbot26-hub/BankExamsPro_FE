@@ -1,0 +1,990 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BankExamsPro — design preview (static)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* BankExamsPro — product shell.
+   The palette is lifted from the exam's own question palette: the greens,
+   reds and purples that mark answered / not-answered / marked-for-review are
+   reused as the data language across the whole product, so a chart means the
+   same thing as the box it came from. */
+
+:root {
+  --ink: #0f1b2d;
+  --ink-2: #2a3a52;
+  --muted: #64748b;
+  --line: #dbe2ea;
+  --line-soft: #eaeff4;
+  --paper: #eef1f6;
+  --card: #ffffff;
+  --brand: #16346b;
+  --brand-soft: #e8edf7;
+
+  --answered: #0e7b4f;
+  --not-answered: #c0392b;
+  --marked: #6b3fa0;
+  --not-visited: #94a3b8;
+  --amber: #b47500;
+
+  --display: 'Familjen Grotesk', 'Segoe UI', system-ui, sans-serif;
+  --body: 'Inter', system-ui, -apple-system, sans-serif;
+  --data: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --r: 4px;
+  --shadow: 0 1px 2px rgba(15, 27, 45, .06), 0 8px 24px -16px rgba(15, 27, 45, .3);
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root { height: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 { font-family: var(--display); font-weight: 600; letter-spacing: -.015em; margin: 0; }
+h1 { font-size: 26px; }
+h2 { font-size: 19px; }
+h3 { font-size: 15px; }
+a { color: var(--brand); }
+p { margin: 0 0 10px; }
+
+:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+
+/* ---------- Layout ---------- */
+.shell { display: grid; grid-template-columns: 216px 1fr; min-height: 100%; }
+
+.rail {
+  background: var(--ink);
+  color: #cbd5e1;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+.rail .wordmark {
+  font-family: var(--display);
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  padding: 0 20px 18px;
+  letter-spacing: -.02em;
+}
+.rail .wordmark span { color: var(--amber); }
+.rail nav { display: flex; flex-direction: column; gap: 1px; padding: 0 10px; }
+.rail nav a {
+  color: #94a3b8;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: var(--r);
+  font-size: 13.5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rail nav a:hover { background: rgba(255, 255, 255, .06); color: #e2e8f0; }
+.rail nav a.active { background: var(--brand); color: #fff; font-weight: 500; }
+.rail .rail-foot { margin-top: auto; padding: 14px 20px 0; border-top: 1px solid rgba(255, 255, 255, .1); }
+.rail .who { font-size: 13px; color: #e2e8f0; }
+.rail .who small { display: block; color: #7c8ba1; font-size: 11.5px; }
+
+.main { padding: 26px 32px 60px; max-width: 1180px; }
+.page-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; margin-bottom: 22px; flex-wrap: wrap; }
+.eyebrow {
+  font-family: var(--data);
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+/* ---------- Surfaces ---------- */
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 18px;
+}
+.card + .card { margin-top: 14px; }
+.card-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 14px; gap: 12px; }
+.grid { display: grid; gap: 14px; }
+.grid.two { grid-template-columns: 1fr 1fr; }
+.grid.three { grid-template-columns: repeat(3, 1fr); }
+.grid.stat { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+
+.stat-box { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 14px 16px; }
+.stat-box .k { font-family: var(--data); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.stat-box .v { font-family: var(--display); font-size: 27px; font-weight: 600; line-height: 1.15; margin-top: 4px; }
+.stat-box .v small { font-size: 14px; color: var(--muted); font-weight: 400; }
+.stat-box .sub { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+.tag {
+  display: inline-block;
+  font-family: var(--data);
+  font-size: 10.5px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: 2px;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  background: #fff;
+}
+.tag.green { color: var(--answered); border-color: #b6ddc9; background: #f0f9f4; }
+.tag.red { color: var(--not-answered); border-color: #f0c4bf; background: #fdf3f2; }
+.tag.purple { color: var(--marked); border-color: #d8c9ea; background: #f7f3fc; }
+.tag.amber { color: var(--amber); border-color: #ead9ae; background: #fdf8ec; }
+
+/* ---------- Controls ---------- */
+button, .btn {
+  font-family: var(--body);
+  font-size: 13.5px;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: var(--r);
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+button:hover, .btn:hover { border-color: #b9c4d2; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+.btn-primary, button.primary { background: var(--brand); border-color: var(--brand); color: #fff; }
+.btn-primary:hover, button.primary:hover { background: #0f2751; border-color: #0f2751; }
+.btn-danger { background: var(--not-answered); border-color: var(--not-answered); color: #fff; }
+
+input, select, textarea {
+  font-family: var(--body);
+  font-size: 13.5px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  background: #fff;
+  color: var(--ink);
+  width: 100%;
+}
+label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; font-weight: 500; }
+.field { margin-bottom: 12px; }
+
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th {
+  text-align: left;
+  font-family: var(--data);
+  font-size: 10.5px;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--line);
+}
+td { padding: 9px 10px; border-bottom: 1px solid var(--line-soft); }
+tbody tr:last-child td { border-bottom: 0; }
+td.num, th.num { text-align: right; font-family: var(--data); font-variant-numeric: tabular-nums; }
+
+/* ---------- The Ledger: signature element ----------
+   Every mock is one column. Section scores stack; the hairline is the
+   overall cut-off. Reading it left to right is reading the whole journey. */
+.ledger { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 18px 18px 12px; }
+.ledger-body { display: flex; align-items: flex-end; gap: 10px; height: 210px; position: relative; padding-bottom: 26px; }
+.ledger-col { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; height: 100%; position: relative; cursor: pointer; }
+.ledger-stack { display: flex; flex-direction: column-reverse; border-radius: 2px 2px 0 0; overflow: hidden; transition: opacity .15s; }
+.ledger-col:hover .ledger-stack { opacity: .82; }
+.ledger-seg { width: 100%; }
+.ledger-label {
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: var(--data);
+  font-size: 10.5px;
+  color: var(--muted);
+}
+.ledger-score {
+  position: absolute;
+  top: -18px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: var(--data);
+  font-size: 11px;
+  font-weight: 600;
+}
+.ledger-cut { position: absolute; left: 0; right: 0; border-top: 1px dashed var(--not-answered); pointer-events: none; }
+.ledger-cut span {
+  position: absolute;
+  right: 0;
+  top: -16px;
+  font-family: var(--data);
+  font-size: 10px;
+  color: var(--not-answered);
+  background: var(--card);
+  padding: 0 4px;
+}
+.ledger-legend { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 22px; font-size: 12px; color: var(--muted); }
+.ledger-legend i { width: 9px; height: 9px; display: inline-block; margin-right: 5px; border-radius: 1px; }
+.ledger-empty { color: var(--muted); padding: 40px 0; text-align: center; }
+
+/* ---------- Insights ---------- */
+.insight { border-left: 3px solid var(--line); padding: 12px 0 12px 14px; }
+.insight + .insight { border-top: 1px solid var(--line-soft); }
+.insight.strength { border-left-color: var(--answered); }
+.insight.weakness { border-left-color: var(--not-answered); }
+.insight.speed { border-left-color: var(--amber); }
+.insight.trend { border-left-color: var(--marked); }
+.insight h3 { font-size: 14.5px; margin-bottom: 4px; }
+.insight p { color: var(--ink-2); font-size: 13.5px; margin: 0; }
+.insight .metric {
+  float: right;
+  margin-left: 14px;
+  text-align: right;
+  font-family: var(--data);
+}
+.insight .metric b { display: block; font-size: 16px; font-weight: 600; }
+.insight .metric span { font-size: 10px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+
+/* ---------- Readiness gauge ---------- */
+.gauge-wrap { display: flex; gap: 22px; align-items: center; flex-wrap: wrap; }
+.gauge-figure { font-family: var(--display); font-size: 44px; font-weight: 700; line-height: 1; }
+
+.bar-row { display: grid; grid-template-columns: 150px 1fr 52px; gap: 10px; align-items: center; padding: 5px 0; font-size: 13px; }
+.bar-track { background: var(--line-soft); height: 8px; border-radius: 2px; overflow: hidden; }
+.bar-fill { height: 100%; background: var(--brand); }
+.bar-row .num { font-family: var(--data); text-align: right; font-size: 12.5px; }
+
+/* ---------- Mock list ---------- */
+.mock-row {
+  display: grid;
+  grid-template-columns: 46px 1fr auto auto;
+  gap: 14px;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  background: #fff;
+  margin-bottom: 8px;
+}
+.mock-row .day {
+  font-family: var(--data);
+  font-size: 11px;
+  text-align: center;
+  color: var(--muted);
+  border-right: 1px solid var(--line-soft);
+  padding-right: 12px;
+}
+.mock-row .day b { display: block; font-size: 17px; color: var(--ink); }
+.mock-row.locked { opacity: .58; }
+.mock-row .title { font-weight: 500; }
+.mock-row .meta { font-size: 12px; color: var(--muted); }
+
+/* ---------- Login ---------- */
+.login-page { display: grid; grid-template-columns: 1.05fr .95fr; min-height: 100vh; }
+.login-pitch { background: var(--ink); color: #fff; padding: 54px 48px; display: flex; flex-direction: column; justify-content: center; }
+.login-pitch h1 { font-size: 40px; line-height: 1.08; color: #fff; max-width: 11ch; }
+.login-pitch h1 em { font-style: normal; color: var(--amber); }
+.login-pitch p { color: #a8b6c8; max-width: 46ch; margin-top: 14px; font-size: 15px; }
+.login-pitch .proof { display: flex; gap: 30px; margin-top: 34px; }
+.login-pitch .proof div b { font-family: var(--display); font-size: 26px; display: block; }
+.login-pitch .proof div span { font-size: 12px; color: #8fa0b5; }
+.login-form { display: flex; align-items: center; justify-content: center; padding: 40px; }
+.login-form .inner { width: 100%; max-width: 340px; }
+.hint { background: var(--brand-soft); border: 1px solid #ccd8ec; border-radius: var(--r); padding: 10px 12px; font-size: 12.5px; margin-top: 18px; }
+.hint code { font-family: var(--data); }
+
+.notice { padding: 9px 12px; border-radius: var(--r); font-size: 13px; margin-bottom: 12px; }
+.notice.error { background: #fdf3f2; border: 1px solid #f0c4bf; color: #8c2a20; }
+.notice.info { background: var(--brand-soft); border: 1px solid #ccd8ec; }
+
+.muted { color: var(--muted); }
+.mono { font-family: var(--data); font-variant-numeric: tabular-nums; }
+.right { text-align: right; }
+.spread { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.stack-sm > * + * { margin-top: 8px; }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.chip {
+  padding: 5px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  font-size: 12.5px;
+  cursor: pointer;
+}
+.chip.on { background: var(--ink); border-color: var(--ink); color: #fff; }
+
+@media (max-width: 900px) {
+  .shell { grid-template-columns: 1fr; }
+  .rail { position: static; height: auto; flex-direction: row; align-items: center; padding: 10px 14px; overflow-x: auto; }
+  .rail .wordmark { padding: 0 16px 0 0; }
+  .rail nav { flex-direction: row; }
+  .rail .rail-foot { margin: 0 0 0 auto; border: 0; padding: 0; }
+  .rail .who small { display: none; }
+  .main { padding: 18px 16px 50px; }
+  .grid.two, .grid.three { grid-template-columns: 1fr; }
+  .login-page { grid-template-columns: 1fr; }
+  .login-pitch { padding: 34px 22px; }
+  .login-pitch h1 { font-size: 30px; }
+  .insight .metric { float: none; margin: 0 0 6px; text-align: left; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+
+/* Cut-off overlay shares the bar box (container height minus the label gutter). */
+.ledger-plot { position: absolute; left: 0; right: 0; top: 0; bottom: 26px; pointer-events: none; }
+.ledger-plot .ledger-cut { position: absolute; }
+
+/* ---------- Mobile pass ----------
+   Everything outside the exam engine works on a phone: schedule, results,
+   solutions, analysis, report, admin. Tables scroll sideways inside their
+   card rather than breaking the page. */
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+@media (max-width: 900px) {
+  body { font-size: 13.5px; }
+  h1 { font-size: 21px; }
+  .page-head { align-items: flex-start; flex-direction: column; gap: 10px; }
+  .card { padding: 14px; }
+  .card .table-scroll table { min-width: 560px; }
+  .grid.stat { grid-template-columns: repeat(2, 1fr); }
+  .stat-box .v { font-size: 22px; }
+  .mock-row { grid-template-columns: 40px 1fr; grid-template-rows: auto auto; row-gap: 8px; }
+  .mock-row .day { grid-row: 1 / 3; }
+  .mock-row .right { text-align: left; }
+  .mock-row > div:last-child { grid-column: 2; }
+  .mock-row button, .mock-row .btn { width: 100%; justify-content: center; }
+  .bar-row { grid-template-columns: 104px 1fr 46px; font-size: 12.5px; }
+  .ledger-body { gap: 5px; height: 170px; }
+  .ledger-score { font-size: 9.5px; }
+  .gauge-wrap { justify-content: center; text-align: left; }
+  .chips { overflow-x: auto; flex-wrap: nowrap; padding-bottom: 4px; }
+  .chip { white-space: nowrap; }
+  .insight .metric { float: none; display: block; margin: 0 0 4px; text-align: left; }
+  .instr { padding: 16px 12px 44px; }
+  .instr .sheet { padding: 14px; }
+  .login-pitch .proof { gap: 18px; flex-wrap: wrap; }
+}
+
+@media (max-width: 480px) {
+  .grid.stat { grid-template-columns: 1fr 1fr; }
+  .main { padding: 14px 12px 44px; }
+}
+
+/* Exam engine — a deliberate replica of the official TCS-iON style portal used
+   by IBPS and SBI. Nothing here is meant to look modern: the point is that a
+   candidate who practises on this screen finds no surprises on exam day.
+   Verdana at 13px, hard edges, the standard palette shapes, the same button
+   order along the bottom. */
+
+.exam-root {
+  position: fixed;
+  inset: 0;
+  background: #fff;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  z-index: 40;
+}
+
+/* ---- Top identity bar ---- */
+.exam-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  border-bottom: 1px solid #b6b6b6;
+  background: #fff;
+}
+.exam-top .brandline { font-size: 15px; font-weight: bold; color: #1a3a63; }
+.exam-top .brandline small { display: block; font-size: 10.5px; font-weight: normal; color: #555; }
+.exam-top .candidate { display: flex; align-items: center; gap: 8px; }
+.exam-top .candidate .photo {
+  width: 42px; height: 50px;
+  border: 1px solid #999;
+  background: #eef1f4 repeating-linear-gradient(135deg, #e4e9ee 0 6px, #eef1f4 6px 12px);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px; font-weight: bold; color: #6b7a8c;
+}
+.exam-top .candidate .who { font-size: 11.5px; line-height: 1.35; }
+.exam-top .candidate .who b { font-size: 12.5px; }
+
+/* ---- Timer strip ---- */
+.exam-strip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(#f4f6f8, #dfe4ea);
+  border-bottom: 1px solid #b6b6b6;
+  padding: 4px 10px;
+}
+.exam-strip .lang { display: flex; align-items: center; gap: 6px; font-size: 11.5px; }
+.exam-strip .lang select { width: auto; font-size: 11.5px; padding: 2px 4px; border-radius: 0; border: 1px solid #9aa4af; }
+.exam-timer {
+  background: #fff;
+  border: 1px solid #8f9aa6;
+  padding: 3px 10px;
+  font-family: Verdana, sans-serif;
+  font-size: 13px;
+}
+.exam-timer b { font-size: 15px; letter-spacing: .5px; }
+.exam-timer.warn { border-color: #b3261e; color: #b3261e; background: #fdecea; }
+.exam-timer.warn b { animation: pulse 1s steps(2, end) infinite; }
+@keyframes pulse { 50% { opacity: .35; } }
+
+/* ---- Section tabs ---- */
+.exam-sections { display: flex; gap: 2px; padding: 6px 10px 0; background: #eef1f4; border-bottom: 1px solid #b6b6b6; }
+.exam-sections button {
+  border: 1px solid #9aa4af;
+  border-bottom: 0;
+  border-radius: 3px 3px 0 0;
+  background: linear-gradient(#fdfdfd, #e2e7ec);
+  padding: 5px 14px;
+  font-family: inherit;
+  font-size: 12px;
+  color: #22303f;
+}
+.exam-sections button.active { background: #1a3a63; border-color: #1a3a63; color: #fff; font-weight: bold; }
+.exam-sections button.done { color: #7b8794; background: #e9ecef; }
+.exam-sections .sec-timer { margin-left: auto; align-self: center; font-size: 11.5px; padding-bottom: 5px; }
+
+/* ---- Body split ---- */
+.exam-body { flex: 1; display: grid; grid-template-columns: 1fr 262px; min-height: 0; }
+.exam-question { overflow: auto; padding: 0; border-right: 1px solid #b6b6b6; display: flex; flex-direction: column; }
+.exam-qbar {
+  display: flex; justify-content: space-between; align-items: center;
+  background: #f2f4f6; border-bottom: 1px solid #d5dae0; padding: 5px 12px; font-size: 12px;
+}
+.exam-qbar .qno { font-weight: bold; }
+.exam-qbar .marks { color: #1c6b3f; font-size: 11.5px; }
+.exam-qbar .marks .neg { color: #b3261e; }
+
+.exam-split { display: grid; grid-template-columns: 1fr 1fr; flex: 1; min-height: 0; }
+.exam-split.single { grid-template-columns: 1fr; }
+.exam-stimulus { overflow: auto; padding: 14px 16px; border-right: 1px dashed #c3c9d0; background: #fcfcfd; }
+.exam-stimulus h4 { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: #55606d; margin: 0 0 8px; }
+.exam-stimulus p { white-space: pre-wrap; line-height: 1.65; margin: 0 0 10px; }
+.exam-stimulus table { border-collapse: collapse; width: 100%; font-size: 12.5px; }
+.exam-stimulus th, .exam-stimulus td { border: 1px solid #9aa4af; padding: 5px 8px; text-align: left; }
+.exam-stimulus th { background: #e8edf2; }
+
+.exam-qtext { overflow: auto; padding: 14px 18px; }
+.exam-qtext .stem { white-space: pre-wrap; line-height: 1.7; margin-bottom: 16px; }
+.exam-qtext img { max-width: 100%; border: 1px solid #ccc; margin-bottom: 12px; }
+.exam-options { list-style: none; margin: 0; padding: 0; }
+.exam-options li { margin-bottom: 9px; }
+.exam-options label {
+  display: flex; gap: 9px; align-items: flex-start;
+  cursor: pointer; padding: 5px 7px; border: 1px solid transparent;
+  font-size: 13px; color: #000; margin: 0; font-weight: normal; line-height: 1.55;
+}
+.exam-options label:hover { background: #f3f6f9; border-color: #dbe2e9; }
+.exam-options input[type=radio] { width: auto; margin: 3px 0 0; accent-color: #1a3a63; }
+.exam-options .idx { font-weight: bold; min-width: 16px; }
+
+/* ---- Palette ---- */
+.exam-palette { background: #f7f8fa; display: flex; flex-direction: column; overflow: hidden; }
+.exam-legend { padding: 8px 10px; border-bottom: 1px solid #d5dae0; font-size: 10.5px; display: grid; grid-template-columns: 1fr 1fr; gap: 5px 6px; }
+.exam-legend div { display: flex; align-items: center; gap: 5px; }
+.exam-palette .paletitle { background: #1a3a63; color: #fff; padding: 5px 10px; font-size: 11.5px; }
+.exam-palette .grid { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px; overflow: auto; align-content: flex-start; }
+.exam-palette .foot { margin-top: auto; border-top: 1px solid #d5dae0; padding: 8px 10px; }
+.exam-palette .foot button { width: 100%; border-radius: 2px; font-family: inherit; }
+
+.pal {
+  width: 30px; height: 30px;
+  border: 0; padding: 0;
+  font-family: Verdana, sans-serif;
+  font-size: 11.5px; font-weight: bold;
+  color: #fff; cursor: pointer;
+  position: relative;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 0;
+}
+.pal.mini { width: 16px; height: 16px; font-size: 0; cursor: default; }
+.pal[data-s="not-visited"] { background: #d4d9de; color: #333; border: 1px solid #b4bcc4; }
+.pal[data-s="not-answered"] { background: #c0392b; clip-path: polygon(50% 0, 100% 26%, 100% 100%, 0 100%, 0 26%); }
+.pal[data-s="answered"] { background: #0e7b4f; clip-path: polygon(0 0, 100% 0, 100% 72%, 50% 100%, 0 72%); }
+.pal[data-s="marked"] { background: #6b3fa0; border-radius: 50%; }
+.pal[data-s="answered-marked"] { background: #6b3fa0; border-radius: 50%; }
+.pal[data-s="answered-marked"]::after {
+  content: ''; position: absolute; right: -1px; bottom: -1px;
+  width: 11px; height: 11px; border-radius: 50%; background: #0e7b4f; border: 1.5px solid #fff;
+}
+.pal.current { outline: 2px solid #f0a500; outline-offset: 1px; }
+
+/* ---- Footer actions ---- */
+.exam-foot {
+  display: flex; align-items: center; gap: 8px;
+  border-top: 1px solid #b6b6b6;
+  background: linear-gradient(#fbfcfd, #e8ecf0);
+  padding: 8px 10px;
+}
+.exam-foot button {
+  font-family: inherit; font-size: 12px; border-radius: 2px;
+  border: 1px solid #9aa4af; background: linear-gradient(#fff, #e9edf1); padding: 7px 12px;
+}
+.exam-foot .review { border-color: #9b7fbf; background: linear-gradient(#fff, #ece4f5); }
+.exam-foot .save { background: linear-gradient(#2a7f57, #0e7b4f); border-color: #0b6440; color: #fff; font-weight: bold; }
+.exam-foot .submit { margin-left: auto; background: linear-gradient(#2a5a96, #1a3a63); border-color: #14304f; color: #fff; font-weight: bold; padding: 7px 24px; }
+
+/* ---- Modal ---- */
+.exam-modal-bg { position: fixed; inset: 0; background: rgba(0, 0, 0, .45); display: flex; align-items: center; justify-content: center; z-index: 60; }
+.exam-modal { background: #fff; border: 1px solid #8f9aa6; width: min(560px, 92vw); font-family: Verdana, sans-serif; }
+.exam-modal header { background: #1a3a63; color: #fff; padding: 8px 12px; font-size: 13px; font-weight: bold; }
+.exam-modal .content { padding: 14px 16px; font-size: 12.5px; }
+.exam-modal .content table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+.exam-modal .content th, .exam-modal .content td { border: 1px solid #c9ced4; padding: 6px 8px; text-align: center; font-size: 12px; }
+.exam-modal .content th { background: #eef1f4; }
+.exam-modal footer { padding: 10px 16px; border-top: 1px solid #d5dae0; display: flex; gap: 8px; justify-content: flex-end; }
+.exam-modal footer button { font-family: inherit; font-size: 12px; border-radius: 2px; }
+
+/* ---- Instructions page ---- */
+.instr { max-width: 900px; margin: 0 auto; padding: 26px 20px 60px; font-family: Verdana, Arial, sans-serif; font-size: 13px; }
+.instr h2 { font-family: inherit; text-align: center; font-size: 17px; margin-bottom: 4px; }
+.instr .sheet { background: #fff; border: 1px solid #b6b6b6; padding: 20px 24px; }
+.instr ol { padding-left: 20px; line-height: 1.75; }
+.instr ol li { margin-bottom: 7px; }
+.instr .legend-row { display: flex; align-items: center; gap: 8px; margin: 6px 0; }
+.instr .agree { border-top: 1px solid #d5dae0; margin-top: 18px; padding-top: 14px; display: flex; gap: 8px; align-items: flex-start; }
+.instr .agree input { width: auto; margin-top: 3px; }
+.instr .actions { margin-top: 16px; display: flex; gap: 10px; justify-content: flex-end; }
+
+@media (max-width: 820px) {
+  .exam-body { grid-template-columns: 1fr; }
+  .exam-palette { position: fixed; right: 0; top: 0; bottom: 0; width: 250px; box-shadow: -4px 0 14px rgba(0,0,0,.2); transform: translateX(100%); transition: transform .18s; z-index: 50; }
+  .exam-palette.open { transform: none; }
+  .exam-split { grid-template-columns: 1fr; }
+  .exam-split .exam-stimulus { max-height: 40vh; border-right: 0; border-bottom: 1px dashed #c3c9d0; }
+}
+
+/* The palette drawer toggle only exists where the palette is a drawer. */
+.only-narrow { display: none; }
+@media (max-width: 820px) { .only-narrow { display: inline-block; } }
+
+
+.exam-options .opt-img { display:block; max-height:84px; max-width:100%; border:1px solid #b9c1ca; background:#fff; padding:3px; margin:1px 0 3px; }
+/* ---- preview scaffolding (not part of the product) ---- */
+.demo-bar { position: sticky; top: 0; z-index: 100; background: #0f1b2d; color: #cbd5e1;
+  display: flex; align-items: center; gap: 6px; padding: 10px 14px; flex-wrap: wrap; }
+.demo-bar .wm { font-family: 'Familjen Grotesk', sans-serif; font-weight: 700; color: #fff; margin-right: 10px; }
+.demo-bar .wm span { color: #b47500; }
+.demo-bar button { background: transparent; color: #94a3b8; border: 1px solid rgba(255,255,255,.18);
+  border-radius: 4px; padding: 6px 12px; font-size: 13px; }
+.demo-bar button.on { background: #16346b; border-color: #16346b; color: #fff; }
+.demo-bar .note { margin-left: auto; font-size: 11.5px; color: #7c8ba1; }
+.screen { display: none; }
+.screen.on { display: block; }
+.frame { max-width: 1180px; margin: 0 auto; padding: 26px 24px 60px; }
+.demo-frame .exam-root { position: relative; inset: auto; height: 760px; border: 1px solid #b6b6b6; z-index: 1; }
+.demo-caption { max-width: 1180px; margin: 14px auto 0; padding: 0 24px; font-size: 12.5px; color: #64748b; }
+@media (max-width: 900px) { .frame { padding: 16px 14px 50px; } .demo-frame .exam-root { height: 640px; } }
+
+</style>
+</head>
+<body>
+<!-- STATIC PREVIEW. No backend, no React — this file exists so you can judge the
+     design before setting anything up. The CSS is the app's real stylesheets,
+     copied verbatim; the data below matches the seeded demo student. -->
+
+<div class="demo-bar">
+  <span class="wm">BankExams<span>Pro</span></span>
+  <button data-s="login" class="on">Sign in</button>
+  <button data-s="dash">Dashboard</button>
+  <button data-s="exam">Exam engine</button>
+  <button data-s="result">Result</button>
+  <button data-s="analysis">AI analysis</button>
+  <span class="note">static design preview — real app is React + Node</span>
+</div>
+
+<!-- ============ SIGN IN (OTP) ============ -->
+<section class="screen on" id="s-login">
+  <div class="login-page">
+    <section class="login-pitch">
+      <div class="eyebrow" style="color:#8fa0b5">IBPS · SBI · RBI · RRB · LIC</div>
+      <h1>Ten mocks. <em>One verdict.</em></h1>
+      <p>Practise on a screen built to match the official examination portal, then let the analysis read all ten attempts together — where you are gaining, where you are bleeding marks, and what to revise tonight.</p>
+      <p style="font-size:13px;color:#8fa0b5">Study your analysis anywhere, including this phone. Attempting a paper needs a laptop or desktop — the same screen you will face on exam day.</p>
+      <div class="proof">
+        <div><b>100</b><span>questions per paper</span></div>
+        <div><b>20:20:20</b><span>sectional timing</span></div>
+        <div><b>−0.25</b><span>negative marking</span></div>
+      </div>
+    </section>
+    <section class="login-form">
+      <div class="inner">
+        <h2>Sign in with OTP</h2>
+        <p class="muted" style="font-size:13px">Enter your email or mobile number and we will send a one-time code. No passwords on this platform.</p>
+        <div class="field" style="margin-top:16px">
+          <label>Email or mobile number</label>
+          <input value="arjun@student.in" readonly>
+        </div>
+        <div class="field">
+          <label>One-time code</label>
+          <input value="4 8 2 2 0 9" readonly style="font-size:20px;letter-spacing:8px;text-align:center;font-family:var(--data)">
+        </div>
+        <button class="primary" style="width:100%;justify-content:center">Verify and sign in</button>
+        <div class="hint"><b>Dev delivery.</b> No SMS gateway is connected in this build, so the code appears on screen and in the server log.</div>
+      </div>
+    </section>
+  </div>
+</section>
+
+<!-- ============ DASHBOARD ============ -->
+<section class="screen" id="s-dash">
+  <div class="frame">
+    <div class="page-head">
+      <div>
+        <div class="eyebrow">Wednesday, 29 July</div>
+        <h1>Good morning, Arjun</h1>
+      </div>
+      <button class="primary">Start Mock Test 8</button>
+    </div>
+
+    <div class="grid stat" style="margin-bottom:14px">
+      <div class="stat-box"><div class="k">Latest score</div><div class="v">55.75<small> / 100</small></div><div class="sub">▲ 0.56 marks per mock</div></div>
+      <div class="stat-box"><div class="k">Best so far</div><div class="v">61.75</div><div class="sub">Average 52.8</div></div>
+      <div class="stat-box"><div class="k">Expected on exam day</div><div class="v">54.7</div><div class="sub">Range 48.7–60.8</div></div>
+      <div class="stat-box"><div class="k">Qualification chance</div><div class="v" style="color:var(--amber)">36.7%</div><div class="sub">Cut-off 58</div></div>
+    </div>
+
+    <div class="card-head" style="margin-top:22px">
+      <div>
+        <h2>IBPS PO 2026 — the ledger</h2>
+        <span class="muted" style="font-size:13px">One column per mock, sections stacked. Click a column to open that paper.</span>
+      </div>
+      <a class="btn" href="#">Full analysis</a>
+    </div>
+    <div class="ledger">
+      <div class="ledger-body">
+        <div class="ledger-plot"><div class="ledger-cut" style="bottom:68.2%"><span>Cut-off 58</span></div></div>
+        <div class="ledger-col" title="Mock 1 — 43.5/100"><span class="ledger-score">43.5</span><div class="ledger-stack" style="height:51.2%"><div class="ledger-seg" style="height:33.3%;background:#16346b"></div><div class="ledger-seg" style="height:29.3%;background:#0e7b4f"></div><div class="ledger-seg" style="height:37.4%;background:#b47500"></div></div><span class="ledger-label">1</span></div><div class="ledger-col" title="Mock 2 — 61.75/100"><span class="ledger-score">61.75</span><div class="ledger-stack" style="height:72.6%"><div class="ledger-seg" style="height:34.0%;background:#16346b"></div><div class="ledger-seg" style="height:30.0%;background:#0e7b4f"></div><div class="ledger-seg" style="height:36.0%;background:#b47500"></div></div><span class="ledger-label">2</span></div><div class="ledger-col" title="Mock 3 — 51.25/100"><span class="ledger-score">51.25</span><div class="ledger-stack" style="height:60.3%"><div class="ledger-seg" style="height:35.1%;background:#16346b"></div><div class="ledger-seg" style="height:29.3%;background:#0e7b4f"></div><div class="ledger-seg" style="height:35.6%;background:#b47500"></div></div><span class="ledger-label">3</span></div><div class="ledger-col" title="Mock 4 — 56.75/100"><span class="ledger-score">56.75</span><div class="ledger-stack" style="height:66.8%"><div class="ledger-seg" style="height:34.4%;background:#16346b"></div><div class="ledger-seg" style="height:30.0%;background:#0e7b4f"></div><div class="ledger-seg" style="height:35.7%;background:#b47500"></div></div><span class="ledger-label">4</span></div><div class="ledger-col" title="Mock 5 — 47.75/100"><span class="ledger-score">47.75</span><div class="ledger-stack" style="height:56.2%"><div class="ledger-seg" style="height:35.6%;background:#16346b"></div><div class="ledger-seg" style="height:30.4%;background:#0e7b4f"></div><div class="ledger-seg" style="height:34.0%;background:#b47500"></div></div><span class="ledger-label">5</span></div><div class="ledger-col" title="Mock 6 — 53/100"><span class="ledger-score">53</span><div class="ledger-stack" style="height:62.4%"><div class="ledger-seg" style="height:34.9%;background:#16346b"></div><div class="ledger-seg" style="height:30.2%;background:#0e7b4f"></div><div class="ledger-seg" style="height:34.9%;background:#b47500"></div></div><span class="ledger-label">6</span></div><div class="ledger-col" title="Mock 7 — 55.75/100"><span class="ledger-score">55.75</span><div class="ledger-stack" style="height:65.6%"><div class="ledger-seg" style="height:34.1%;background:#16346b"></div><div class="ledger-seg" style="height:30.9%;background:#0e7b4f"></div><div class="ledger-seg" style="height:35.0%;background:#b47500"></div></div><span class="ledger-label">7</span></div>
+      </div>
+      <div class="ledger-legend">
+        <span><i style="background:#16346b"></i>English Language</span>
+        <span><i style="background:#0e7b4f"></i>Reasoning Ability</span>
+        <span><i style="background:#b47500"></i>Quantitative Aptitude</span>
+        <span style="margin-left:auto">Day of preparation →</span>
+      </div>
+    </div>
+
+    <div class="grid two" style="margin-top:14px">
+      <div class="card">
+        <div class="card-head"><h2>Exam readiness</h2></div>
+        <div class="gauge-wrap">
+          <svg width="132" height="108" viewBox="0 0 132 108"><path d="M 19.2 93 A 54 54 0 1 1 112.8 93" fill="none" stroke="#e7ecf2" stroke-width="11" stroke-linecap="round"/><path d="M 19.2 93 A 54 54 0 1 1 105 33" fill="none" stroke="#b47500" stroke-width="11" stroke-linecap="round"/><text x="66" y="72" text-anchor="middle" font-size="30" font-weight="700" fill="#0f1b2d" font-family="Familjen Grotesk">65</text><text x="66" y="88" text-anchor="middle" font-size="9.5" fill="#64748b" font-family="IBM Plex Mono" letter-spacing="1">READY</text></svg>
+          <div style="flex:1;min-width:200px">
+            <p style="font-size:13.5px">Built from your score margin over the cut-off, accuracy, consistency between mocks, sectional safety and the direction you are moving in.</p>
+            <div class="chips" style="margin-top:8px">
+              <span class="tag">score margin 42</span><span class="tag">accuracy 69</span><span class="tag">consistency 89</span><span class="tag">sectional safety 95</span><span class="tag">momentum 53</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head"><h2>Tonight's priority</h2></div>
+        <div style="display:flex;gap:12px;padding:9px 0;border-bottom:1px solid var(--line-soft)">
+          <span class="mono muted" style="font-size:12;padding-top:2px">60m</span>
+          <div><b style="font-size:13.5px">Time and Work</b> <span class="muted" style="font-size:12px">· Quantitative Aptitude</span>
+          <div style="font-size:13px;color:var(--ink-2)">30 untimed questions to rebuild the method, then 15 timed at 60s each.</div></div>
+        </div>
+        <div style="display:flex;gap:12px;padding:9px 0;border-bottom:1px solid var(--line-soft)">
+          <span class="mono muted" style="font-size:12;padding-top:2px">40m</span>
+          <div><b style="font-size:13.5px">Number Series</b> <span class="muted" style="font-size:12px">· Quantitative Aptitude</span>
+          <div style="font-size:13px;color:var(--ink-2)">20 mixed-difficulty questions. Log every wrong answer with the reason — concept, calculation or misread.</div></div>
+        </div>
+        <div style="display:flex;gap:12px;padding:9px 0">
+          <span class="mono muted" style="font-size:12;padding-top:2px">25m</span>
+          <div><b style="font-size:13.5px">Data Interpretation speed</b> <span class="muted" style="font-size:12px">· Quantitative Aptitude</span>
+          <div style="font-size:13px;color:var(--ink-2)">10 questions with a hard 55s cap. Abandon on the buzzer even if half-solved.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXAM ENGINE ============ -->
+<section class="screen" id="s-exam">
+  <div class="frame demo-frame" style="padding-top:18px">
+    <div class="exam-root">
+      <div class="exam-top">
+        <div class="brandline">IBPS PO 2026 — Prelims<small>IBPS PO 2026 — Mock Test 8</small></div>
+        <div class="candidate">
+          <div class="who"><b>Arjun Nair</b><br>Roll No: 1BE18BC4</div>
+          <div class="photo">AN</div>
+        </div>
+      </div>
+      <div class="exam-strip">
+        <div class="lang"><label style="margin:0">View in</label>
+          <select><option>English</option><option>हिन्दी</option></select></div>
+        <div class="exam-timer">Time Left: <b id="demo-timer">00:17:42</b></div>
+      </div>
+      <div class="exam-sections">
+        <button class="done">English Language</button>
+        <button class="done">Reasoning Ability</button>
+        <button class="active">Quantitative Aptitude</button>
+        <div class="sec-timer">Section time left: <b class="mono">00:17:42</b></div>
+      </div>
+      <div class="exam-body">
+        <div class="exam-question">
+          <div class="exam-qbar">
+            <span class="qno">Question No. <span id="demo-qno">4</span></span>
+            <span class="marks">
+              <button id="btn-di" style="padding:2px 8px;font-size:11px;font-weight:bold">DI question</button>
+              <button id="btn-fig" style="padding:2px 8px;font-size:11px">Image question</button>
+              &nbsp; Marks: +1 <span class="neg">−0.25</span></span>
+          </div>
+          <div class="exam-split" id="view-di">
+            <div class="exam-stimulus">
+              <h4>Accounts opened at four branches during the quarter</h4>
+              <p>Study the table and answer the questions that follow. All figures are the number of accounts opened.</p>
+              <table>
+                <thead><tr><th>Branch</th><th>Savings accounts</th><th>Current accounts</th></tr></thead>
+                <tbody>
+                  <tr><td>Andheri</td><td>3240</td><td>1870</td></tr>
+                  <tr><td>Borivali</td><td>4110</td><td>2450</td></tr>
+                  <tr><td>Chembur</td><td>2780</td><td>1290</td></tr>
+                  <tr><td>Dadar</td><td>3650</td><td>2980</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="exam-qtext">
+              <div class="stem">The number of savings accounts at Andheri is what percent of the savings accounts at Borivali? (rounded to the nearest whole number)</div>
+              <ul class="exam-options">
+                <li><label><input type="radio" name="q4"><span class="idx">A.</span><span>72%</span></label></li>
+                <li><label><input type="radio" name="q4" checked><span class="idx">B.</span><span>79%</span></label></li>
+                <li><label><input type="radio" name="q4"><span class="idx">C.</span><span>84%</span></label></li>
+                <li><label><input type="radio" name="q4"><span class="idx">D.</span><span>68%</span></label></li>
+              </ul>
+            </div>
+          </div>
+        
+          <div class="exam-split single" id="view-fig" style="display:none">
+            <div class="exam-qtext">
+              <div class="stem">Select the figure that continues the series shown below.</div>
+              <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20360%2070%22%20width%3D%22360%22%20height%3D%2270%22%3E%3Crect%20width%3D%22360%22%20height%3D%2270%22%20fill%3D%22white%22/%3E%3Cg%20transform%3D%22rotate%280%2036%2035%29%22%3E%3Crect%20x%3D%2222%22%20y%3D%2221%22%20width%3D%2228%22%20height%3D%2228%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%222.5%22/%3E%3Ccircle%20cx%3D%2236%22%20cy%3D%2213%22%20r%3D%223.5%22%20fill%3D%22black%22/%3E%3C/g%3E%3Cg%20transform%3D%22rotate%2845%20104%2035%29%22%3E%3Crect%20x%3D%2290%22%20y%3D%2221%22%20width%3D%2228%22%20height%3D%2228%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%222.5%22/%3E%3Ccircle%20cx%3D%22104%22%20cy%3D%2213%22%20r%3D%223.5%22%20fill%3D%22black%22/%3E%3C/g%3E%3Cg%20transform%3D%22rotate%2890%20172%2035%29%22%3E%3Crect%20x%3D%22158%22%20y%3D%2221%22%20width%3D%2228%22%20height%3D%2228%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%222.5%22/%3E%3Ccircle%20cx%3D%22172%22%20cy%3D%2213%22%20r%3D%223.5%22%20fill%3D%22black%22/%3E%3C/g%3E%3Cg%20transform%3D%22rotate%28135%20240%2035%29%22%3E%3Crect%20x%3D%22226%22%20y%3D%2221%22%20width%3D%2228%22%20height%3D%2228%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%222.5%22/%3E%3Ccircle%20cx%3D%22240%22%20cy%3D%2213%22%20r%3D%223.5%22%20fill%3D%22black%22/%3E%3C/g%3E%3Crect%20x%3D%22278%22%20y%3D%228%22%20width%3D%2260%22%20height%3D%2254%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-dasharray%3D%224%203%22/%3E%3Ctext%20x%3D%22308%22%20y%3D%2242%22%20text-anchor%3D%22middle%22%20font-size%3D%2226%22%20font-family%3D%22Verdana%22%3E%3F%3C/text%3E%3C/svg%3E" alt="Figure series">
+              <ul class="exam-options">
+                <li><label><input type="radio" name="qfig"><span class="idx">A.</span><span><img class="opt-img" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2066%2070%22%20width%3D%2266%22%20height%3D%2270%22%3E%3Crect%20width%3D%2266%22%20height%3D%2270%22%20fill%3D%22white%22/%3E%3Cg%20transform%3D%22rotate%28180%2032%2035%29%22%3E%3Crect%20x%3D%2218%22%20y%3D%2221%22%20width%3D%2228%22%20height%3D%2228%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%222.5%22/%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2213%22%20r%3D%223.5%22%20fill%3D%22black%22/%3E%3C/g%3E%3C/svg%3E" alt="Option A"></span></label></li>
+                <li><label><input type="radio" name="qfig" checked><span class="idx">B.</span><span><img class="opt-img" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2066%2070%22%20width%3D%2266%22%20height%3D%2270%22%3E%3Crect%20width%3D%2266%22%20height%3D%2270%22%20fill%3D%22white%22/%3E%3Cg%20transform%3D%22rotate%28225%2032%2035%29%22%3E%3Crect%20x%3D%2218%22%20y%3D%2221%22%20width%3D%2228%22%20height%3D%2228%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%222.5%22/%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2213%22%20r%3D%223.5%22%20fill%3D%22black%22/%3E%3C/g%3E%3C/svg%3E" alt="Option B"></span></label></li>
+                <li><label><input type="radio" name="qfig"><span class="idx">C.</span><span><img class="opt-img" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2066%2070%22%20width%3D%2266%22%20height%3D%2270%22%3E%3Crect%20width%3D%2266%22%20height%3D%2270%22%20fill%3D%22white%22/%3E%3Cg%20transform%3D%22rotate%2890%2032%2035%29%22%3E%3Crect%20x%3D%2218%22%20y%3D%2221%22%20width%3D%2228%22%20height%3D%2228%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%222.5%22/%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2213%22%20r%3D%223.5%22%20fill%3D%22black%22/%3E%3C/g%3E%3C/svg%3E" alt="Option C"></span></label></li>
+                <li><label><input type="radio" name="qfig"><span class="idx">D.</span><span><img class="opt-img" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2066%2070%22%20width%3D%2266%22%20height%3D%2270%22%3E%3Crect%20width%3D%2266%22%20height%3D%2270%22%20fill%3D%22white%22/%3E%3Cg%20transform%3D%22rotate%28135%2032%2035%29%22%3E%3Crect%20x%3D%2218%22%20y%3D%2221%22%20width%3D%2228%22%20height%3D%2228%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%222.5%22/%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2213%22%20r%3D%223.5%22%20fill%3D%22black%22/%3E%3C/g%3E%3C/svg%3E" alt="Option D"></span></label></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <aside class="exam-palette">
+          <div class="exam-legend">
+            <div><span class="pal mini" data-s="answered"></span> <b>12</b> Answered</div>
+            <div><span class="pal mini" data-s="not-answered"></span> <b>3</b> Not Answered</div>
+            <div><span class="pal mini" data-s="not-visited"></span> <b>17</b> Not Visited</div>
+            <div><span class="pal mini" data-s="marked"></span> <b>2</b> Marked</div>
+            <div><span class="pal mini" data-s="answered-marked"></span> <b>1</b> Answered &amp; Marked</div>
+          </div>
+          <div class="paletitle">Quantitative Aptitude</div>
+          <div class="grid" id="demo-palette"></div>
+          <div class="foot"><button class="submit">Submit Test</button></div>
+        </aside>
+      </div>
+      <div class="exam-foot">
+        <button class="review">Mark for Review &amp; Next</button>
+        <button>Clear Response</button>
+        <button>&laquo; Previous</button>
+        <button class="save">Save &amp; Next</button>
+        <button class="submit">Submit</button>
+      </div>
+    </div>
+  </div>
+  <p class="demo-caption">A deliberate replica of the TCS-iON style portal used by IBPS and SBI: Verdana at 13px, the five palette shapes, the same button order. The point is that exam day holds no surprises. In the real app this runs full-screen with a live server-synced timer, autosave every 10 seconds, and sectional locking. Use the two buttons in the question bar to switch between a table-based DI question and a non-verbal question with an image in the stem and an image in every option.</p>
+</section>
+
+<!-- ============ RESULT ============ -->
+<section class="screen" id="s-result">
+  <div class="frame">
+    <div class="page-head">
+      <div>
+        <div class="eyebrow">IBPS PO 2026 · submitted 28 Jul, 10:02 am</div>
+        <h1>IBPS PO 2026 — Mock Test 7</h1>
+      </div>
+      <div style="display:flex;gap:8px"><a class="btn" href="#">All mocks</a><a class="btn btn-primary" href="#">What this means</a></div>
+    </div>
+    <div class="grid stat">
+      <div class="stat-box"><div class="k">Score</div><div class="v">55.75<small> / 100</small></div><div class="sub">Below the 58 cut-off</div></div>
+      <div class="stat-box"><div class="k">Accuracy</div><div class="v">70.5%</div><div class="sub">62 right · 26 wrong · 12 left</div></div>
+      <div class="stat-box"><div class="k">Percentile</div><div class="v">87.5</div><div class="sub">2 candidates · topper 63.5</div></div>
+      <div class="stat-box"><div class="k">Time used</div><div class="v">57<small> min</small></div><div class="sub">of 60 available</div></div>
+    </div>
+    <div class="card" style="margin-top:14px">
+      <div class="card-head"><h2>Section by section</h2><span class="tag green">all sectional cut-offs cleared</span></div>
+      <div class="table-scroll"><table>
+        <thead><tr><th>Section</th><th class="num">Attempted</th><th class="num">Correct</th><th class="num">Wrong</th><th class="num">Accuracy</th><th class="num">Time</th><th class="num">Score</th><th class="num">Cut-off</th></tr></thead>
+        <tbody>
+          <tr><td><span style="display:inline-block;width:8px;height:8px;border-radius:1px;background:#16346b;margin-right:7px"></span>English Language</td><td class="num">27/30</td><td class="num">22</td><td class="num">5</td><td class="num">81.5%</td><td class="num">17m</td><td class="num"><b>20.75</b></td><td class="num"><span class="tag green">9</span></td></tr>
+          <tr><td><span style="display:inline-block;width:8px;height:8px;border-radius:1px;background:#0e7b4f;margin-right:7px"></span>Reasoning Ability</td><td class="num">30/35</td><td class="num">21</td><td class="num">9</td><td class="num">70.0%</td><td class="num">19m</td><td class="num"><b>18.75</b></td><td class="num"><span class="tag green">12</span></td></tr>
+          <tr><td><span style="display:inline-block;width:8px;height:8px;border-radius:1px;background:#b47500;margin-right:7px"></span>Quantitative Aptitude</td><td class="num">31/35</td><td class="num">19</td><td class="num">12</td><td class="num">61.3%</td><td class="num">21m</td><td class="num"><b>16.25</b></td><td class="num"><span class="tag green">11</span></td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="card" style="margin-top:14px">
+      <div class="card-head"><h2>Solutions</h2>
+        <div class="chips"><button class="chip">All questions</button><button class="chip on">Got wrong</button><button class="chip">Skipped</button><button class="chip">Took too long</button><button class="chip">Marked for review</button></div>
+      </div>
+      <div style="padding:4px 0 10px;border-bottom:1px solid var(--line-soft);display:grid;grid-template-columns:20px 1fr auto;gap:12px;align-items:center">
+        <span class="pal mini" data-s="not-answered"></span>
+        <span><span class="muted mono" style="font-size:11px">Quantitative Aptitude · Q11 · Time and Work</span><br><span style="font-size:13.5px">A can finish a piece of work in 12 days and B in 18 days. Working together…</span></span>
+        <span class="mono muted" style="font-size:12px">2m 05s ⚠</span>
+      </div>
+      <div style="padding:12px 4px 4px">
+        <ol type="A" style="padding-left:20px;margin:0 0 10px">
+          <li style="color:var(--answered);font-weight:600">7.2 — correct answer</li>
+          <li style="color:var(--not-answered)">9 — your answer</li>
+          <li>7.5</li><li>15</li>
+        </ol>
+        <div class="notice info"><b>Solution.</b> Combined one-day work = 1/12 + 1/18. Days = 12×18/(12+18) = 7.2.</div>
+        <p class="muted" style="font-size:12px;margin:8px 0 0">You spent 2m 05s; this question is built for about 60s. Difficulty: Hard.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AI ANALYSIS ============ -->
+<section class="screen" id="s-analysis">
+  <div class="frame">
+    <div class="page-head">
+      <div>
+        <div class="eyebrow">Across 7 of 10 mock tests</div>
+        <h1>IBPS PO 2026 — performance analysis</h1>
+      </div>
+      <div style="display:flex;gap:8px"><span class="tag">analysis engine</span><a class="btn" href="#">Final report</a></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>Where this is heading</h2><span class="muted" style="font-size:12.5px">Projected from your last 7 papers, weighted towards the most recent</span></div>
+      <div class="gauge-wrap">
+        <svg width="132" height="108" viewBox="0 0 132 108"><path d="M 19.2 93 A 54 54 0 1 1 112.8 93" fill="none" stroke="#e7ecf2" stroke-width="11" stroke-linecap="round"/><path d="M 19.2 93 A 54 54 0 1 1 105 33" fill="none" stroke="#b47500" stroke-width="11" stroke-linecap="round"/><text x="66" y="72" text-anchor="middle" font-size="30" font-weight="700" fill="#0f1b2d" font-family="Familjen Grotesk">65</text><text x="66" y="88" text-anchor="middle" font-size="9.5" fill="#64748b" font-family="IBM Plex Mono" letter-spacing="1">READY</text></svg>
+        <div style="flex:1;min-width:260px">
+          <div class="grid stat" style="gap:10px">
+            <div class="stat-box" style="border:0;padding:0"><div class="k">Expected score</div><div class="v">54.7<small> / 100</small></div><div class="sub">Likely between 48.7 and 60.8</div></div>
+            <div class="stat-box" style="border:0;padding:0"><div class="k">Qualification chance</div><div class="v">36.7%</div><div class="sub">Moderate · cut-off 58</div></div>
+          </div>
+          <div style="margin-top:12px">
+            <div class="bar-row"><span>English Language cut-off</span><div class="bar-track"><div class="bar-fill" style="width:99%;background:var(--answered)"></div></div><span class="num">99%</span></div>
+            <div class="bar-row"><span>Reasoning Ability cut-off</span><div class="bar-track"><div class="bar-fill" style="width:97%;background:var(--answered)"></div></div><span class="num">97%</span></div>
+            <div class="bar-row"><span>Quantitative Aptitude cut-off</span><div class="bar-track"><div class="bar-fill" style="width:88%;background:var(--answered)"></div></div><span class="num">88%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-head" style="margin-top:26px">
+      <h2>What the numbers are telling you</h2>
+      <div class="chips"><button class="chip on">Everything</button><button class="chip">Strength</button><button class="chip">Weakness</button><button class="chip">Speed</button><button class="chip">Trend</button></div>
+    </div>
+    <div class="card">
+      <div class="insight strength">
+        <span class="metric"><b>84%</b><span>Average accuracy</span></span>
+        <h3>English Language is your anchor section</h3>
+        <p>You average 84% accuracy here at 41s per question, and you have cleared its cut-off in 100% of your mocks. Protect this section — it is what keeps your total above the line.</p>
+      </div>
+      <div class="insight weakness">
+        <span class="metric"><b>3.3</b><span>Marks lost</span></span>
+        <h3>Time and Work is costing you the most marks</h3>
+        <p>Across 28 questions in Quantitative Aptitude, your accuracy sits at 28%. That is roughly 3.3 marks left on the table per exam. The good news: it is improving (+17.5 points in your recent mocks).</p>
+      </div>
+      <div class="insight speed">
+        <span class="metric"><b>2.08× target</b><span>Pace</span></span>
+        <h3>Data Interpretation — Table is eating 15 minutes an exam</h3>
+        <p>You take 114s per question against a target of 55s — 2.08× the pace it deserves. With accuracy at 53% as well, the time is not buying you marks. Skip these on sight in the real exam.</p>
+      </div>
+      <div class="insight speed">
+        <span class="metric"><b>English first</b><span>Start with</span></span>
+        <h3>Suggested order: English Language → Reasoning Ability → Quantitative Aptitude</h3>
+        <p>English Language returns marks fastest for you (41s per question at 84% accuracy), while Quantitative Aptitude is slowest at 83s. Bank the certain marks first, then spend what is left on Quant.</p>
+      </div>
+      <div class="insight trend">
+        <span class="metric"><b>+16.2 pts</b><span>Improvement</span></span>
+        <h3>Quantitative Aptitude accuracy has climbed 16.2 points</h3>
+        <p>From 54% in Mock 1 to 70% in Mock 7. Reasoning Ability has moved only 2 points over the same period — whatever routine you changed for Quant, run it there next.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+// screen switcher
+document.querySelectorAll('.demo-bar button').forEach(function (b) {
+  b.addEventListener('click', function () {
+    document.querySelectorAll('.demo-bar button').forEach(function (x) { x.classList.remove('on'); });
+    document.querySelectorAll('.screen').forEach(function (x) { x.classList.remove('on'); });
+    b.classList.add('on');
+    document.getElementById('s-' + b.dataset.s).classList.add('on');
+    window.scrollTo(0, 0);
+  });
+});
+
+// palette: 35 numbered buttons with a realistic status spread
+(function () {
+  var states = [];
+  for (var i = 0; i < 12; i++) states.push('answered');
+  for (var i = 0; i < 3; i++) states.push('not-answered');
+  states.push('marked'); states.push('marked'); states.push('answered-marked');
+  while (states.length < 35) states.push('not-visited');
+  var grid = document.getElementById('demo-palette');
+  states.forEach(function (s, i) {
+    var b = document.createElement('button');
+    b.className = 'pal' + (i === 3 ? ' current' : '');
+    b.dataset.s = s;
+    b.textContent = i + 1;
+    grid.appendChild(b);
+  });
+})();
+
+// ticking timer for realism
+(function () {
+  var t = 17 * 60 + 42;
+  var el = document.getElementById('demo-timer');
+  setInterval(function () {
+    if (t <= 0) return;
+    t--;
+    var h = '00', m = String(Math.floor(t / 60)).padStart(2, '0'), s = String(t % 60).padStart(2, '0');
+    el.textContent = h + ':' + m + ':' + s;
+  }, 1000);
+})();
+
+// DI / image-question toggle inside the exam frame
+(function () {
+  var di = document.getElementById('view-di'), fig = document.getElementById('view-fig');
+  var bdi = document.getElementById('btn-di'), bfig = document.getElementById('btn-fig');
+  var qno = document.getElementById('demo-qno');
+  function show(which) {
+    di.style.display = which === 'di' ? '' : 'none';
+    fig.style.display = which === 'fig' ? '' : 'none';
+    bdi.style.fontWeight = which === 'di' ? 'bold' : 'normal';
+    bfig.style.fontWeight = which === 'fig' ? 'bold' : 'normal';
+    qno.textContent = which === 'di' ? '4' : '12';
+  }
+  bdi.addEventListener('click', function () { show('di'); });
+  bfig.addEventListener('click', function () { show('fig'); });
+})();
+</script>
+</body>
+</html>

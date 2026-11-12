@@ -1,0 +1,19 @@
+[Unit]
+Description=BankExamsPro API
+After=network.target
+
+[Service]
+Type=simple
+User=bankexams
+WorkingDirectory=/opt/bankexamspro/server
+EnvironmentFile=/etc/bankexamspro.env
+ExecStart=/usr/bin/node src/index.js
+Restart=always
+RestartSec=3
+# Hardening
+NoNewPrivileges=true
+ProtectSystem=full
+ReadWritePaths=/opt/bankexamspro/server/data
+
+[Install]
+WantedBy=multi-user.target

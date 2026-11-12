@@ -1,0 +1,8 @@
+node_modules/
+dist/
+server/data/db.json
+.env
+functions/node_modules/
+functions/src/
+functions/seed-db.json
+.firebaserc

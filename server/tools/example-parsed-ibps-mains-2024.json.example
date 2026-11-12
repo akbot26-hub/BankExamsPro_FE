@@ -1,0 +1,4359 @@
+{
+  "sections": [
+    {
+      "id": "rea",
+      "name": "Reasoning & Computer Aptitude",
+      "count": 43
+    },
+    {
+      "id": "eng",
+      "name": "English Language",
+      "count": 35
+    },
+    {
+      "id": "dai",
+      "name": "Data Analysis & Interpretation",
+      "count": 31
+    },
+    {
+      "id": "ga",
+      "name": "General, Economy & Banking Awareness",
+      "count": 38
+    }
+  ],
+  "stimuli": [
+    {
+      "id": "stim_2_6",
+      "type": "directions",
+      "title": "Directions for questions 2–6",
+      "text": "Read the following passage and answer the given questions. A word and number sorting machine, when given an input of words and numbers, rearranges them in a particular manner step by step, as indicated below, until all the words and numbers are arranged. Given below is an illustration of this arrangement. Input: 37 50 FGN KZU 74 YNS 51 100 ORS 17 HPBM Step 1: 100 37 50 FGN KZU 74 YNS ORS 17 HPBM 51 Step 2: 74 100 50 FGN KZU YNS ORS 17 HPBM 51 37 Step 3: 50 74 100 FGN KZU YNS ORS HPBM 51 37 17 Step 4: 50 74 100 EFGNM KZU YNS ORS HPBM 51 37 17 Step 5: 50 74 100 EFGNM GHPBML KZU YNS ORS 51 37 17 Step 6: 50 74 100 EFGNM GHPBML JKZUT YNS ORS 51 37 17 Step 7: 50 74 100 EFGNM GHPBML JKZUT NORSR YNS 51 37 17 Step 8: 50 74 100 EFGNM GHPBML JKZUT NORSR XYNSR 51 37 17 And, step 8 is the last step of the above input, as per the rules followed in the steps given above; find out in each of the following questions the appropriate step for the given input. Input: ETU 75 GTQ 14 RTV 22 NTS 32 MTW 67 FSN 19 CER"
+    },
+    {
+      "id": "stim_7_10",
+      "type": "directions",
+      "title": "Directions for questions 7–10",
+      "text": "Study the following information carefully to answer the given questions. An uncertain number of persons are sitting in a straight line facing the north direction. The persons sitting at the odd-numbered positions are Managers and the persons sitting at the even-numbered positions are Associates in different companies. Both X and Z are seated to the left of U and P, but to the right of Q. There are five persons between J and G. The person sitting fifth to the right of Q is an Associate. Two persons are seated between Q and R. The number of persons sitting between Q and the Manager at the extreme left end is one more than the number of persons sitting between J and P. The number of persons sitting between R and G is the same as the number of persons sitting between X and Z. Four persons are seated between Q and T, who is not seated to the right of R. The Manager at the extreme left end of the row is S. Three Managers are seated between T and X. J sits 3rd to the right of R. The number of persons sitting between Q and R is one more than the number of persons sitting to the right of G. P is the third Associate to the right of J."
+    },
+    {
+      "id": "stim_12_15",
+      "type": "directions",
+      "title": "Directions for questions 12–15",
+      "text": "Each of the questions below, consist of a question and three statements numbered I, II and III. You have to decide whether the data provided in the statements are sufficient to answer the question. Read the three statements and give answer: (a) Data in statements I, II and III together are sufficient to answer the question. (b) Data in statements I, II and III together are not sufficient to answer the question. (c) Data in statements I and II together are sufficient to answer the question. (d) Data in statements I and III together are sufficient to answer the question. (e) Data in statements II and III together are sufficient to answer the question."
+    },
+    {
+      "id": "stim_17_18",
+      "type": "directions",
+      "title": "Directions for questions 17–18",
+      "text": "Read the following information carefully and answer the given questions. ‘G % H’ means ‘G is the husband of H’. ‘G @ H’ means ‘G is the wife of H’. ‘G # H’ means ‘G is the sister of H’. ‘G * H’ means ‘G is the brother of H’. ‘G = H’ means ‘G is the mother of H’. ‘G + H’ means ‘G is the father of H’. ‘G ^ H’ means ‘G is the son of H’. ‘G ≠ H’ means ‘G is the daughter of H’. Example: G 2% H means G is the husband of H and G has two siblings. The following is the family of Y, a married person: N 2+ P, O 1% D, A 0@ N, D 0= T, C 2# T, M 1^ A, Y 1* O, S 0≠ B, E 1* R, F 0^ R, R 1% C"
+    },
+    {
+      "id": "stim_19_22",
+      "type": "directions",
+      "title": "Directions for questions 19–22",
+      "text": "Read the following information carefully and answer the given questions. Eight persons — A, B, C, D, E, F, G, and H are sitting around a circular table facing toward the center, but not necessarily in the same order. Also, each of them is holding number cards from 2 to 9 (one card per person). The numbers on their cards are distinct. Consecutive numbered card holders are not sitting adjacent to each other. B is sitting second to the left of the person holding the card numbered 7. The person holding the card numbered 3 is sitting second to the right of E, who holds an even-numbered card greater than 4. C holds a card whose number is a prime number, but C is not sitting adjacent to either B or the person holding the card numbered 9. The person holding the card numbered 9 is sitting immediately to the right of A, who holds a card number divisible by both 2 and 4. The difference between the numbers on the cards hold by D and the person sitting opposite D is 3. The person holding the card numbered 2 sits third to the left of the person holding the card numbered 6. The sum of the numbers on the cards hold by G and the person sitting to G’s immediate right is 11. The person holding the card numbered 4 is sitting opposite the person holding the card numbered 8."
+    },
+    {
+      "id": "stim_23_24",
+      "type": "directions",
+      "title": "Directions for questions 23–24",
+      "text": "Read the following arrangement of symbols, letters, and numbers carefully and answer the questions based on it. & F A # L K 4 $ 9 G P @ 8 B S M @ € 5 D % L β K 4 A 9 @S W ¥ 6 B &8#J Step I: All the symbols, which are immediately followed by a letter, will be placed from extreme left end in the same order. Step II: If a letter is immediately followed by a symbol, then such letters are placed from extreme right end in the English Alphabetical order. Step III: All the numbers between the 7 element from the left end and 7 element from the right end are placed between the 11 and the 12 element from the left end in descending order. Step IV: The first ten elements of the arrangement from the left end are placed from extreme right end in the same order. Note: Step II is performed after the completion of Step I, similarly, Step III is performed after the completion of Step II, and so on."
+    },
+    {
+      "id": "stim_25_26",
+      "type": "directions",
+      "title": "Directions for questions 25–26",
+      "text": "Read the following passage and answer the given questions. Microsoft and OpenAI have forged a strategic alliance to advance the frontier of artificial intelligence (AI) research and development. Leveraging Microsoft’s vast resources and technological prowess alongside OpenAI’s cutting-edge AI research, the partnership aims to accelerate innovation in AI technologies. Together, they collaborate on projects aimed at tackling complex challenges across various domains, from healthcare and climate change to education and beyond. This collaboration underscores their shared commitment to harnessing the power of AI for the betterment of society."
+    },
+    {
+      "id": "stim_28_32",
+      "type": "directions",
+      "title": "Directions for questions 28–32",
+      "text": "Read the following information carefully and answer the given questions. Six persons: A, B, C, D, E, and F were born on different dates in March 2000, falling between the 20th and 28th, but not necessarily in the same order. There are three vacant dates, and these are not consecutive. A was born on an odd-numbered date. B was born on the 25th, but not before C. Three persons were born between A and F. F was born just next date of E. There are two vacant dates between C and F. D was born on an even-numbered date, and was born neither just before E nor just after A."
+    },
+    {
+      "id": "stim_36_39",
+      "type": "directions",
+      "title": "Directions for questions 36–39",
+      "text": "Study the following information carefully and answer the given questions. Five ships (A, B, C, D, and E) are moored at Dock M, and their captains (P, Q, R, S, and T) are steering their respective ships. Each ship starts from the dock, moves in a specific direction, and covers a certain distance before reaching its final position which is named as ship’s captain’s name. Movements of the ships: I. Ship A, steered by Captain P, starts moving north and covers 5m, then turns left and moves 8m, finally turning right and moving 10m to reach its final position. II. Ship B, steered by Captain Q, moves east for 12m, then turns right and moves 7m, finally turning right again and moving 3m to its final position. III. Ship C, steered by Captain R, starts by moving south for 6m, then turns right and moves 5m, then turns left and moves 9m to its final position. IV. Ship D, steered by Captain S, moves west for 10m, then turns left and moves 4m, finally turning right and moving 6m to its final position. V. Ship E, steered by Captain T, starts moving north for 8m, then turns right and moves 10m, finally turning right again and moving 5m to its final position."
+    },
+    {
+      "id": "stim_40_41",
+      "type": "directions",
+      "title": "Directions for questions 40–41",
+      "text": "Study the following information carefully and answer the given questions. There are two cars, Car 1 and Car 2, with 9 persons (A to I) traveling. One car has 5 persons, and other car has 4 persons. All of them are facing south as seated in each row of each car. Each car has three seats at the back and two seats at the front, such that one of the back seat in one car is vacant. Also, consecutively named persons are not sitting adjacent to each other (neither beside/front/back nor above/below). Car 2 is placed above the Car 1. The seats are arranged in two rows in each car, with the following seat numbers in each car as shown in the diagram: Car 2 Car 1 Front 2c 2d 2a 2b Car 2 1a A is seated in Car 1, either in seat 1a or 1b. No one is seated between B and E. No one is seated behind E. F is seated in Car 2 and in the same row with B. I is just diagonally above C. No one is to the left of G. D is not seated adjacent to I. The seat just behind C is not vacant. D is not seated in the middle of the row of seats."
+    },
+    {
+      "id": "stim_42_45",
+      "type": "directions",
+      "title": "Directions for questions 42–45",
+      "text": "Read the following information carefully and answer the given questions accordingly. Eighteen students are divided into six different groups viz., Red, Violet, Brown, Orange, Purple and Olive. They are sitting in a linear row and facing north direction. Each group consists of three students. A, B, C, D, E and F are captains of their groups. The distance between any two adjacent groups is equal. Other group members are G, H, I, J, K, L, M, N, O, P, Q and R. G, C and P belong to Violet group. Two groups are sitting between Brown and Purple groups. Neither Brown nor Purple group sits at either end. Orange group sits between Brown and Violet groups. Red group is third to the left of Olive group. A and D belong to Olive and Orange group, respectively. D sits to the left of C. Nine members are sitting between B and E, who belongs to Purple group. F is captain of O and M. K and I belong to the same group, but neither Orange nor Purple group. H and L belong to the group that is to the left of D. R is not a member of 2e Purple group. J and E do not belong to the same group. B doesn’t belong to Brown group."
+    },
+    {
+      "id": "stim_46_54",
+      "type": "directions",
+      "title": "Directions for questions 46–54",
+      "text": "Read the following passage and answer the given questions. Japan is at the forefront of a demographic shift that is reshaping societies worldwide. With one of the most rapidly ageing populations globally, it faces unique challenges and opportunities in maintaining economic vitality and social stability. The Japanese government has developed a multifaceted approach to address these issues, encompassing healthcare, labor market reforms, and community-based initiatives. As of recent estimates, over 29% of Japan’s population is aged 65 or older, making it the world’s oldest society. The country’s low fertility rate and high life expectancy contribute to this demographic phenomenon. While increased longevity is a testament to advancements in healthcare and living standards, the shrinking working-age population poses economic challenges. Dependency ratios are rising, with fewer workers supporting a growing number of retirees. Healthcare is a cornerstone of Japan’s ageing population strategy. The country operates a universal healthcare system that provides affordable and high-quality medical services. However, the growing number of elderly individuals has strained resources. To address this, the government has introduced policies to shift focus from hospital-based care to community-based care. This model emphasizes home healthcare services, enabling older individuals to receive medical attention and support in familiar surroundings. Technological innovation plays a significant role in improving elderly care. Japan has been a pioneer in developing and deploying robotic assistants for caregiving. Robots equipped with artificial intelligence (AI) help with tasks such as lifting patients, providing companionship, and monitoring health conditions. These advancements not only alleviate caregiver burdens but also ensure the elderly can maintain a degree of independence. The ageing population has also prompted Japan to rethink its labor policies. To mitigate the economic impact of a shrinking workforce, the government is encouraging older individuals to remain employed longer. In 2021, Japan raised the mandatory retirement age for public servants to 65, with further plans to allow workers to continue until 70. Many private companies have followed suit, creating flexible work arrangements to accommodate senior employees. Additionally, the government is actively promoting women’s participation in the workforce, addressing a long-standing gender gap. By enhancing access to childcare and promoting equal pay initiatives, Japan aims to unlock the potential of its underutilized human resources. Efforts are also underway to attract foreign workers, albeit at a cautious pace, given Japan’s historically conservative approach to immigration. Policies such as the Specified Skilled Worker visa program aim to fill labor shortages in key sectors like healthcare and construction. Japan’s pension system faces sustainability challenges due to the increasing ratio of retirees to active contributors. To ensure its viability, the government has implemented several reforms, including raising the pension eligibility age and encouraging private retirement savings. Additionally, public awareness campaigns emphasize the importance of financial planning for old age. Recognizing the importance of social inclusion, Japan has also invested in community-building initiatives to combat the isolation often experienced by the elderly. Programs such as “Silver Human Resource Centers” offer older individuals opportunities to engage in part-time work or volunteer activities, fostering a sense of purpose and community. Intergenerational programs that bring together youth and seniors are also gaining popularity, promoting mutual understanding and support. Japan has embraced smart city concepts to cater to an ageing society. Urban planning now incorporates features like barrier-free public spaces, accessible transportation systems, and community hubs for elderly residents. Technology-driven solutions such as health monitoring apps and remote consultations have become widespread, ensuring older individuals can easily access healthcare and support services. Despite these efforts, challenges remain. The cost of maintaining an ageing society is immense, and Japan’s public debt is among the highest globally. Balancing the needs of the elderly with those of younger generations requires careful policy-making and equitable resource allocation. Furthermore, cultural attitudes towards immigration and gender roles must evolve to fully address labor shortages. Japan’s proactive approach to its ageing population provides valuable lessons for other nations facing similar demographic trends. By investing in healthcare, technology, and inclusive policies, Japan demonstrates how an ageing society can adapt and thrive. While challenges persist, the resilience and innovation embedded in Japan’s administrative strategies offer hope for a balanced and sustainable future. This comprehensive approach positions Japan not only to manage its demographic challenges but also to serve as a global leader in addressing the complexities of an ageing world."
+    },
+    {
+      "id": "stim_55_60",
+      "type": "directions",
+      "title": "Directions for questions 55–60",
+      "text": "Read the following passage and answer the given questions. The proliferation of online advertising for betting apps has significantly influenced young audiences, often with troubling implications. These advertisements, leveraging sophisticated digital marketing strategies, have become pervasive across social media, streaming platforms, and gaming apps. While the allure of these ads lies in their flashy visuals, promises of quick wealth, and celebrity endorsements, the effects on impressionable youth are multifaceted, raising concerns about their mental, social, and financial well-being. One of the most pronounced effects is the normalization of gambling behavior. Betting apps often frame gambling as a harmless or even glamorous pastime, obscuring its risks. Advertisements rarely emphasize the addictive nature of gambling or the potential for financial loss, leading young individuals to perceive it as a risk-free opportunity. This normalization can desensitize them to the broader societal and personal harms of gambling, fostering habits that may persist into adulthood. Psychologically, these advertisements exploit cognitive biases like the “illusion of control” and the “gamblers’ fallacy,” wherein users believe their actions or luck can influence outcomes. For youth, who are still developing critical reasoning skills, such messages can be particularly compelling, increasing the likelihood of impulsive decisionmaking. Furthermore, the integration of gamified elements, such as streaks or rewards, mimics the mechanics of video games, making betting apps more appealing and addictive to younger audiences. Socially, the impact of betting app advertisements manifests in strained relationships and peer pressure. Youth may face pressure to participate in betting as it becomes normalized among their social groups. This can also lead to conflicts within families, especially when financial losses accumulate or academic performance declines due to preoccupation with gambling. Financially, the consequences are severe. Youth often lack stable income sources and financial literacy, making them vulnerable to significant losses. Many are lured by promotions like free bets, only to find themselves caught in a cycle of chasing losses. In the absence of stricter regulations on online advertising, these effects are likely to intensify. Policymakers and educators must address this issue by raising awareness, enforcing stricter advertising standards, and promoting responsible behavior to shield young minds from the predatory allure of betting app promotions."
+    },
+    {
+      "id": "stim_61_62",
+      "type": "directions",
+      "title": "Directions for questions 61–62",
+      "text": "Read the following passage and answer the given questions. China’s Gross Domestic Product (GDP) is one of the largest in the world, reflecting its position as a global economic powerhouse. Currently, China has the second-largest GDP, valued at over $17 trillion, trailing only the United States. This growth has been driven by industrial development, strong exports, and increasing technological innovation. For many years, China’s economy was centered on manufacturing, earning it the title “the factory of the world.” However, recent trends show a shift towards services and domestic consumption, with e-commerce and technology playing key roles in driving growth. Companies like Alibaba and Huawei highlight this transition. Despite its rapid expansion, China faces challenges such as an ageing population, environmental concerns, and trade tensions with other nations. To address these issues, the government is focusing on green energy, innovation, and infrastructure development. China’s GDP growth remains steady, ensuring its influence on the global economy continues to grow."
+    },
+    {
+      "id": "stim_63_67",
+      "type": "directions",
+      "title": "Directions for questions 63–67",
+      "text": "In the following passage, some of the words are missing. Find the suitable word from the options given below that make the paragraph meaningful. Climate negotiations have a tendency to get entangled more in words than in enabling action. A devastating year of heat waves, droughts, lost crops, extreme floods made it impossible to ignore climate-related damages to lives and livelihoods. The latest round of _______ (A), COP27 in Egypt began with little hope and ended two days beyond schedule with a faint glimmer. All 197 Parties to the UN Framework Convention on Climate Change (UNFCCC) agreed to enable financing for loss and damage to those that need it the most. But the goal of keeping temperature rise to levels that could _______ (B) loss and damage continued to slip away. Loss and damage (or L&D) refers to the adverse impacts that _______ (C) communities and countries face as a result of a changing climate, including the increased incidents and intensity of natural disasters and extreme weather as well as slow-onset temperature increase, sea-level rise, or desertification. Rich countries had resisted L&D payments for years, worried that their historical emissions would impose large calls for compensation. Under pressure, they could no longer duck their _______ (D). The COP27 decision includes the development of a Transition Committee dedicated to L&D, with equal representation across rich and poor countries. In order to operationalise the funding arrangements, this committee has been tasked with configuring institutional _______ (E), identifying and expanding sources of funding, and coordinating with existing funding arrangements — all by COP28 in the UAE next year. The sticking points of negotiations, thus, remain. India can speak — and act — on behalf of the Global South, to ensure that the new L&D financing facility delivers. A global index, based on climatic risks and compounding impacts, would transparently—and scientifically— establish the sheer size of the problem that the L&D facility will have to address."
+    },
+    {
+      "id": "stim_68_71",
+      "type": "directions",
+      "title": "Directions for questions 68–71",
+      "text": "The following questions have two statements with connectors as alternatives. You must choose the one that will link both statements and make them grammatically and contextually accurate."
+    },
+    {
+      "id": "stim_72_75",
+      "type": "directions",
+      "title": "Directions for questions 72–75",
+      "text": "In the following question, a sentence is given in which the last part is omitted. You must choose the most suitable alternative among the five that should fill the omitted part making the sentence grammatically correct and contextually meaningful. If none of the given alternatives are appropriate to fill the blank, choose option (e) i.e. “none of these” as your answer choice."
+    },
+    {
+      "id": "stim_77_78",
+      "type": "directions",
+      "title": "Directions for questions 77–78",
+      "text": "the question below contains five scattered segments of a sentence. Indicate the sequence which correctly assembles the segments and completes the sentence."
+    },
+    {
+      "id": "stim_79_80",
+      "type": "directions",
+      "title": "Directions for questions 79–80",
+      "text": "Below given is a passage with the 5 words in BOLD. Answer the questinos following the passage. Rahul and Ananya were excited about the new zipline (1) park opening nearby. They had heard about thrilling activities like the adventure (2) and rock climbing, which sparked their curiosity. While Ananya was eager to try everything, Rahul felt slightly nervous about safety (3). However, Ananya reassured (4) him by mentioning the park’s focus on heights (5) and the presence of trained staff. They decided to visit early in the morning to avoid the long queues (6), with Ananya taking charge of booking the tickets online. Both friends looked forward to a day filled with fun and excitement."
+    },
+    {
+      "id": "stim_82_83",
+      "type": "directions",
+      "title": "Directions for questions 82–83",
+      "text": "Read the following passage and answer the given questions. Two algebraic expressions are given as (I) 6x2 + 29x + P and (II) 3x + 1. (I) is divided by (II) leaving (2x + 9) as quotient and 19 as remainder."
+    },
+    {
+      "id": "stim_86_90",
+      "type": "directions",
+      "title": "Directions for questions 86–90",
+      "text": "Read the following passage and answer the given questions. Study the following given pie - charts carefully and answer the questions given below. The first pie chart represents the breakup of the number of employees working in different departments of an organization and the second pie chart represents the distribution of promotion of employees. Total number of employees in organization = 6000 Total number of employees got promotion = 1200 Sells, 20% Account, 30% Production, 15% HR, 15% IT, 20%"
+    },
+    {
+      "id": "stim_95_98",
+      "type": "directions",
+      "title": "Directions for questions 95–98",
+      "text": "Read the following information carefully and answer the given questions. A shopkeeper sold five articles: P, Q, R, S and T. Further partial information in given in table below. Article Cost price % Profit Marked price P – 40% (10.8b + 3m) Q – – (12a – n) R – 20% – S (5b – m – n – 48) – – T 4a + – 13a – Note: m n +6 (i) Value of ‘n’ is 4 times of larger root of given equation. K2 – 32P + 252 = 0 (ii) Article T is marked up `1280 more than its cost price and the difference between marked price and cost price of article T is 28% more than profit earned on article S. (iii) Discount given on article Q is 16.66%, and selling price of S is `(5m + 7n + 4a + 296). (iv) Value of ‘m’ is twice of missing value in the given sequence. 140, 136, 161, (?), 329, – 200"
+    },
+    {
+      "id": "stim_99_101",
+      "type": "directions",
+      "title": "Directions for questions 99–101",
+      "text": "Read the following passage and answer the given questions. There are five pouches (A, B, C, D, and E) which contain candies of four flavors (Orange, Pineapple, Caramel, and Coffee). Below table shows the number of candies of four different flavors in five pouches: Orange candy Pineapple candy Caramel candy Coffee candy Pouch A --- --- --- Pouch B --- --- Pouch C --- --- --- Pouch D --- --- --- Pouch E --10 ----Some information is given below: ● When one candy is picked at random from pouch A, then the and when one candy probability of getting one coffee candy is is picked at random from pouch C, then the probability of getting neither caramel nor coffee is . ● In pouch E, number of orange candies is same as number of caramel candies. Total number of caramel candies in all five pouches together is 69. ● The number of pineapple candies in pouches C and D are equal and when two candies are picked at random from pouch A, then . the probability of getting both being pineapple candies is ● When one candy is picked at random from pouch B, then the . probability of getting either orange candy or caramel candy is Total number of caramel candies and coffee candies are same in all five pouches together. Number of caramel candies in pouch D is 2 more than that in pouch A. ● When one candy is picked at random from pouch C, then the . probability that the candy picked is not caramel flavor is When two candies are picked at random from pouch D, then the . probability that none of the candies is orange flavor is ● When one candy is picked at random from pouch E, then the probability of getting one orange candy is . When one candy is picked at random from pouch D, then probability of getting coffee candy is . When one candy is picked at random from pouch E, then the probability of getting one pineapple candy is ."
+    },
+    {
+      "id": "stim_112_115",
+      "type": "directions",
+      "title": "Directions for questions 112–115",
+      "text": "Read the following information carefully and answer the given questions. Some recruitment is done by three companies, i.e., P, Q and R. The number of vacancies in company P, Q, and R are 6, 12 and 2 respectively. The number of candidates, who got interview call for per vacancy in company P, Q and R are 60, 6x and 4x respectively. The total number of candidates applied in company R is 25% of the total number of candidates, applied in the company Q and three fifth of the total number of candidates applied in the company P. The difference between the number of candidates, who got interview calls in the company Q and R is 320."
+    }
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": null,
+      "text": "In the question given below, three conclusions are given followed by five statements. You have to choose the correct set of statements that logically satisfies the given conclusions disregarding the commonly known facts. Conclusions: I. Some atoms being matter is a possibility. II. Few elements are not particles. III. No matter is molecules. Statements: I. Every molecules are atoms. No matter is particle. Only a few elements are matter. Some particles are not molecules. II. None of the particles are molecules. Half elements are molecules. All matter are atoms. Some atoms are particles. III. Not a single matter is particle. Only a few elements are matter. All atoms are elements. Very few molecules are particles. IV. All molecules are Atoms. All matter are atoms. Some particles are elements. No element is molecule. V. Some particles are molecules. Only a few matter are elements. No particle is atom. Each atom is element.",
+      "options": [
+        {
+          "text": "All statements satisfy"
+        },
+        {
+          "text": "Both statements II and V"
+        },
+        {
+          "text": "Only statement III"
+        },
+        {
+          "text": "Both statements I and IV"
+        },
+        {
+          "text": "None of the statements satisfy"
+        }
+      ],
+      "answer": 4,
+      "explanation": "According to the question, From statement I: Atoms Particles Molecules Matter Elements There is no direct relation between matter and molecules. From statement II: Atoms Particles Molecules Matter Elements Some atoms are definitely matter From statement III: Elements Matter Atomes Particle Molecules Some matter being molecules is a possibility. From statement IV: Atomes Therefore, none of the statements satisfy the given conclusions..",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 2,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_2_6",
+      "text": "How many elements are there between ‘RTV’ and ‘NTS’ in the step prior to the penultimate step?",
+      "options": [
+        {
+          "text": "None"
+        },
+        {
+          "text": "One"
+        },
+        {
+          "text": "Two"
+        },
+        {
+          "text": "Three"
+        },
+        {
+          "text": "Four"
+        }
+      ],
+      "answer": 0,
+      "explanation": "Clearly, there is no element between ‘RTV’ and ‘NTS’ in the step 8.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 3,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_2_6",
+      "text": "How many elements are there in between ‘BCERQ’ and 75 in the step 9?",
+      "options": [
+        {
+          "text": "5"
+        },
+        {
+          "text": "4"
+        },
+        {
+          "text": "8"
+        },
+        {
+          "text": "6"
+        },
+        {
+          "text": "3"
+        }
+      ],
+      "answer": 3,
+      "explanation": "Clearly, 6 elements are there between BCERQ and 75 in the step 9.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 4,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_2_6",
+      "text": "What is the position of ‘EFSNM’ in the step 7?",
+      "options": [
+        {
+          "text": "Seventh from the left"
+        },
+        {
+          "text": "Seventh from the right"
+        },
+        {
+          "text": "Fifth from the right"
+        },
+        {
+          "text": "Sixth from the left"
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 3,
+      "explanation": "Clearly, ‘EFSNM’ is sixth from the left in the step 7.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 5,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_2_6",
+      "text": "Which element is second to the left of ‘GTQ’ in the step 4?",
+      "options": [
+        {
+          "text": "BCERQ"
+        },
+        {
+          "text": "RTV"
+        },
+        {
+          "text": "MTW"
+        },
+        {
+          "text": "75"
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 0,
+      "explanation": "Clearly, ‘BCERQ’ is second to the left of ‘GTQ’ in the step 4.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 6,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_2_6",
+      "text": "Which of the following is the last step?",
+      "options": [
+        {
+          "text": "7"
+        },
+        {
+          "text": "9"
+        },
+        {
+          "text": "11"
+        },
+        {
+          "text": "8"
+        },
+        {
+          "text": "10"
+        }
+      ],
+      "answer": 4,
+      "explanation": "Clearly, step 10 is the last step.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 7,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_7_10",
+      "text": "How many persons are seated between the third Associate to the right of J and the fourth Manager from the extreme right end of the row?",
+      "options": [
+        {
+          "text": "4"
+        },
+        {
+          "text": "5"
+        },
+        {
+          "text": "9"
+        },
+        {
+          "text": "11"
+        },
+        {
+          "text": "More than 11"
+        }
+      ],
+      "answer": 0,
+      "explanation": "4 persons are seated between P, the third Associate to the right of J and J, the fourth Manager from the extreme right end of the row.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 8,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_7_10",
+      "text": "Who is seated exactly in the middle of R and the person who sits immediately to the left of Z, if the total number of persons is known and the seating alternates between Managers and Associates?",
+      "options": [
+        {
+          "text": "Q"
+        },
+        {
+          "text": "X"
+        },
+        {
+          "text": "J"
+        },
+        {
+          "text": "Unknown person"
+        },
+        {
+          "text": "G"
+        }
+      ],
+      "answer": 2,
+      "explanation": "J is seated exactly in the middle of R and the person, who sits immediately to the left of Z.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 9,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_7_10",
+      "text": "Which of the following statements is definitely true?",
+      "options": [
+        {
+          "text": "The number of persons sitting to the right of Z is equal to the number of persons sitting between Q and R."
+        },
+        {
+          "text": "T is seated to the right of X."
+        },
+        {
+          "text": "S is seated to the right of J."
+        },
+        {
+          "text": "The number of Managers sitting between X and P is more than two."
+        },
+        {
+          "text": "The person is seated 5th to the right of Q is P."
+        }
+      ],
+      "answer": 3,
+      "explanation": "The number of Managers sitting between X and P is more than two is definitely true. J P G U",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 10,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_7_10",
+      "text": "What is the position of the one who sits third to the left of the 5th Manager from left end of the row with respect to Q?",
+      "options": [
+        {
+          "text": "Third to the right"
+        },
+        {
+          "text": "Immediate left"
+        },
+        {
+          "text": "Second to the left"
+        },
+        {
+          "text": "Fifth to the right"
+        },
+        {
+          "text": "Fourth to the left"
+        }
+      ],
+      "answer": 1,
+      "explanation": "Immediate left is the position of the one who sits third to the left of the 5th Manager from left end of the row with respect to Q. Hence, B is 3rd to the right of the 2nd letter from the left end. In option (d), L(–)=G(+)—X(+)=C(–) So, L is sister-in-law of X.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 11,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": null,
+      "text": "In the question some symbols –:, #, /, ¥, β and * are used with the following meaning as illustrated below: ‘P:Q’ means ‘Q is father of P’ ‘P#Q’ means ‘P is mother of Q’ ‘P/Q’ means ‘P is sister of Q’ ‘P¥Q’ means ‘Q is brother of P’ ‘PβQ’ means ‘P is wife of Q’ ‘P*Q’ means ‘Q is wife of P’ Which of the following expressions mean L is sister-in-law of X?",
+      "options": [
+        {
+          "text": "X¥ H:C¥ L"
+        },
+        {
+          "text": "L /XβT¥ E"
+        },
+        {
+          "text": "L /X¥ F ¥ G"
+        },
+        {
+          "text": "L β G ¥X*C"
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 3,
+      "explanation": "From option (a), L would be brother of C, so L would be male, so option (a) can be eliminated. In option (b) and (c), L is sister of X, so both can be eliminated. Z",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 12,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_12_15",
+      "text": "Six persons sit around a triangular table. Three persons sit at each corner of table and rest sit at middle of each side of table. All of them face inside and like different colours. Who among the following likes Green colour? I. Y likes Purple and sits second to the left of X. W is not an immediate neighbor of X but sits third to the right of the one who likes Pink colour. II. The one who likes Pink sits second to the right of Z, who does not sit at any side of the table. U neither likes Black nor Green. The one who likes Green sits second to the right of the one who likes Black colour. III. V likes White colour and sits second to the left of the one who likes Yellow colour.",
+      "options": [
+        {
+          "text": "Data in statements I, II and III together are sufficient to answer the question."
+        },
+        {
+          "text": "Data in statements I, II and III together are not sufficient to answer the question."
+        },
+        {
+          "text": "Data in statements I and II together are sufficient to answer the question."
+        },
+        {
+          "text": "Data in statements I and III together are sufficient to answer the question."
+        },
+        {
+          "text": "Data in statements II and III together are sufficient to answer the question."
+        }
+      ],
+      "answer": 0,
+      "explanation": "From I, II and III: Z(Yellow) W(Green) Y(Purple) N(m) T C(f) M(m) P X",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 13,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_12_15",
+      "text": "A certain number of persons sit in a line facing north. Then, how many persons sit between P and V? I. P sits 3rd to the right of Q, who sits 4th from extreme end. Q is an immediate neighbour of both R and S. II T sits 2nd to the left of U, who sits 3rd from the extreme end. There are as many persons sit between V and U as between U and W. III. Three persons sit between R and W. X sits 2nd from extreme left end. T sits between P and W.",
+      "options": [
+        {
+          "text": "Data in statements I, II and III together are sufficient to answer the question."
+        },
+        {
+          "text": "Data in statements I, II and III together are not sufficient to answer the question."
+        },
+        {
+          "text": "Data in statements I and II together are sufficient to answer the question."
+        },
+        {
+          "text": "Data in statements I and III together are sufficient to answer the question."
+        },
+        {
+          "text": "Data in statements II and III together are sufficient to answer the question."
+        }
+      ],
+      "answer": 0,
+      "explanation": "By combining statements I, II & III: X S Q R (4) A (9)D W likes Green colour. Hence, data in statements I, II and III together are sufficient to answer the question.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 14,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_12_15",
+      "text": "Eight persons i.e. A, B, C, D, E, F, G and H sit around a circular table facing inside, but not necessarily in the same order. Then, who sits 2nd to the left of B? I. Three persons are sitting between A and B, who is an immediate neighbour of C. D faces E. II. F is an immediate neighbour of E and A, who sits 3rd to the left of H. III. G faces H, who is an immediate neighbour of B. C is not an immediate neighbour of D.",
+      "options": [
+        {
+          "text": "Data in statements I, II and III together are sufficient to answer the question."
+        },
+        {
+          "text": "Data in statements I, II and III together are not sufficient to answer the question."
+        },
+        {
+          "text": "Data in statements I and II together are sufficient to answer the question."
+        },
+        {
+          "text": "Data in statements I and III together are sufficient to answer the question."
+        },
+        {
+          "text": "Data in statements II and III together are sufficient to answer the question."
+        }
+      ],
+      "answer": 1,
+      "explanation": "From statements I, II and III: A F G G(7) F/H (2) F/H (3) B(6) C(5) E (8) P T W U V So, three persons sit between P and V. Hence, statements I, II and III together are sufficient to answer the question. B(f)",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 15,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_12_15",
+      "text": "What are the words for code “dt ef” as per the given code language? I. “ninja turle game famous” is coded as “cd ef dk mn” II. “game in world the” is coded as “dk pq lm dt”, “ninja in the world” is coded as “pq lm dt cd” III. “turtle now the world” is coded as “lm ex dt mn”",
+      "options": [
+        {
+          "text": "Data in statements I, II and III together are sufficient to answer the question."
+        },
+        {
+          "text": "Data in statements I, II and III together are not sufficient to answer the question."
+        },
+        {
+          "text": "Data in statements I and II together are sufficient to answer the question."
+        },
+        {
+          "text": "Data in statements I and III together are sufficient to answer the question."
+        },
+        {
+          "text": "Data in statements II and III together are sufficient to answer the question."
+        }
+      ],
+      "answer": 1,
+      "explanation": "From I, II and III: Words Ninja Turtle Game Famous In The/world Now Code cd mn dk ef pq lm/dt Ex As, exact word for code ‘dt’ can’t find. Hence, data in statements I, II and III are not sufficient to answer the question.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 16,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": null,
+      "text": "In the word ‘COLLABORATION’, all consonants are replaced with their preceding letters, and all vowels are replaced with their succeeding letters and in the word ‘DETERMINATION’, letters appearing before N in the English alphabetical series are replaced with their succeeding letters, while letters appearing after N are replaced with their preceding letters and N remains as it is. After that, combine the transformed letters from both words into a single sequence, arrange them in alphabetical order. Now, determine which of the following letter is 3rd to the right of the 2nd letter from left end?",
+      "options": [
+        {
+          "text": "J"
+        },
+        {
+          "text": "F"
+        },
+        {
+          "text": "B"
+        },
+        {
+          "text": "N"
+        },
+        {
+          "text": "A"
+        }
+      ],
+      "answer": 2,
+      "explanation": "Word: C O L L A B O R A T I O N Arrangement: B P K K B A P Q B S J P M Word: D E T E R M I N A T I O N Arrangement: E F S F Q N J N B S J N N Combined: A B B B B E F F J J J K K MNNNNPPPQQSSS Left → 2nd → 3rd Right",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 17,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_17_18",
+      "text": "How S is related to O?",
+      "options": [
+        {
+          "text": "Daughter"
+        },
+        {
+          "text": "Sister-in-law"
+        },
+        {
+          "text": "Niece"
+        },
+        {
+          "text": "Daughter-in-law"
+        },
+        {
+          "text": "None of the above"
+        }
+      ],
+      "answer": 2,
+      "explanation": "S is the niece of O. V(White) (Black) Y(m) R(m) E(m) S(f) F(m)",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 18,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_17_18",
+      "text": "How is N related to R?",
+      "options": [
+        {
+          "text": "Brother-in-law"
+        },
+        {
+          "text": "Father-in-law"
+        },
+        {
+          "text": "Father"
+        },
+        {
+          "text": "Cousin"
+        },
+        {
+          "text": "None of the above"
+        }
+      ],
+      "answer": 0,
+      "explanation": "N is the brother-in-law of R.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 19,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_19_22",
+      "text": "Which of the following is true about the seating arrangement?",
+      "options": [
+        {
+          "text": "The person holding card numbered 6 sits second to the right of A."
+        },
+        {
+          "text": "C is seated opposite to the person holding card numbered 9."
+        },
+        {
+          "text": "The person holding card numbered 4 sits third to the left of E."
+        },
+        {
+          "text": "G and the person holding card numbered 3 are seated adjacent to each other."
+        },
+        {
+          "text": "None of the above."
+        }
+      ],
+      "answer": 3,
+      "explanation": "G and the person holding card numbered 3 are seated adjacent to each other is the correct statement.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 20,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_19_22",
+      "text": "Who is seated immediately to the left of the person holding the card numbered 7?",
+      "options": [
+        {
+          "text": "A"
+        },
+        {
+          "text": "F"
+        },
+        {
+          "text": "B"
+        },
+        {
+          "text": "G"
+        },
+        {
+          "text": "Can’t be determined"
+        }
+      ],
+      "answer": 4,
+      "explanation": "Either F or H is seated immediately to the left of the person holding the card numbered 7, so the answer is can’t be determined.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 21,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_19_22",
+      "text": "What is the card number held by the person seated opposite to B?",
+      "options": [
+        {
+          "text": "8"
+        },
+        {
+          "text": "6"
+        },
+        {
+          "text": "4"
+        },
+        {
+          "text": "9"
+        },
+        {
+          "text": "2"
+        }
+      ],
+      "answer": 3,
+      "explanation": "The card number held by the person seated opposite to B is 9. C H B But, position of D and E can’t fix as C is not an immediate neighbour of D and F sits between E and A. So, on combining the given statements we cannot find the answer.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 22,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_19_22",
+      "text": "If the sum of the card numbers held by A and H is 7, then what will be the difference between the card numbers held by C and the one who is sitting second to the left of E?",
+      "options": [
+        {
+          "text": "0"
+        },
+        {
+          "text": "2"
+        },
+        {
+          "text": "4"
+        },
+        {
+          "text": "3"
+        },
+        {
+          "text": "1"
+        }
+      ],
+      "answer": 3,
+      "explanation": "If the sum of the card numbers held by A and H is 7, then the difference between the card numbers held by C and the one who is sitting second to the left of E is = 5 – 2 = 3. As card numbered of H is = 7 – 4 = 3.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 23,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_23_24",
+      "text": "How many elements are between two ‘A’ after applying step IV in the given arrangement?",
+      "options": [
+        {
+          "text": "13"
+        },
+        {
+          "text": "17"
+        },
+        {
+          "text": "14"
+        },
+        {
+          "text": "15"
+        },
+        {
+          "text": "16"
+        }
+      ],
+      "answer": 4,
+      "explanation": "Sixteen elements are between two A’s after applying step IV.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 25,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_25_26",
+      "text": "Which of the following statement can be concluded from the passage? I. Microsoft and OpenAI have joined forces to pioneer advancements in artificial intelligence (AI) research and development. II. The partnership between Microsoft and OpenAI combines Microsoft’s extensive resources and technological prowess with OpenAI’s cutting-edge AI research. III. The partnership between Microsoft and OpenAI focuses solely on developing consumer-oriented AI products and services.",
+      "options": [
+        {
+          "text": "Only I and II"
+        },
+        {
+          "text": "Only II and III"
+        },
+        {
+          "text": "Only I and III"
+        },
+        {
+          "text": "Only II"
+        },
+        {
+          "text": "Only III"
+        }
+      ],
+      "answer": 0,
+      "explanation": "Statement I: Follows (The passage explicitly states that Microsoft and OpenAI have formed a strategic alliance to advance the frontier of AI research and development, supporting the conclusion that they have joined forces for this purpose.) Statement II: Follows (The passage mentions that the partnership leverages Microsoft’s vast resources and technological prowess, alongside OpenAI’s cutting-edge AI research, supporting the conclusion that their collaboration combine these respective strengths.) Statement III: Doesn’t follow (The passage…",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 26,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_25_26",
+      "text": "Which of the following statement should be the course of action? I. Expand the scope of collaborative projects between Microsoft and OpenAI to include research initiatives aimed at addressing global challenges such as climate change, healthcare disparities, and education access. II. Transition Microsoft and OpenAI’s partnership to focus exclusively on commercializing AI technologies for profitdriven ventures. III. Discontinue collaborative efforts between Microsoft and OpenAI due to conflicting research priorities and organizational objectives.",
+      "options": [
+        {
+          "text": "Only I"
+        },
+        {
+          "text": "Only II"
+        },
+        {
+          "text": "Only I and II"
+        },
+        {
+          "text": "Only I and III"
+        },
+        {
+          "text": "Only II and III"
+        }
+      ],
+      "answer": 0,
+      "explanation": "Statement I: Follows (The passage mentions collaborations on projects aimed at tackling complex challenges across various domains, suggesting that expanding the scope of collaborative projects to address global challenges aligns with their partnership objectives.) Statement II: Doesn’t follow (The passage does not indicate that the partnership’s primary objective is commercialization for profit-driven ventures. Instead, it highlights collaborations on projects aimed at pushing the boundaries of AI capabilities and addressing societal…",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 27,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": null,
+      "text": "We have five words given below, such that one letter of each word is bold. Find how many meaningful words can be formed by using the letters (only once) which are bold in each given word? A. Wonderful B. Journey C. Technology D. Famous E. Inspiration",
+      "options": [
+        {
+          "text": "One"
+        },
+        {
+          "text": "None"
+        },
+        {
+          "text": "Two"
+        },
+        {
+          "text": "Three"
+        },
+        {
+          "text": "More than three"
+        }
+      ],
+      "answer": 1,
+      "explanation": "However, when trying to create a valid word using all five letters D, U, T, M, S, there is no common meaningful English word that uses all five letters exactly once.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 28,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_28_32",
+      "text": "Which of the following pairs of dates could be vacant, based on the given information?",
+      "options": [
+        {
+          "text": "21st and 24th"
+        },
+        {
+          "text": "22nd and 27th"
+        },
+        {
+          "text": "23rd and 26th"
+        },
+        {
+          "text": "20th and 28th"
+        },
+        {
+          "text": "24th and 26th"
+        }
+      ],
+      "answer": 4,
+      "explanation": "24th and 26th are vacant dates.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 29,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_28_32",
+      "text": "On which of the following dates was D born?",
+      "options": [
+        {
+          "text": "21"
+        },
+        {
+          "text": "20"
+        },
+        {
+          "text": "26"
+        },
+        {
+          "text": "24"
+        },
+        {
+          "text": "25"
+        }
+      ],
+      "answer": 1,
+      "explanation": "D was born on 20th March.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 30,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_28_32",
+      "text": "How many people were born between B and C?",
+      "options": [
+        {
+          "text": "One"
+        },
+        {
+          "text": "Two"
+        },
+        {
+          "text": "Three"
+        },
+        {
+          "text": "None"
+        },
+        {
+          "text": "Four"
+        }
+      ],
+      "answer": 3,
+      "explanation": "No one was born between B and C.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 31,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_28_32",
+      "text": "Which of the following statements is true?",
+      "options": [
+        {
+          "text": "E and B were born on consecutive dates."
+        },
+        {
+          "text": "A was born three days after F."
+        },
+        {
+          "text": "D was born before C."
+        },
+        {
+          "text": "D was born on the 25th."
+        },
+        {
+          "text": "All are true"
+        }
+      ],
+      "answer": 2,
+      "explanation": "D was born before C is true statement.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 32,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_28_32",
+      "text": "Who among them was born on 22nd March?",
+      "options": [
+        {
+          "text": "A"
+        },
+        {
+          "text": "D"
+        },
+        {
+          "text": "C"
+        },
+        {
+          "text": "No one"
+        },
+        {
+          "text": "E"
+        }
+      ],
+      "answer": 3,
+      "explanation": "No one was born on 22nd March.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 33,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": null,
+      "text": "In the question below, a few statements are given depicting an issue or a problem. You have to assume everything in the statements to be true even if they are at variance from commonly known facts, and on the basis of the information given in the statements, decide which of the suggested courses of action logically follow(s) for pursuing. Statement: Semiconductor facilities play a critical role in the global electronics industry’s supply chain. Courses of Action: I. Governments should impose heavy tariffs on semiconductor imports, hindering the global electronics industry’s access to critical components. II. Manufacturers should neglect investments in research and development, relying solely on outdated semiconductor technologies for production.",
+      "options": [
+        {
+          "text": "Only I follows"
+        },
+        {
+          "text": "Only II follows"
+        },
+        {
+          "text": "Either I or II follows"
+        },
+        {
+          "text": "Neither I nor II follows"
+        },
+        {
+          "text": "Both I and II follow"
+        }
+      ],
+      "answer": 3,
+      "explanation": "From statement I: Doesn’t follow (Imposing heavy tariffs on semiconductor imports contradicts the statement because it would disrupt the global electronics industry’s supply chain instead of acknowledging the critical role semiconductor facilities play in it.) From statement II: Doesn’t follow (Neglecting investments in research and development and relying solely on outdated semiconductor technologies also contradicts the statement. Semiconductor facilities need to continually innovate to keep pace with technological advancements and meet the…",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 34,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": null,
+      "text": "The question given below consists of a statement, followed by two arguments numbered I and II. You have to decide which of the arguments is a ‘strong’ argument and which is a ‘weak’ argument. Statement: Should the RBI lift the ban on the BOB World app? Arguments: I. Yes, lifting the ban promotes financial inclusion, but it may also risk exposing users to potential security threats. II. No, maintaining the ban ensures financial security and protects users from potential fraudulent activities and data breaches.",
+      "options": [
+        {
+          "text": "If only I is strong"
+        },
+        {
+          "text": "If only II is strong"
+        },
+        {
+          "text": "If either I or II is strong"
+        },
+        {
+          "text": "If neither I nor II is strong"
+        },
+        {
+          "text": "If both I and II are strong"
+        }
+      ],
+      "answer": 1,
+      "explanation": "Argument I: While lifting the ban may promote financial inclusion, it could also expose users to potential security threats and risks. This is not a strong argument because it’s contradictory. Argument II: Maintaining the ban protects users from potential fraudulent activities and data breaches, ensuring their financial security. This is a strong argument. It provides a clear and relevant reason focused on user safety and fraud prevention. Hence, only Argument II is strong.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 35,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": null,
+      "text": "In the following question, there is a statement followed by two assumptions labeled I and II. Examine the statement and determine which of the assumptions is implicit. Statement: Immigration policies should balance national security concerns with humanitarian values, promoting fair and orderly migration processes, fostering social integration, and addressing economic needs. Assumptions: I. Stricter immigration controls are necessary to ensure national security and manage the influx of migrants, while upholding legal immigration pathways. II. Welcoming and inclusive immigration policies benefit societies by enriching cultural diversity, filling labour gaps, and contributing to economic growth and innovation.",
+      "options": [
+        {
+          "text": "Only assumption I is implicit"
+        },
+        {
+          "text": "Only assumption II is implicit"
+        },
+        {
+          "text": "Either I or II is implicit"
+        },
+        {
+          "text": "Neither I nor II is implicit"
+        },
+        {
+          "text": "Both I and II are implicit"
+        }
+      ],
+      "answer": 4,
+      "explanation": "Assumptions I: Implicit (This assumption, though not explicitly stated, is implied within the statement. It suggests that immigration policies need to include measures to regulate the flow of migrants into a country, balancing the need for security with maintaining legal immigration channels to facilitate orderly migration.) Assumptions II: Implicit (Similarly, this assumption is not explicitly stated but is implied within the statement. It suggests that immigration policies that embrace diversity and inclusivity have positive societal…",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 36,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_36_39",
+      "text": "In which direction is S with respect to R in the final position?",
+      "options": [
+        {
+          "text": "North"
+        },
+        {
+          "text": "North-west"
+        },
+        {
+          "text": "North-east"
+        },
+        {
+          "text": "South-west"
+        },
+        {
+          "text": "South"
+        }
+      ],
+      "answer": 1,
+      "explanation": "S is in north-west direction of R.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 37,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_36_39",
+      "text": "What is the total distance covered by Q and R in their journey?",
+      "options": [
+        {
+          "text": "32m"
+        },
+        {
+          "text": "22m"
+        },
+        {
+          "text": "62m"
+        },
+        {
+          "text": "42m"
+        },
+        {
+          "text": "Can’t be determined"
+        }
+      ],
+      "answer": 3,
+      "explanation": "The total distance covered by Q and R in their journey is = (12 + 7 + 3) + (6 + 5 + 9) = 42m.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 38,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_36_39",
+      "text": "Which of the following statements is true?",
+      "options": [
+        {
+          "text": "P is in north-east of Q."
+        },
+        {
+          "text": "Shortest distance between P and R is 19m."
+        },
+        {
+          "text": "T is in north-east of Q."
+        },
+        {
+          "text": "Ship E covered 33m total distance."
+        },
+        {
+          "text": "All are true"
+        }
+      ],
+      "answer": 2,
+      "explanation": "T is in north-east of Q is true statement.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 39,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_36_39",
+      "text": "What is the shortest distance between the initial and final position of ship B?",
+      "options": [
+        {
+          "text": "130 m"
+        },
+        {
+          "text": "100 m"
+        },
+        {
+          "text": "120 m"
+        },
+        {
+          "text": "130 m"
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 3,
+      "explanation": "The shortest distance between the initial and final position of ship B is = 92 + 7 2 = 81 + 49 = 130 m",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 40,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_40_41",
+      "text": "Who among the following is seated in 1d?",
+      "options": [
+        {
+          "text": "H"
+        },
+        {
+          "text": "D"
+        },
+        {
+          "text": "G"
+        },
+        {
+          "text": "No one"
+        },
+        {
+          "text": "F"
+        }
+      ],
+      "answer": 3,
+      "explanation": "No one is seated in 1d.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 41,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_40_41",
+      "text": "Four of the following five are alike in a certain way and thus form a group, then who among the following doesn’t belong to that group?",
+      "options": [
+        {
+          "text": "F"
+        },
+        {
+          "text": "B"
+        },
+        {
+          "text": "C"
+        },
+        {
+          "text": "E"
+        },
+        {
+          "text": "G"
+        }
+      ],
+      "answer": 2,
+      "explanation": "Except C, all of them are seated in Car 2.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 42,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_42_45",
+      "text": "How many students are seated to the right of group member O?",
+      "options": [
+        {
+          "text": "Three"
+        },
+        {
+          "text": "Six"
+        },
+        {
+          "text": "Nine"
+        },
+        {
+          "text": "None"
+        },
+        {
+          "text": "More than nine"
+        }
+      ],
+      "answer": 4,
+      "explanation": "Twelve students are sitting to the right of group member O.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 43,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_42_45",
+      "text": "B and H belong to the ________",
+      "options": [
+        {
+          "text": "Brown group"
+        },
+        {
+          "text": "Red group"
+        },
+        {
+          "text": "Purple and Red groups respectively"
+        },
+        {
+          "text": "Olive and Brown groups respectively"
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 1,
+      "explanation": "B and H belong to the Red group.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 44,
+      "sectionId": "rea",
+      "sectionName": "Reasoning & Computer Aptitude",
+      "stimulusId": "stim_42_45",
+      "text": "Which among the following options is the odd from the rest?",
+      "options": [
+        {
+          "text": "K and I are in Olive group"
+        },
+        {
+          "text": "O and M are in Brown group"
+        },
+        {
+          "text": "J and N are in Orange group"
+        },
+        {
+          "text": "E and Q are in Purple group"
+        },
+        {
+          "text": "B and L are in Red group"
+        }
+      ],
+      "answer": 2,
+      "explanation": "J and N are in Orange group is odd from the rest, because J and N are from different groups.",
+      "expectedTimeSec": 75,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 46,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_46_54",
+      "text": "What can be inferred as the primary reason for Japan’s ageing population challenges?",
+      "options": [
+        {
+          "text": "High rates of immigration"
+        },
+        {
+          "text": "Decreasing fertility rates combined with increasing life expectancy"
+        },
+        {
+          "text": "Lack of technological innovation in healthcare"
+        },
+        {
+          "text": "Overdependence on foreign workers"
+        },
+        {
+          "text": "Declining investments in urban planning"
+        }
+      ],
+      "answer": 1,
+      "explanation": "The passage mentions that Japan’s low fertility rate and high life expectancy are key factors contributing to its ageing population. Immigration and technological innovation are not emphasized as primary causes.",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 47,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_46_54",
+      "text": "Why is Japan encouraging community-based healthcare instead of hospital-based care for the elderly?",
+      "options": [
+        {
+          "text": "To reduce healthcare costs and resource strain"
+        },
+        {
+          "text": "To increase hospital revenue"
+        },
+        {
+          "text": "To eliminate dependency on robotic caregivers"
+        },
+        {
+          "text": "To privatize healthcare services"
+        },
+        {
+          "text": "To introduce stricter healthcare policies"
+        }
+      ],
+      "answer": 0,
+      "explanation": "The passage highlights that shifting to community-based care addresses the strain on healthcare resources and allows elderly individuals to receive care in familiar settings.",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 48,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_46_54",
+      "text": "What is a plausible reason for Japan promoting the participation of older individuals in the workforce?",
+      "options": [
+        {
+          "text": "To maintain traditional labor practices"
+        },
+        {
+          "text": "To offset the economic impact of a shrinking workforce"
+        },
+        {
+          "text": "To discourage younger workers from emigrating"
+        },
+        {
+          "text": "To attract more foreign investments in technology"
+        },
+        {
+          "text": "To align with global retirement age trends"
+        }
+      ],
+      "answer": 1,
+      "explanation": "The passage discusses how Japan’s ageing population has led to a reduced working-age population, and the government encourages older individuals to stay employed to mitigate the impact.",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 49,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_46_54",
+      "text": "Which policy reflects Japan’s cautious approach to immigration?",
+      "options": [
+        {
+          "text": "Raising the retirement age to 70"
+        },
+        {
+          "text": "Promoting gender equality in the workforce"
+        },
+        {
+          "text": "The introduction of the Specified Skilled Worker visa program"
+        },
+        {
+          "text": "Launching universal healthcare"
+        },
+        {
+          "text": "Creating intergenerational programs"
+        }
+      ],
+      "answer": 2,
+      "explanation": "The passage mentions Japan’s historically conservative stance on immigration and highlights the Specified Skilled Worker visa program as a way to address labor shortages.",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 50,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_46_54",
+      "text": "Why is technology significant in Japan’s elderly care reforms?",
+      "options": [
+        {
+          "text": "It helps reduce hospital construction costs"
+        },
+        {
+          "text": "It replaces the need for community-based programs"
+        },
+        {
+          "text": "It aids caregivers and supports elderly independence"
+        },
+        {
+          "text": "It focuses solely on financial planning for retirees"
+        },
+        {
+          "text": "It eliminates the need for intergenerational initiatives"
+        }
+      ],
+      "answer": 2,
+      "explanation": "The passage discusses how Japan uses robotic assistants with AI to alleviate caregiver burdens and help the elderly maintain independence.",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 51,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_46_54",
+      "text": "What inference can be made about Japan’s pension reforms?",
+      "options": [
+        {
+          "text": "They aim to completely eliminate public pensions."
+        },
+        {
+          "text": "They are intended to reduce taxes for retirees."
+        },
+        {
+          "text": "They encourage individuals to rely more on personal savings."
+        },
+        {
+          "text": "They aim to increase benefits for the elderly."
+        },
+        {
+          "text": "They replace the need for financial planning."
+        }
+      ],
+      "answer": 2,
+      "explanation": "The passage explains that pension reforms include raising eligibility ages and promoting private retirement savings to ensure the system’s sustainability.",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 52,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_46_54",
+      "text": "Why has Japan invested in intergenerational programs?",
+      "options": [
+        {
+          "text": "To combat isolation among the elderly and promote mutual understanding"
+        },
+        {
+          "text": "To encourage older people to mentor younger workers"
+        },
+        {
+          "text": "To reduce the dependency on immigration policies"
+        },
+        {
+          "text": "To ensure equal employment opportunities for all age groups"
+        },
+        {
+          "text": "To train the elderly for technology-based jobs"
+        }
+      ],
+      "answer": 0,
+      "explanation": "The passage mentions that intergenerational programs help reduce isolation in the elderly while fostering mutual support between age groups.",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 53,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_46_54",
+      "text": "What does the term “Silver Human Resource Centers” imply about Japan’s approach to its ageing population?",
+      "options": [
+        {
+          "text": "Japan focuses only on full-time jobs for the elderly."
+        },
+        {
+          "text": "The elderly are encouraged to engage in community work or part-time employment."
+        },
+        {
+          "text": "It signifies Japan’s plan to reduce public spending on senior citizens."
+        },
+        {
+          "text": "The government prioritizes pension reform over employment."
+        },
+        {
+          "text": "These centers are intended to replace retirement homes."
+        }
+      ],
+      "answer": 1,
+      "explanation": "The passage describes these centers as initiatives that offer part-time work or volunteering opportunities to older individuals.",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 54,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_46_54",
+      "text": "What challenge does Japan still face despite its proactive measures for the ageing population?",
+      "options": [
+        {
+          "text": "Lack of technological advancements"
+        },
+        {
+          "text": "Insufficient public debt management"
+        },
+        {
+          "text": "Inadequate healthcare for the elderly"
+        },
+        {
+          "text": "Over-reliance on immigration policies"
+        },
+        {
+          "text": "Limited focus on gender equality"
+        }
+      ],
+      "answer": 1,
+      "explanation": "The passage states that Japan’s public debt is one of the highest globally, posing a significant challenge despite its efforts to manage the ageing population.",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 55,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_55_60",
+      "text": "Why are betting apps particularly appealing to youth, according to the passage?",
+      "options": [
+        {
+          "text": "They offer guaranteed monetary returns."
+        },
+        {
+          "text": "They replicate the mechanics of video games to increase engagement."
+        },
+        {
+          "text": "They emphasize the importance of financial literacy."
+        },
+        {
+          "text": "They are endorsed by family and educational institutions."
+        },
+        {
+          "text": "They focus on long-term investment strategies."
+        }
+      ],
+      "answer": 1,
+      "explanation": "The passage explains that betting apps use gamified elements, such as streaks and rewards, which mimic video games, making them more appealing to younger audiences.",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 56,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_55_60",
+      "text": "What inference can be drawn about the portrayal of gambling in online betting advertisements?",
+      "options": [
+        {
+          "text": "It is presented as a serious financial activity requiring expertise."
+        },
+        {
+          "text": "It emphasizes the addictive nature of gambling."
+        },
+        {
+          "text": "It downplays risks and highlights gambling as a glamorous activity."
+        },
+        {
+          "text": "It focuses on the social harms associated with gambling."
+        },
+        {
+          "text": "It aims to discourage impulsive decision-making among users."
+        }
+      ],
+      "answer": 2,
+      "explanation": "The passage states that these advertisements frame gambling as harmless or glamorous, often ignoring the risks involved.",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 57,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_55_60",
+      "text": "What is the primary psychological tactic used by betting advertisements to attract youth?",
+      "options": [
+        {
+          "text": "Promoting financial literacy and responsibility."
+        },
+        {
+          "text": "Exploiting cognitive biases such as the “illusion of control.”"
+        },
+        {
+          "text": "Highlighting long-term economic benefits."
+        },
+        {
+          "text": "Encouraging teamwork and collaboration."
+        },
+        {
+          "text": "Demonstrating the negative consequences of gambling."
+        }
+      ],
+      "answer": 1,
+      "explanation": "The passage mentions that these ads manipulate cognitive biases, such as making users believe they can influence outcomes, making the apps more appealing.",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 58,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_55_60",
+      "text": "What social consequence is implied for youth who are influenced by betting app advertisements?",
+      "options": [
+        {
+          "text": "Improved relationships with peers due to shared interests."
+        },
+        {
+          "text": "Greater academic achievements due to logical thinking skills gained from gambling."
+        },
+        {
+          "text": "Increased peer pressure and strained familial relationships."
+        },
+        {
+          "text": "Enhanced understanding of economic principles."
+        },
+        {
+          "text": "Development of leadership skills through betting platforms."
+        }
+      ],
+      "answer": 2,
+      "explanation": "The passage discusses how gambling habits can create conflicts within families and increase peer pressure to participate in such activities.",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 59,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_55_60",
+      "text": "What financial risk is associated with youth engaging in betting, based on the passage?",
+      "options": [
+        {
+          "text": "Long-term investment planning difficulties."
+        },
+        {
+          "text": "Lack of interest in career development."
+        },
+        {
+          "text": "Falling into a cycle of chasing losses due to impulsive betting."
+        },
+        {
+          "text": "Accumulation of wealth through regular gambling."
+        },
+        {
+          "text": "Excessive saving habits that affect spending."
+        }
+      ],
+      "answer": 2,
+      "explanation": "The passage highlights that youth often get trapped in a cycle of trying to recover losses, exacerbating their financial vulnerability.",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 60,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_55_60",
+      "text": "What is suggested as a possible solution to mitigate the negative effects of betting app advertisements on youth?",
+      "options": [
+        {
+          "text": "Promoting gambling as a harmless activity."
+        },
+        {
+          "text": "Introducing stricter regulations on online advertising."
+        },
+        {
+          "text": "Encouraging families to monitor all social media usage."
+        },
+        {
+          "text": "Focusing on the benefits of gambling education."
+        },
+        {
+          "text": "Eliminating all forms of digital advertisements."
+        }
+      ],
+      "answer": 1,
+      "explanation": "The passage emphasizes the need for stricter regulations, alongside awareness and education, to mitigate the harmful effects of such advertisements.",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 61,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_61_62",
+      "text": "What can be inferred about the shift in China’s economy in recent years?",
+      "options": [
+        {
+          "text": "China has completely abandoned manufacturing for services."
+        },
+        {
+          "text": "Manufacturing remains important, but services and domestic consumption are becoming significant drivers of growth."
+        },
+        {
+          "text": "The services sector has replaced all other sectors in contributing to GDP growth."
+        },
+        {
+          "text": "Exports have stopped contributing to China’s GDP."
+        },
+        {
+          "text": "China is reducing its focus on technology and e-commerce."
+        }
+      ],
+      "answer": 1,
+      "explanation": "The passage mentions that while manufacturing has historically driven China’s growth, recent trends indicate a shift toward services and domestic consumption, supported by e-commerce and technology.",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 62,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_61_62",
+      "text": "What is a likely reason for China’s focus on green energy and innovation?",
+      "options": [
+        {
+          "text": "To replace manufacturing with agriculture as the primary sector."
+        },
+        {
+          "text": "To address challenges like environmental concerns and slowing growth."
+        },
+        {
+          "text": "To increase its reliance on foreign investments."
+        },
+        {
+          "text": "To decrease the value of its GDP intentionally."
+        },
+        {
+          "text": "To reduce the need for domestic consumption."
+        }
+      ],
+      "answer": 1,
+      "explanation": "The passage explains that China faces issues such as environmental concerns and other growth challenges. The government is focusing on green energy and innovation as solutions to sustain economic growth.",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 63,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_63_67",
+      "text": "Which of the following options is suitable for blank (A)? I. Dialogue II. Discussions III. Examination",
+      "options": [
+        {
+          "text": "Only (I)"
+        },
+        {
+          "text": "Only (II)"
+        },
+        {
+          "text": "Only (III)"
+        },
+        {
+          "text": "Both (I) and (II)"
+        },
+        {
+          "text": "Both (I) and (III)"
+        }
+      ],
+      "answer": 3,
+      "explanation": "The passage states that future COPs must focus almost exclusively on ensuring delivery and holding laggards accountable. The latest round of discussions (COP27 in Egypt) began with little hope and ended (two days beyond schedule) with a faint glimmer. As per the context of the passage both the words ‘discussions’ and ‘dialogue’ are suitable options to fill the blank (A). Hence the correct answer choice is option (d).",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 64,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_63_67",
+      "text": "Which of the following options is suitable for blank (B)? I. Exacerbate II. Exaggerate III. Minimize",
+      "options": [
+        {
+          "text": "Only (I)"
+        },
+        {
+          "text": "Only (II)"
+        },
+        {
+          "text": "Only (III)"
+        },
+        {
+          "text": "Both (I) and (II)"
+        },
+        {
+          "text": "Both (I) and (III)"
+        }
+      ],
+      "answer": 2,
+      "explanation": "The passage states that future COPs must focus almost exclusively on ensuring delivery and holding laggards accountable. The 197 Parties to the UN Framework Convention on Climate Change (UNFCCC) decided to make it possible to finance loss and damage for those who most need it. However, the objective of limiting temperature rise to levels that could minimize loss. Therefore, as per the context of the passage ‘Minimize’ is the correct word to fill the blank (B). Hence the correct answer choice is option (c). Exaggerate: To make something worse,…",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 65,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_63_67",
+      "text": "Which of the following options is suitable for blank (C)? I. Vulnerable II. Distinctive III. Rapport",
+      "options": [
+        {
+          "text": "Only (I)"
+        },
+        {
+          "text": "Only (II)"
+        },
+        {
+          "text": "Only (III)"
+        },
+        {
+          "text": "Both (I) and (II)"
+        },
+        {
+          "text": "Both (I) and (III)"
+        }
+      ],
+      "answer": 0,
+      "explanation": "The passage states that future COPs must focus almost exclusively on ensuring delivery and holding laggards accountable. Therefore, as per the context of the passage ‘Vulnerable’ is the correct word to fill the blank (C). Loss and damage (L&D) is the term used to describe the negative effects that a changing climate has on vulnerable communities and nations. These effects include an increase in the frequency and severity of natural disasters and extreme weather events, as well as slow-onset temperature rise, sealevel rise, and desertification.…",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 66,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_63_67",
+      "text": "Which of the following options is suitable for blank (D)? I. Impediment II. Onus III. Responsibility",
+      "options": [
+        {
+          "text": "Only (I)"
+        },
+        {
+          "text": "Only (II)"
+        },
+        {
+          "text": "Only (III)"
+        },
+        {
+          "text": "Both (I) and (II)"
+        },
+        {
+          "text": "Both (I) and (III)"
+        }
+      ],
+      "answer": 4,
+      "explanation": "The passage states that future COPs must focus almost exclusively on ensuring delivery and holding laggards accountable. Rich nations had opposed L&D payments for years out of concern that the previous emissions might result in significant compensation demands. They were under so much pressure that they had to accept their accountability. Impediment means Something that makes it difficult for a person to progress or something that makes speaking difficult. ‘Impediment’ therefore is not the correct word to fill the blank (D). Onus means…",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 67,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_63_67",
+      "text": "Which of the following options is suitable for blank (E)? I. Advancements II. Arrangements III. Channelization",
+      "options": [
+        {
+          "text": "Only (I)"
+        },
+        {
+          "text": "Only (II)"
+        },
+        {
+          "text": "Only (III)"
+        },
+        {
+          "text": "Both (I) and (II)"
+        },
+        {
+          "text": "Both (I) and (III)"
+        }
+      ],
+      "answer": 1,
+      "explanation": "The passage states that future COPs must focus almost exclusively on ensuring delivery and holding laggards accountable. This committee has been entrusted with setting up institutional arrangements, locating and expanding sources of funding, and coordinating with current funding arrangements by COP28 in the UAE the following year in order to operationalize the financial arrangements. Therefore, as per the context of the passage ‘Arrangements’ is the correct word to fill the blank (E). ‘Advancement’ and ‘Channelization’ are not the suitable…",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 68,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_68_71",
+      "text": "I. Sharan and Ram have incredible voices II. They will go far in their music career. A. Similarly B. Otherwise C. Undoubtedly",
+      "options": [
+        {
+          "text": "Only A"
+        },
+        {
+          "text": "Only B"
+        },
+        {
+          "text": "Both A and C"
+        },
+        {
+          "text": "Both A and B"
+        },
+        {
+          "text": "Both B and A"
+        }
+      ],
+      "answer": 1,
+      "explanation": "Let’s examine the significance of each alternative one by one using the elimination procedure. Possibility 1: Sharan and Ram have incredible voices, similarly they will go far in their music career. Clearly, the above formulation is not grammatically valid, it does not form a meaningful statement. Possibility 2: Sharan and Ram have incredible voices, otherwise they will go far in their music career. The preceding formulation is not grammatically valid, it does not form a meaningful statement. Possibility 3: Sharan and Ram have incredible…",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 69,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_68_71",
+      "text": "A. Any person contravening this order shall be punished. B. Section 188 of the Indian Penal Code (IPC) and appropriate sections of the Epidemic Diseases Act and National Disaster Management Act. (i) Even (ii) With (iii) Under",
+      "options": [
+        {
+          "text": "Only (ii)"
+        },
+        {
+          "text": "Both (i) and (iii)"
+        },
+        {
+          "text": "Only (i)"
+        },
+        {
+          "text": "All (i), (ii) and (iii)"
+        },
+        {
+          "text": "Only (iii)"
+        }
+      ],
+      "answer": 4,
+      "explanation": "In legal language, someone is always punished under a certain section of law. Only (iii) acts as the right connector and hence, option (e) is the right answer.",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 70,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_68_71",
+      "text": "A. \u0007 Originally called Abhijit Dhananjay Sarang, Kalicharan reportedly changed his name. B. He met with an accident while in his teens that badly twisted his leg but left him with only a hairline fracture. (i) While (ii) After (iii) Since",
+      "options": [
+        {
+          "text": "Only (i)"
+        },
+        {
+          "text": "Only (ii)"
+        },
+        {
+          "text": "Only (iii)"
+        },
+        {
+          "text": "Both (i) and (ii)"
+        },
+        {
+          "text": "All (i), (ii) and (iii)"
+        }
+      ],
+      "answer": 1,
+      "explanation": "The mentioned person changed his name after an incident. So, out of the given connectors only the one given in option (b) will be correct in the context. Therefore, the best option is (b).",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 71,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_68_71",
+      "text": "A. \u0007In the clip, a group of tourists is seen sitting inside a safari vehicle, with wired mesh covering the windows. B. As the car stands on the road for a better view, the big cat attempts to bite off the rear bumper of the black car. (i) However (ii) Though (iii) Meanwhile",
+      "options": [
+        {
+          "text": "Only (iii)"
+        },
+        {
+          "text": "Both (i) and (iii)"
+        },
+        {
+          "text": "Only (ii)"
+        },
+        {
+          "text": "Only (i)"
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 1,
+      "explanation": "Both ‘however’ and ‘meanwhile’ will be the best to join the two separate sentences given above. Though will not be correct grammatically and hence, that can be eliminated. Therefore, option (b) is the correct answer.",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 72,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_72_75",
+      "text": "Twitter does not want users to migrate to other platforms through links shared via tweets or retweets to ensure users spend more time on the platform which in turn _______ .",
+      "options": [
+        {
+          "text": "short-form content while using recommendations to drive discovery across the platform."
+        },
+        {
+          "text": "which is also actively looking to increase its paid subscriber count."
+        },
+        {
+          "text": "it would no longer allow users to promote their presence on other social media platforms."
+        },
+        {
+          "text": "boosts its position to increase advertising revenue."
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 3,
+      "explanation": "The blank seems to be filled by the subject/topic/theme that twitter does not want to move to other platforms which in turn will increase its advertising revenue. Part (B) and (D) provide hints for the theme of the paragraph. Among the options, option (d) complements the given information in the paragraph. Hence, option (d) is the correct answer. Option (a) does not contribute contextually to the passage. Option (b) is incorrect as it talks about twitter’s paid subscriber count. Option (c) does not contribute to the passage as it talks about…",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 73,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_72_75",
+      "text": "Financial inclusion, a cornerstone of equitable economic growth, aims to ensure that individuals and communities _______.",
+      "options": [
+        {
+          "text": "savings, credit, insurance, and investment opportunities."
+        },
+        {
+          "text": "financial systems that were previously inaccessible."
+        },
+        {
+          "text": "have access to a wide range of financial services and resources."
+        },
+        {
+          "text": "limits their ability to invest in education, healthcare, and entrepreneurship."
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 2,
+      "explanation": "(a) Option (a) lists the specific financial services but does not relate with the context of the sentence. (b) Option (b) suggests that financial inclusion targets previously inaccessible financial systems, but this is not the primary focus of the given statement. (c) Option (c) accurately summarizes the main goal of financial inclusion, which is to ensure individuals and communities have access to a broad range of financial services and resources. (d) Option (d) mentions the consequences of lacking financial inclusion, which can limit…",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 74,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_72_75",
+      "text": "Climate change remains a critical issue on the global agenda as the world _______.",
+      "options": [
+        {
+          "text": "address rising global temperatures and extreme weather events."
+        },
+        {
+          "text": "grapples with its far-reaching implications."
+        },
+        {
+          "text": "focus on renewable energy, carbon neutrality, and nature-based solutions."
+        },
+        {
+          "text": "limit the worst impacts of climate change and protect the planet’s ecosystems."
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 1,
+      "explanation": "Option (b) is the correct choice - “grapples with its far-reaching implications.” The phrase “grapples with its far-reaching implications” means that the world is struggling with the significant and wideranging consequences of climate change. It emphasizes that climate change is not just a localized or isolated problem but a complex issue with profound effects on various aspects of the environment, society, and the economy worldwide. The other options, while relevant to the issue of climate change, do not accurately capture the overall context…",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 75,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_72_75",
+      "text": "Investment and funding are integral components of the financial landscape that significantly impact _______.",
+      "options": [
+        {
+          "text": "with the expectation of generating returns over a specific period."
+        },
+        {
+          "text": "entrepreneurial endeavors that exhibit promising growth potential."
+        },
+        {
+          "text": "to facilitate diverse initiatives, projects, or business ventures."
+        },
+        {
+          "text": "economic development, technological innovation, and the realization of various projects."
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 3,
+      "explanation": "Option (a) focuses on generating returns from investments but doesn’t cover the broader impacts on economic development, innovation, and projects. Option (b) highlights promising growth potential in entrepreneurial endeavors, but it omits the wider context of economic development and various projects. Option (c) mentions facilitating diverse initiatives and ventures, yet it doesn’t explicitly encompass the effects on economic development and technological innovation. Option (d) accurately captures the statement’s main points about investments…",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 76,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": null,
+      "text": "Direction: In each of the questions given below, a passage has been given which is either situation based or describes a scenario. Below each passage, a question has been given which is framed to make you infer something out of it. Mark out the correct inference as your answer. The world will be transformed. By 2050, we will be driving electric cars and flying in aircraft running on synthetic fuels produced through solar and wind energy. New energy-efficient technologies, most likely harnessing artificial intelligence, will dominate nearly all human activities from farming to heavy industry. The fossil fuel industry will be in the final stages of a terminal decline. Nuclear fusion and other new energy sources may have become widespread. Perhaps our planet will even be orbited by massive solar arrays capturing cosmic energy from sunlight and generating seemingly endless energy for all our needs. Which of the following is true about the role of AI in future clean energy goals?",
+      "options": [
+        {
+          "text": "AI will dominate the harnessing of new clean energy."
+        },
+        {
+          "text": "New clean energy will be harnessed with some help from AI."
+        },
+        {
+          "text": "AI will overtake nuclear fusion as a source of clean energy harnessing processes."
+        },
+        {
+          "text": "Both A and B"
+        },
+        {
+          "text": "Both B and C"
+        }
+      ],
+      "answer": 1,
+      "explanation": "The passage states: “New energyefficient technologies, most likely harnessing artificial intelligence, will dominate nearly all human activities from farming to heavy industry.” It shows that new energy will be dominating human activities. It does not, however, state that AI will be the only way of harnessing new energy. As alternatives, the passage suggests “nuclear fusion and other new energy sources”. Thus, statement A cannot be inferred from the passage. The quoted sentence also shows how statement B can be correctly inferred from the…",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 77,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_77_78",
+      "text": "A. lakes, and coastal areas in reducing physical exposure to B. natural hazards such as floods, landslides C. or avalanches by serving as buffers D. there are many experiences around the world which point to the potential E. benefits of protecting and preserving ecosystems such as wetlands, forests",
+      "options": [
+        {
+          "text": "DECBA"
+        },
+        {
+          "text": "ABCED"
+        },
+        {
+          "text": "CABDE"
+        },
+        {
+          "text": "ABDEC"
+        },
+        {
+          "text": "DEABC"
+        }
+      ],
+      "answer": 4,
+      "explanation": "Here, D is the introductory part of the sentence that states the experiences faced by the world. D is followed by E that states the benefits of preserving ecosystems. A follows E. further A is followed by B which states regarding natural hazards. C follows B and concludes the sentence. The correct arrangement will be DEABC. Therefore, option (e) is the correct answer. The rearranged sentence will be: There are many experiences around the world which point to the potential benefits of protecting and preserving ecosystems such as wetlands,…",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 78,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_77_78",
+      "text": "A. \u0007Even during the lockdown, people cooped up in homes with less than B. usual activity were advised by psychologists to take time off C. and relax in places close to home where one D. for mental and physical well being. E. feels less stressed, as it is important",
+      "options": [
+        {
+          "text": "DECBA"
+        },
+        {
+          "text": "ABCED"
+        },
+        {
+          "text": "CABDE"
+        },
+        {
+          "text": "ABDEC"
+        },
+        {
+          "text": "DEABC"
+        }
+      ],
+      "answer": 1,
+      "explanation": "Here, A is the introductory part of the sentence that states the situation of people during lockdown . A is followed by B . B follows C. further C is followed by E which states the places where one feels less stressed. D follows E and concludes the sentence. The correct arrangement will be ABCED. Therefore, option (b) is the correct answer. The rearranged sentence will be: Even during the lockdown, people cooped up in homes with less than usual activity were advised by psychologists to take time off and relax in places close to home where one…",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 79,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_79_80",
+      "text": "Find the correct combination of the words that replace each other so as to make the given paragraph contextually and gramatically correct. If the sentence is correct as it is then select option",
+      "options": [
+        {
+          "text": "1-4 and 2-3"
+        },
+        {
+          "text": "2-1 and 3-5"
+        },
+        {
+          "text": "2-3 and 4-5"
+        },
+        {
+          "text": "2-4 and 1-5"
+        },
+        {
+          "text": "No interchange required"
+        }
+      ],
+      "answer": 1,
+      "explanation": "The positions of words in the given paragraph are incorrect. Hence, swapping the words in their correct positions will frame a grammatically correct and contextually meaningful sentence. The word (1) will be swapped with the word (2) and (3) with the (5). Hence, the correct option choice is (b).",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 80,
+      "sectionId": "eng",
+      "sectionName": "English Language",
+      "stimulusId": "stim_79_80",
+      "text": "What is the synonym of the word adventure?",
+      "options": [
+        {
+          "text": "Danger"
+        },
+        {
+          "text": "Exploration"
+        },
+        {
+          "text": "Routine"
+        },
+        {
+          "text": "Obstacle"
+        },
+        {
+          "text": "Boredom DATA ANALYSIS AND INTERPRETATION"
+        }
+      ],
+      "answer": 1,
+      "explanation": "The word adventure refers to an exciting or daring experience, often involving exploration or a journey. Among the given options, exploration best matches the meaning of adventure. Other options like “danger” or “routine” do not convey the same sense of excitement or thrill.",
+      "expectedTimeSec": 60,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 81,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": null,
+      "text": "Two series I and II given below each have one wrong number P and Q respectively. Series I: 5, 20, 40, 67, 105, 140, 224 Series II: 13, 20, 30, 98, 119, 334 Find the difference between P and Q ?",
+      "options": [
+        {
+          "text": "24"
+        },
+        {
+          "text": "36"
+        },
+        {
+          "text": "38"
+        },
+        {
+          "text": "42"
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 3,
+      "explanation": "From series I: +15 +20 +5 +27 +7 +2 Quantity of water +38 +11 +4 +51 +13 +2 +68 +17 +4 Value of P = 140 From series II: 13, 20, 30, 98, 119, 334 20 – 13 = 7 = 23 – 1 30 – 20 = 10 = 32 + 1 93 – 30 = 63 = 43 – 1 119 – 93 = 26 = 52 + 1 334 – 119 = 215 = 63 – 1 Value of Q = 98 Difference between P and Q = 42",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 82,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": "stim_82_83",
+      "text": "Find the value of P.",
+      "options": [
+        {
+          "text": "25"
+        },
+        {
+          "text": "26"
+        },
+        {
+          "text": "27"
+        },
+        {
+          "text": "28"
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 3,
+      "explanation": "We know that, Dividend = Divisor × Quotient + Remainder So, 6x2 + 29x + P = (3x + 1) × (2x + 9) + 19 ⇒ 6x2 + 29x + P = 6x2 + 27x + 2x + 9 + 19 ⇒ P = 28",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 84,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": null,
+      "text": "Puneet buys 240 articles and labels each with the same marked price. He sells 160 articles initially at 20% discount on the labelled price. Then he sells rest articles at an additional discount of 25% on the discounted price. Thus, he gets total of `Z, and makes profit of 10%. When he offered no discount find its profit %.",
+      "options": [
+        {
+          "text": "65%"
+        },
+        {
+          "text": "60%"
+        },
+        {
+          "text": "75%"
+        },
+        {
+          "text": "25%"
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 0,
+      "explanation": "Let, marked price per article be M For 160 articles: Selling price per article = 0.8M Total selling price = 160 × 0.8M = 128M For 80 articles: Selling price per article = 0.8 M × 0.75 = 0.6M Total = 80 × 0.6M = 48M Total revenue (Z) = 128M + 48M = 176M Given 10% profit, 176M = 1.1× Cost price 176M 160M ⇒ Cost Price = = 1.1 Total selling price without discount = 240M Profit = 240M – 160M = 80M 80M \\ Profit % = × 100 = 50% 160M",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 86,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": "stim_86_90",
+      "text": "If the number of female employees who were promoted in HR department were 120 and the ratio of male and female employees in HR department is 7 : 5, then the ratio of the total number of male employees in the HR department to the number of male employees promoted in the same department was:",
+      "options": [
+        {
+          "text": "105 : 8"
+        },
+        {
+          "text": "112 : 15"
+        },
+        {
+          "text": "145 : 11"
+        },
+        {
+          "text": "175 : 12"
+        },
+        {
+          "text": "None of these."
+        }
+      ],
+      "answer": 3,
+      "explanation": "Total number of male employees, who promoted in the HR department = 180 – 120 = 60 Total number of male employees in the HR department = × 1500 = 875 Required ratio = 875 : 60 = 175 : 12",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 87,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": "stim_86_90",
+      "text": "If the ratio of number of male employees to the female employees in the production department is 2 : 3 and the ratio of number of male employees to female employees who get promotions in the same department is 4 : 5, then what percent of the female employees get promotions in the production department?",
+      "options": [
+        {
+          "text": "18.52%"
+        },
+        {
+          "text": "21.50%"
+        },
+        {
+          "text": "22.50%"
+        },
+        {
+          "text": "25%"
+        },
+        {
+          "text": "33.33%"
+        }
+      ],
+      "answer": 0,
+      "explanation": "The number of female employees in the production department = × 900 = 540 The number of female employees who get promotions in the production department = × 180 = 100 Required % = × 100 = 18.52%",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 88,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": "stim_86_90",
+      "text": "The difference between the percentage of the number of employees, who get promotions from the HR department and IT department is:",
+      "options": [
+        {
+          "text": "0.50%"
+        },
+        {
+          "text": "0.75%"
+        },
+        {
+          "text": "1.25%"
+        },
+        {
+          "text": "1.33%"
+        },
+        {
+          "text": "1.60%"
+        }
+      ],
+      "answer": 3,
+      "explanation": "The percentage of the number of employees, who get promotion from the HR department = × 100 = 12% 1500 The percentage of the number of employees, who get promotion from the IT department = × 100 = 13.33% 1800 Required difference = 13.33% – 12% = 1.33%",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 89,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": "stim_86_90",
+      "text": "The total number of employees promoted in the Account, IT, and Sells department together is what percent of the total number of employees in these departments?",
+      "options": [
+        {
+          "text": "18.33%"
+        },
+        {
+          "text": "23.33 %"
+        },
+        {
+          "text": "22.02 %"
+        },
+        {
+          "text": "33.13 %"
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 1,
+      "explanation": "Required % = 360 + 240 + 240 1200 + 1800 + 600 × 100 = 23.33% 3600",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 90,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": "stim_86_90",
+      "text": "What is the difference between the average number of employees who were promoted in the IT, Production, and Sells departments and the average of number of total employees in these three departments?",
+      "options": [
+        {
+          "text": "540"
+        },
+        {
+          "text": "740"
+        },
+        {
+          "text": "880"
+        },
+        {
+          "text": "950"
+        },
+        {
+          "text": "1250"
+        }
+      ],
+      "answer": 2,
+      "explanation": "Required difference 1800 + 900 + 600 240 + 180 + 240 − = = 1100 – 220 = 880 = 40 1 × = 18 liters 100 4",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 91,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": null,
+      "text": "A bag contains some balls of three different colours. Probability of drawing a blue colour ball is   and the ratio of red to green  24  colour balls is 9 : 10. What is the total number of balls in the bag? I. Average of total number of balls of all the three colours is 8. II. Two balls are drawn randomly from the bag and probability that both the balls are green is . III. One ball is drawn at random from the bag and the probability  7 that the ball is either blue or red is   .  12 ",
+      "options": [
+        {
+          "text": "Either I alone or III alone is sufficient."
+        },
+        {
+          "text": "Either I alone or II alone is sufficient."
+        },
+        {
+          "text": "Either II alone or III alone is sufficient."
+        },
+        {
+          "text": "Any one of them alone is sufficient."
+        },
+        {
+          "text": "Any two of them together are sufficient."
+        }
+      ],
+      "answer": 1,
+      "explanation": "Let total number of balls in the bag = 24x Probability of drawing a blue colour ball = Total blue colour balls = 5x Total red and green colour balls = 24x – 5x = 19x 9 Total red colour balls = 19 x ×   =9 x  19  Total green colour balls  10  = 19 x ×   = 10 x  19  From I: Average of total number of balls of all the three colours5 x + 9 x + 10 x =8 ⇒ 24x = 24 ⇒ x = 1 Total balls in the bag = 24x = 24 Statement I alone is sufficient. From II: Probability that two drawn balls 10 x C2 15 are of green colour = 24= x C2 92 ⇒ 5 x (10 x −…",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 92,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": null,
+      "text": "Question below is followed by three statements I, II and III. You have to determine whether the data given in the statement is sufficient for answering the question. y litres mixture of milk and water contains milk and water in the ratio a : b respectively. The milkman sold z litres of the mixture and added 10 litres of pure milk and 8 litres of water to the remaining mixture such that the ratio of milk and water in the final mixture became 5 : 4 respectively. Find the respective ratio of amount of milk in the initial mixture and amount of milk in the final mixture. Statement I: A 54 litres mixture of syrup and water contains syrup and water in the ratio a : b respectively. If 10 litres of syrup and 6 litres of water is added to the mixture, the ratio of syrup and water becomes 4 : 3 respectively. Statement II: A 60 litres mixture of milk and water contains milk and water in the ratio 7 : 5 respectively. If z litres of the mixture is replaced with water, the ratio of milk and water in the mixture becomes 7 : 23 respectively. Statement III: y = 3z",
+      "options": [
+        {
+          "text": "Only I and II together"
+        },
+        {
+          "text": "Either I or II and III together"
+        },
+        {
+          "text": "Any two of the three"
+        },
+        {
+          "text": "All I, II and III together"
+        },
+        {
+          "text": "Cannot be answered even after combining all the three statements"
+        }
+      ],
+      "answer": 3,
+      "explanation": "From I: a Syrup = × 54 a+b Water =  a   b  4  a + b × 54 + 10 ÷  a + b × 54 + 6 = 3  a  ⇒ 3×  × 54 + 10 = a + b   b  × × 54 + 6 a + b  \b a 162a 216b ⇒ + 30= + 24 ⇒ = 5 : 4 b a+b a+b Amount of milk = = = × 60 7+5 × 60 = 25 litres 7z 12 = 7 5x 25 − + z 23 35 − 7z  5z    ⇒ 23 ×  35 −  =7 ×  25 − + z    12  420 − 7 z 300 − 5 z + 12 z =7 × ⇒ 23 × (420 – 7z) = 7 × (300 + 7z) ⇒ 9660 – 161z = 2100 + 49z ⇒ 161z + 49z = 9660 –2100 ⇒ 210z = 7560 7560 ⇒z= = 36 From III: y = 3z From I, II and III: y = 3 × 36 = 108 Amount…",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 93,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": null,
+      "text": "Time taken by the boat in river A to cover (D + 120) km in downstream is 25% more than the time taken by the same boat to cover (D – 80) km in upstream in river B. The speed of the stream in river B is 20% less than the speed of stream in river A. Ratio of the speed of the boat to the speed of the stream in river A is 9 : 5. Find the value of (D + 40) if the speed of the boat is constant.",
+      "options": [
+        {
+          "text": "160"
+        },
+        {
+          "text": "200"
+        },
+        {
+          "text": "240"
+        },
+        {
+          "text": "280"
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 1,
+      "explanation": "Let the speed of the boat and the speed of the stream in river A be 9x km/hr and 5x km/hr respectively. Speed of stream in river B = 5x × 80% = 4x km/hr According to the question, ( D + 120) = 125% of ( D − 80) (9 x + 5 x ) (9 x − 4 x ) ( D + 120 ) ( D − 80) ⇒ = 1.25 × b × 54 a+b From II: Amount of water = × 60 7+5 × 60 = 35 litres 14 x 5x D + 120) ( ⇒ = 0.25 × ( D − 80) ⇒ D + 120 = 3.5 × (D − 80) ⇒ D + 120 = 3.5D − 280 ⇒ 2.5D = 400 ⇒ D = 160 Required answer = (D + 40) = 200",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 94,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": null,
+      "text": "Ratio of the height of the cone and cylinder is 3 : 2. Ratio of the radius of the cone and cylinder is 3 : 4. Ratio of the volume of the cone and cylinder is m : n. The length of the cuboid is (m + 11) and the breadth of the cuboid is (n – 11). The total volume of the cuboid is 11340. Find the possible value of the height of the cuboid? I. 3m n II. III. n – m – 15",
+      "options": [
+        {
+          "text": "Only I"
+        },
+        {
+          "text": "Only II"
+        },
+        {
+          "text": "Only III"
+        },
+        {
+          "text": "Only I and II"
+        },
+        {
+          "text": "Only I and III"
+        }
+      ],
+      "answer": 0,
+      "explanation": "According to question, ×3× × (3 × 3) m = n ×4×4×2 9 m = 32 n So, the length of the cuboid = 9 + 11 = 20 Breadth of the cuboid = 32 – 11 = 21 Or, 11340 = 27 20 × 21 I. 3 m = 3 × 9 = 27 n 32 II. = = 8 ≠ 27 4 4 III. n – m – 15 = 32 – 9 – 15 = 8 ≠ 27 So, height =",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 95,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": "stim_95_98",
+      "text": "If cost price of P is 87.5% more than that of T, and P is sold after discount of (2L – 210) %, then which of the following is/are possible value of L? I. 1.5 m II. (b – n – 8) III. 2.4(b – a) IV. 240",
+      "options": [
+        {
+          "text": "I and III only"
+        },
+        {
+          "text": "II and IV only"
+        },
+        {
+          "text": "I, II, and III only"
+        },
+        {
+          "text": "I, II, III, and IV"
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 2,
+      "explanation": "Cost price of P = 187.5% of 640 = `1200 Selling price of P = 1200 × 1.4 = `1680 2400 – 1680 Discount = × 100 = 30% 2400 So, (2L – 210) = 30 Value of L = = 120 I. 1.5 m = 1.5 × 80 = 120 II. (b − n − 8) = 200 − 72 − 8 =120 III. 2.4(b − a) = 2.4 × (200 − 150) = 120 IV. 240 Only I, II, and III follows.",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 97,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": "stim_95_98",
+      "text": "If profit% given on article Q is thrice as that of discount %, then find difference between cost price of Q and S.",
+      "options": [
+        {
+          "text": "160"
+        },
+        {
+          "text": "80"
+        },
+        {
+          "text": "120"
+        },
+        {
+          "text": "240"
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 0,
+      "explanation": "Discount % given on article Q = % So, profit % on article Q =3 × =50% Selling price of article Q = × 1728 = `1440 1440 Cost price of article Q = = ` 960 1.5 Cost price of article S = `800 Required difference = 960 – 800 = `160",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 98,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": "stim_95_98",
+      "text": "If the discount given on article T is (b – a)% and sold at a profit of L%, while the marked price of S is `400 less than that of P, and S sold after giving a discount of D%. Find (L% – D%).",
+      "options": [
+        {
+          "text": "30%"
+        },
+        {
+          "text": "20%"
+        },
+        {
+          "text": "25%"
+        },
+        {
+          "text": "40%"
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 3,
+      "explanation": "Discount % on T = (200 – 150)% = 50% So, selling price of T = 1920 × 50% = `960 Profit% on T 960 − 640 L% ) ×= 100 50% (= MP of S = 2400 – 400 = `2000 Selling price of S = `1800 Discount % on S 2000 − 1800 = × 100 = 10% 2000 Required value = (50% − 10%) = 40%",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 99,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": "stim_99_101",
+      "text": "The question below contains a statement followed by Quantity I, Quantity II and Quantity III. Find all quantities to find the relationship among them. If 5 orange candies from pouch A are shifted to pouch C and 2 caramel candies from pouch D are shifted to pouch A. Quantity I: When two candies are picked at random from pouch D, then what is the probability that the both candies are caramel flavor? Quantity II: When three candies are picked at random from pouch A, then what is the probability that exactly two candies are pineapple flavor? Quantity III: When one candy is picked at random from pouch C, then what is the probability that the picked candy is orange flavor?",
+      "options": [
+        {
+          "text": "Quantity I > Quantity II < Quantity III"
+        },
+        {
+          "text": "Quantity I > Quantity II > Quantity III"
+        },
+        {
+          "text": "Quantity I < Quantity II > Quantity III"
+        },
+        {
+          "text": "Quantity I < Quantity II < Quantity III"
+        },
+        {
+          "text": "Quantity I = Quantity II < Quantity III"
+        }
+      ],
+      "answer": 3,
+      "explanation": "If 5 orange candies from pouch A are shifted to pouch C and 2 caramel candies from pouch D are shifted to pouch A. Pouch A: Orange candies = 12 – 5 = 7 Pineapple candies = 10 Caramel candies = 8 + 2 = 10 Coffee candies = 15 Total = 7 + 10 + 10 + 15 = 42 Pouch C: Orange candies = 25 + 5 = 30 Pineapple candies = 15 Caramel candies = 16 Coffee candies = 24 Total = 30 + 15 + 16 + 24 = 85 Pouch D: Orange candies = 15 Pineapple candies = 15 Caramel candies = 10 – 2 = 8 Coffee candies = 10 Total = 15 + 15 + 8 + 10 = 48 Quantity I: C2 8×7 Required…",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 101,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": "stim_99_101",
+      "text": "If ‘K’ pineapple candies are taken out from pouch D and put into pouch E, and then ‘2K’ caramel candies and ‘K’ coffee candies are taken out from pouch E and put into pouch D. One candy is picked at random from pouch D, then the probability of getting orange flavor candy is . What is the value of ‘K’?",
+      "options": [
+        {
+          "text": "30"
+        },
+        {
+          "text": "7"
+        },
+        {
+          "text": "10"
+        },
+        {
+          "text": "2"
+        },
+        {
+          "text": "5"
+        }
+      ],
+      "answer": 4,
+      "explanation": "In pouch D: Orange candies = 15, Pineapple candies = 15 – K, Caramel candies = 10 + 2K Coffee candies = 10 + K Total = 15 + 15 – K + 10 + 2K + 10 + K = (50 + 2K) = (50 + 2K ) 4 ⇒ 60 = 50 + 2K ⇒ 2K = 10 ⇒ K = 5",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 102,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": null,
+      "text": "Time taken by P, Q, and R together to complete the job is 37.5% less than time taken by Q and R together to complete the job, while P and Q together can do the job in Z days, and R alone can complete it in Y days. Share of R is `8000 out of total share of P, Q, and R together (`16000). If P, Q and R together can complete the job in (Z – K) days, which of the following is/are definitely true. Y =K I. II. If time taken by P, Q and R together to complete the job is 15 day less than that of P and Q together, then time taken by S to complete the job is 20 days, if R is half efficient that as that of S. III. Z = Y",
+      "options": [
+        {
+          "text": "III only"
+        },
+        {
+          "text": "I and III only"
+        },
+        {
+          "text": "II and I only"
+        },
+        {
+          "text": "II and III only"
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 1,
+      "explanation": "Ratio of time taken of (P + Q + R) and (Q + R) = 5 : 8 Ratio of efficiency of (P + Q + R) to that of (Q + R) = 8 : 5 Let the efficiency of (P + Q + R) and (Q + R) be 8 units/day and 5 units/day respectively. So, efficiency of P = 8 – 5 = 3 units/day 8000 1 Share of R out of total share = = 16000 2 That means efficiency of R = (P + Q) Efficiency of R = P + Q = = 4 units/day So, efficiency of Q = 4 – 3 = 1 unit/day Time taken by P and Q together to complete the job = Z days Time taken by P, Q, and R together to complete the job = (Z – K) days…",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 103,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": null,
+      "text": "Car P and Q started from point A and point B respectively running towards each other. Car P running at 4Z km/h and meets Q after 10 hours. After reaching point A, driver of car Q realized that car R 3Y  (running towards point B) is  − 360 km ahead of car Q. So,  5  car Q started chasing car R and overtakes it in 6 hours. Find speed of car P, if distance between point A and point B is Y km and speed of car R is 2Z km/h.",
+      "options": [
+        {
+          "text": "20 km/hr"
+        },
+        {
+          "text": "40 km/hr"
+        },
+        {
+          "text": "60 km/hr"
+        },
+        {
+          "text": "80 km/hr"
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 1,
+      "explanation": "Speed of car P = 4Z km/h Distance between point A and point B = Y km Let speed of car Q = a km/h Now, (4Z + a) × 10 = Y Y Value of a = – 4Z Also,  3Y  Y  − 360 =6 ×  − 4 Z − 2 Z      ⇒ 3Y 3Y − 360 = − 36 Z 71 + 25 = 96 So, y = 33 Series III follow the pattern as: 3 + 1! = 4 4 + 2! = 6 6 + 3! = 12 12 + 4! = 36 36 + 5! = 156 So, z = 36 Therefore, x < y < z",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 104,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": null,
+      "text": "If value of M = 30, then for which of the following series value of M not satisfied properly? M I. 18, M, 50, 97, 208, 444 II. −50,−49,−45,−35,−16, III. 8, 5, 6.5, M, 110, 1319",
+      "options": [
+        {
+          "text": "Only I"
+        },
+        {
+          "text": "Both II and III"
+        },
+        {
+          "text": "Only III"
+        },
+        {
+          "text": "Both I and II"
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 2,
+      "explanation": "Pattern of series I: 18 M = 30 50 +12 +20 +47 +111 +27 +64 +125 +4 +3 +10 +6 +19 +9 480 × = 1200 1200 × = 3600 3600 × 12600 = 12600 × So, value of M satisfies properly in I. Pattern of series II: M –50 –49 –45 –35 –16 2 = 15 +1 = +236 +8 240 × +31 +12 So, value of M satisfies properly in II. Pattern of series III 8 × 0.75 – 1 = 5 5 × 1.5 – 1 = 6.5 6.5 × 3 – 1 = 18.5 ≠ M 18.5 × 6 – 1 = 110 110 × 12 – 1 = 1319 So, value of M not satisfies properly in III.",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 105,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": null,
+      "text": "In the question, three series I, II and III are given. Find the value of x, y and z to establish the correct relation among them and choose the correct option. (i) 12, 24, 8, x, 6.4, 38.4 (ii) 11, 20, y, 50, 71, 96 (iii) 3, 4, 6, 12, z, 156",
+      "options": [
+        {
+          "text": "x = y = z"
+        },
+        {
+          "text": "x < y = z"
+        },
+        {
+          "text": "x = y < z"
+        },
+        {
+          "text": "x < y < z"
+        },
+        {
+          "text": "x > y > z"
+        }
+      ],
+      "answer": 3,
+      "explanation": "Series I follow the pattern as: 12 × 2 = 24 24 ÷ 3 = 8 8 × 4 = 32 32 ÷ 5 = 6.4 6.4 × 6 = 38.4 So, x = 32 Series II follow the pattern as: 11 + 9 = 20 20 + 13 = 33 33 + 17 = 50 50 + 21 = 71 = 50400 III. Pattern of series: +5 +16 +11 +29 +13 111 R=176 264 +46 +17 +65 +19 +88 +23 So, P = Q > R will be true.",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 106,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": null,
+      "text": "Given below three series I, II & III given and each series has a wrong number. The number that should come in place of the wrong number in series I, II & III is P, Q & R respectively. Find the value of P, Q & R and then find which of the following statement is true. 244, 380, 476, 536, 568, 580, 580 160, 200, 480, 1200, 3600, 12600, 50400 15, 20, 36, 65, 111, 186, 264",
+      "options": [
+        {
+          "text": "P = Q < R"
+        },
+        {
+          "text": "P = Q > R"
+        },
+        {
+          "text": "P > Q > R"
+        },
+        {
+          "text": "P < Q < R"
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 1,
+      "explanation": "I. Pattern of series: P = 380 − (122 − 4) = 240 380 + (102 − 4) =476 476 + (82 − 4) = 536 536 + (62 − 4) = 568 568 + (42 − 4) = 580 580 + (22 − 4) = 580 II. Pattern of series: Q = 160 × = 240 = 10 So, speed of car P = 4 × 10 = 40 km/h ⇒Z=",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 107,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": null,
+      "text": "Calculate the value of (A) and (B) and answer the questions given below: (A), (B), 102, 104, 107, 113, 128, 173 If M is 150% more than (A), then find which of the following number is nearest square root of the difference between M and (B).",
+      "options": [
+        {
+          "text": "16"
+        },
+        {
+          "text": "12"
+        },
+        {
+          "text": "9"
+        },
+        {
+          "text": "18"
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 1,
+      "explanation": "A B B = 102 − 2 = 100, A = 100 − 4 = 96 100 + 150 = Now, M = 96 × Difference between M and B = 240 – 100 = 140 ~ 144 Required number = 144 = 12",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 108,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": null,
+      "text": "Direction: In the following question, two quantities I and II are given. Compare quantity I and quantity II on its basis. (Only quantity is to be considered) Two trains A and B are running in the same direction and they cross a 75 m long platform in 25 seconds and 15 seconds respectively. Speed of train B is 25.2 km/h more than that of train A and the length of train A is 45 m more than that of train B. Quantity I: If both the trains were running in opposite directions, then in what time would they cross each other? Quantity II: If the speed of train B were 3 m/s more than its original speed, then at what time would train B cross a 95 m long tunnel?",
+      "options": [
+        {
+          "text": "Quantity I > Quantity II"
+        },
+        {
+          "text": "Quantity I < Quantity II"
+        },
+        {
+          "text": "Quantity I ≥ Quantity II"
+        },
+        {
+          "text": "Quantity I ≤ Quantity II"
+        },
+        {
+          "text": "Quantity I = Quantity II or relation can’t be established"
+        }
+      ],
+      "answer": 0,
+      "explanation": "Let the speed of train A = x km/h So, the speed of train B = (x + 25.2) km/h Let the length of train B = ‘d’ m So, the length of train A = (d + 45)m According to question, ( d + 45 + 75) × 18 = 25 x×5 ( d + 120 ) × 18 ⇒ 5x = \b ... (i) And, ( d + 75) × 18 = 15 ( x + 25.2) × 5 ⇒ ( d + 75) × 18 = (5 x + 126) × 15 \b ...(ii) From equations (i) and (ii):  ( d + 120 ) × 18  + 75 ) × 18  + 126  × 15 ( d=    d + 120 + 175  = ⇒ d + 75   × 15   ⇒ 5 d + 375 = 3 d + 885 ⇒ d = 255 From equation (i): x = 54 Speed of train A = 54 km/h = 15 m/s…",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 109,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": null,
+      "text": "Direction: In the following question, two quantities I and II are given. Compare quantity I and quantity II on its basis. (Only quantity is to be considered) Train A crosses train B in 13 seconds while running in the opposite direction and train C crosses train A in 100 seconds while running in the same direction. Average of speeds of trains A and B is 15 m/s and the speed of train C is 4 m/s more than that of train A. Train A can cross a 140 m long platform in 20 seconds and the speed of train B is 14 m/s. Quantity I: If speed of train C were 95% of its original speed, then in what time train C would cross train B while running in the same direction? Quantity II: If a series is formed, whose 1st term is the length of train A, 2nd term is (1st term – 22), 3rd term is (2nd term – 32), 4th term is (3rd term – 52) and 5th term is (4th term – 72), then what is the 5th term of the series?",
+      "options": [
+        {
+          "text": "Quantity I > Quantity II"
+        },
+        {
+          "text": "Quantity I < Quantity II"
+        },
+        {
+          "text": "Quantity I ≥ Quantity II"
+        },
+        {
+          "text": "Quantity I ≤ Quantity II"
+        },
+        {
+          "text": "Quantity I = Quantity II or relation can’t be established"
+        }
+      ],
+      "answer": 1,
+      "explanation": "The speed of train b = 14 m/s So, the speed of train A = 2 × 15 – 14 = 16 m/s And, the speed of train C = 16 + 4 = 20 m/s Let the lengths of trains A, B and C are ‘a’m, ‘b’m and ‘c’m respectively. a+b Now, = 13 ⇒ a + b = 390\b ... (i) 16 + 14 a+c = 100 ⇒ a + c = 400\b ... (ii) Also, 20 – 16 Since, train A can cross a 140 m long platform in 20 seconds. a + 140 = 20 ⇒ a = 180 So, From equation (i): b = 210 From equation (ii): c = 220 Quantity I: Since, original speed of train C = 20 m/s So, new speed of train C would be = 95% of 20 = 19 m/s And,…",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 110,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": null,
+      "text": "Direction: In the following question, three quantities I, II and III are given. Compare quantity I, quantity II and quantity III on its basis. (Only quantity is to be considered) Two equations",
+      "options": [
+        {
+          "text": "Quantity I > Quantity III > Quantity II"
+        },
+        {
+          "text": "Quantity II > Quantity III > Quantity I"
+        },
+        {
+          "text": "Quantity III < Quantity II < Quantity I"
+        },
+        {
+          "text": "Quantity II < Quantity I < Quantity III"
+        },
+        {
+          "text": "Quantity I = Quantity II < Quantity III"
+        }
+      ],
+      "answer": 1,
+      "explanation": "3x – 4y = 2 \b ... (a) x – 2y = 8 \b ... (b) By equation (a) – equation (b) × 2 : 3x – 4y – 2x + 4y = 2 – 16 x → = –14 From equation (b): y = –11 Quantity I: Value of ‘x’ = –14 Quantity II: Value of ‘y’ = –11 Quantity III: Since MP of the article = ₹1000 So, CP of the article = 1000 – 250 = ₹750 And SP of the article = 1000 – 200 = ₹800 Now, P= × 100 = 33 % And, × 100 = 20% Q= 1000 (Q – P) = 20 – 33 = –13 Hence, Quantity II > Quantity III > Quantity I",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 111,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": null,
+      "text": "Directions: In the following question, two quantities I and II are given. Compare quantity I and quantity II on its basis. (Only quantity is to be considered). Two series A and B are given below with one wrong term in series. A: 3, 8, 24, 45, 120, 168 B: 28, 42, 56, 98, 154, 182 Quantity I: Average of wrong terms of both the series. Quantity II: Difference between the next term of series A and the next term of series B.",
+      "options": [
+        {
+          "text": "Quantity I > Quantity II"
+        },
+        {
+          "text": "Quantity I < Quantity II"
+        },
+        {
+          "text": "Quantity I ≥ Quantity II"
+        },
+        {
+          "text": "Quantity I ≤ Quantity II"
+        },
+        {
+          "text": "Quantity I = Quantity II or No relation"
+        }
+      ],
+      "answer": 0,
+      "explanation": "Logic in series A: 22 − 1 = 3 32 − 1 = 8 52 − 1 = 24 72 − 1 = 48(45) 112 − 1 = 120 132 − 1 = 168 So, wrong term of the series = 45 And the next term of the series = 172 – 1 = 288 Logic in series B: 14 × 2 = 28 14 × 3 = 42 14 × 5 = 70(56) 14 × 7 = 98 14 × 11 = 154 14 × 13 = 182 So, wrong term of the series = 56 And the next term of the series = 14 × 17 = 238 Quantity I: Average of wrong terms of both the series = 45 + 56 101 = = 50.5 Quantity II: Difference between next terms of both the series = 288 – 238 = 50 Hence, Quantity I > Quantity II",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 112,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": "stim_112_115",
+      "text": "What is the total number of candidates applied in company Q?",
+      "options": [
+        {
+          "text": "450"
+        },
+        {
+          "text": "600"
+        },
+        {
+          "text": "300"
+        },
+        {
+          "text": "Can’t be determined"
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 3,
+      "explanation": "It cannot be answered.",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 113,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": "stim_112_115",
+      "text": "The number of candidates applied in company R is what percentage of the number of candidates applied in company P?",
+      "options": [
+        {
+          "text": "75%"
+        },
+        {
+          "text": "50%"
+        },
+        {
+          "text": "60%"
+        },
+        {
+          "text": "80%"
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 2,
+      "explanation": "Required percentage a = × 100 = 60% 5a",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 114,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": "stim_112_115",
+      "text": "In company P, out of the total number of candidates who got interview call 40% are female and company P allotted its posts to male and female in the ratio of 2 : 1 respectively, then find the number of females who did not get the job in company P.",
+      "options": [
+        {
+          "text": "142"
+        },
+        {
+          "text": "90"
+        },
+        {
+          "text": "62"
+        },
+        {
+          "text": "150"
+        },
+        {
+          "text": "None of these"
+        }
+      ],
+      "answer": 0,
+      "explanation": "The total number of candidates, who got interview call in company P = 360 The number of female candidates, who got interview call in company P = 360 × 0.40 = 144 The number of females, who got job in company P = × 6 = The number of females, who did not get the job in company P = 144 – 2 = 142",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 115,
+      "sectionId": "dai",
+      "sectionName": "Data Analysis & Interpretation",
+      "stimulusId": "stim_112_115",
+      "text": "If the difference between the total number of candidates applied in company P and company R is 160, then find the number of candidates, who did not get interview call from company Q.",
+      "options": [
+        {
+          "text": "900"
+        },
+        {
+          "text": "960"
+        },
+        {
+          "text": "1050"
+        },
+        {
+          "text": "600"
+        },
+        {
+          "text": "None of these GENERAL, ECONOMY/BANKING AWARENESS"
+        }
+      ],
+      "answer": 3,
+      "explanation": "According to question, 5a 2a − a= 160 ⇒ = 160 ⇒ a= 240 The total number of candidates applied in company Q = 4 × 240 = 960 The number of candidates who did not get interview call from company Q = 960 – 360 = 600",
+      "expectedTimeSec": 90,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 116,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "What is the maximum limit for UPI123 Pay and UPI Lite Wallet transactions respectively?",
+      "options": [
+        {
+          "text": "`15,000 for UPI123 Pay, `7,000 for UPI Lite Wallet"
+        },
+        {
+          "text": "`10,000 for UPI123 Pay, `5,000 for UPI Lite Wallet"
+        },
+        {
+          "text": "`12,000 for UPI123 Pay, `6,000 for UPI Lite Wallet"
+        },
+        {
+          "text": "`5,000 for UPI123 Pay, `10,000 for UPI Lite Wallet"
+        },
+        {
+          "text": "`8,000 for UPI123 Pay, `4,000 for UPI Lite Wallet"
+        }
+      ],
+      "answer": 1,
+      "explanation": "The maximum limit for UPI123 Pay and UPI Lite Wallet transactions are ₹10,000 and ₹5,000, respectively. UPI123 Pay is designed for feature phones, allowing users to make UPI payments without internet access. It works through IVR, missed calls, or appbased solutions on basic phones. UPI Lite is an on-device wallet introduced to enable fast, low-value transactions without requiring a bank’s real-time system every time.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 117,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "What is the implementation period for the National Green Hydrogen Mission (NHM)?",
+      "options": [
+        {
+          "text": "2023-2025"
+        },
+        {
+          "text": "2023-2030"
+        },
+        {
+          "text": "2024-2032"
+        },
+        {
+          "text": "2025-2030"
+        },
+        {
+          "text": "2024-2035"
+        }
+      ],
+      "answer": 1,
+      "explanation": "The implementation period for the National Green Hydrogen Mission (NHM) is 2023-2030. The National Green Hydrogen Mission (NGHM) was launched by the Government of India on January 4, 2023. Phase I focuses on creating demand, enabling supply through domestic electrolyser manufacturing, and initiating pilot projects in hard-to-abate sectors. ​ Phase II aims to make clean hydrogen cost-competitive. ​",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 118,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "Which company manufactures the Vande Bharat train in India?",
+      "options": [
+        {
+          "text": "Hindustan Aeronautics Limited (HAL)"
+        },
+        {
+          "text": "Tata Motors"
+        },
+        {
+          "text": "Integral Coach Factory (ICF)"
+        },
+        {
+          "text": "Bharat Heavy Electricals Limited (BHEL)"
+        },
+        {
+          "text": "Larsen & Toubro (L&T)"
+        }
+      ],
+      "answer": 2,
+      "explanation": "Integral Coach Factory (ICF) in Chennai manufactures the Vande Bharat train in India. ICF is a production unit under Indian Railways. It developed the first Vande Bharat indigenously under the “Make in India” initiative. The train features modern amenities, highspeed capability, and energy-efficient design.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 119,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "What is the interest rate for the Sukanya Samriddhi Scheme for the quarter from October 1, 2024, to December 31, 2024?",
+      "options": [
+        {
+          "text": "7.1%"
+        },
+        {
+          "text": "7.5%"
+        },
+        {
+          "text": "8.2%"
+        },
+        {
+          "text": "7.7%"
+        },
+        {
+          "text": "4.0%"
+        }
+      ],
+      "answer": 2,
+      "explanation": "The interest rate for the Sukanya Samriddhi Scheme for the quarter from October 1, 2024, to December 31, 2024 is 8.2%. Sukanya Samriddhi Yojana is a government-backed savings scheme meant for the parents of girl children. It is part of the Beti Bachao, Beti Padhao initiative and offers high interest rates with tax benefits, making it a great option for long-term financial planning. Minimum deposit amount is ₹250 per year.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 120,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "Where has HDFC Bank recently opened its first branch as part of its international expansion strategy?",
+      "options": [
+        {
+          "text": "Dubai"
+        },
+        {
+          "text": "London"
+        },
+        {
+          "text": "New York"
+        },
+        {
+          "text": "Singapore"
+        },
+        {
+          "text": "Tokyo"
+        }
+      ],
+      "answer": 3,
+      "explanation": "On 16th October 2024, HDFC Bank opened its first branch in Singapore. This move aligns with the bank’s goal to serve the global Indian diaspora and expand its international banking services. This move supports HDFC Bank’s vision to scale beyond Indian borders and offer world-class banking services internationally. The branch opening followed regulatory approvals from Monetary Authority of Singapore.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 121,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "What is the Return on Assets (RoA) for Scheduled Commercial Banks (SCBs) as of March 2024, according to the 29th issue of the Financial Stability Report (FSR) released by the Reserve Bank of India (RBI)?",
+      "options": [
+        {
+          "text": "1.0 percent"
+        },
+        {
+          "text": "1.3 percent"
+        },
+        {
+          "text": "1.5 percent"
+        },
+        {
+          "text": "2.0 percent"
+        },
+        {
+          "text": "2.5 percent"
+        }
+      ],
+      "answer": 1,
+      "explanation": "The Return on Assets for Scheduled Commercial Banks as of March 2024 is 1.3%. RoA is a key profitability metric that shows how efficiently a bank uses its assets to generate profit. Scheduled Commercial Banks are banks that are listed under the Second Schedule of the Reserve Bank of India Act, 1934.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 122,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "Which public sector bank recorded the highest profit in FY 2024?",
+      "options": [
+        {
+          "text": "State Bank of India"
+        },
+        {
+          "text": "Bank of Maharshtra"
+        },
+        {
+          "text": "Bank of Baroda"
+        },
+        {
+          "text": "Union Bank of India"
+        },
+        {
+          "text": "Indian Bank"
+        }
+      ],
+      "answer": 0,
+      "explanation": "State Bank of India has recorded the highest profits is the FY 2024. SBI’s net profit for Q4 FY24 was ₹20,698 crore, showing a 24% year-on-year increase. In comparison, other public sector banks reported lower net profits for the same period.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 123,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "What is India’s rank in the 2024 Global Nature Conservation Index (NCI) developed by the Goldman Sonnenfeldt School of Sustainability and Climate Change at Ben-Gurion University and BioDB.com, a biodiversity database?",
+      "options": [
+        {
+          "text": "156th"
+        },
+        {
+          "text": "167th"
+        },
+        {
+          "text": "176th"
+        },
+        {
+          "text": "178th"
+        },
+        {
+          "text": "180th"
+        }
+      ],
+      "answer": 2,
+      "explanation": "India’s rank in the 2024 Global Nature Conservation Index (NCI) is 176th. This ranking places India among the lowest in terms of nature conservation efforts, showing challenges in biodiversity preservation and environmental protection. The Global Nature Conservation Index evaluates the effectiveness of nature conservation efforts across 180 countries, focusing on several key factors. In the 2024 rankings, Luxembourg secured the top position with a score of 70.8.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 124,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "Who is the present Union Minister of Agriculture and Rural Development?",
+      "options": [
+        {
+          "text": "Narendra Singh Tomar"
+        },
+        {
+          "text": "Giriraj Singh"
+        },
+        {
+          "text": "Shivraj Singh Chauhan"
+        },
+        {
+          "text": "Manohar Lal Khattar"
+        },
+        {
+          "text": "Parshottam Rupala"
+        }
+      ],
+      "answer": 2,
+      "explanation": "Shivraj Singh Chauhan is the current Union Minister of Agriculture and Rural Development. Prior to his current role, Chouhan served as the Chief Minister of Madhya Pradesh from 2005 to 2018 and again from 2020 to 2023. Shivraj Singh Chouhan is an Indian politician from Madhya Pradesh, affiliated with the Bharatiya Janata Party.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 125,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "In November 2024, the Ministry of Railways planned to cover over 66,000 route km (rkm) out of its total network with the indigenous Automatic Train Protection (ATP) system named Kavach, by _______.",
+      "options": [
+        {
+          "text": "2025"
+        },
+        {
+          "text": "2028"
+        },
+        {
+          "text": "2027"
+        },
+        {
+          "text": "2030"
+        },
+        {
+          "text": "2035"
+        }
+      ],
+      "answer": 3,
+      "explanation": "In November 2024, the Ministry of Railways planned to equip over 66,000 route kilometers (rkm) of its network with the indigenous Automatic Train Protection system named Kavach by 2030. The Kavach system is an indigenous Automatic Train Protection technology developed by Indian Railways to enhance train safety by preventing collisions through continuous monitoring and automatic braking if necessary.​ As of April 2022, Kavach was implemented on 1,445 route kilometers and 144 locomotives in the South Central Railway zone. Approximately ₹50 lakh…",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 126,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "What is the Paid-up- Capital of the Reserve Bank of India?",
+      "options": [
+        {
+          "text": "5 crore"
+        },
+        {
+          "text": "10 crore"
+        },
+        {
+          "text": "15 crore"
+        },
+        {
+          "text": "20 crore"
+        },
+        {
+          "text": "50 crore"
+        }
+      ],
+      "answer": 0,
+      "explanation": "The Paid-up- Capital of the Reserve Bank of India is ₹5 crore. This was set at the time of its establishment in 1935. Initially, private shareholders held the majority of these shares, with the central government subscribing to a smaller portion.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 127,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "Under Basel III, what is the minimum Common Equity Tier 1 (CET1) capital requirement for banks in India?",
+      "options": [
+        {
+          "text": "4.5%"
+        },
+        {
+          "text": "6%"
+        },
+        {
+          "text": "8%"
+        },
+        {
+          "text": "10.5%"
+        },
+        {
+          "text": "12%"
+        }
+      ],
+      "answer": 2,
+      "explanation": "Under Basel III, the minimum Common Equity Tier 1 (CET1) capital requirement for banks in India is 8%. Regulators may impose a capital conservation buffer, typically set at 2.5% of RWAs, to ensure banks build up capital during periods of economic stability that can be used during periods of stress. Banks are required to maintain a minimum CET1 ratio of 5.5% of risk-weighted asset. In addition to the minimum CET1 requirement, banks should also maintain a CCB of 2.5% of RWAs, also in the form of CET1 capital.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 128,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "Where will the Hockey Women’s Asian Champions Trophy 2024 be held?",
+      "options": [
+        {
+          "text": "Ranchi, Jharkhand"
+        },
+        {
+          "text": "New Delhi, India"
+        },
+        {
+          "text": "Rajgir, Bihar"
+        },
+        {
+          "text": "Bangalore, Karnataka"
+        },
+        {
+          "text": "Mumbai, Maharashtra"
+        }
+      ],
+      "answer": 2,
+      "explanation": "The Hockey Women’s Asian Champions Trophy 2024 was held at Rajgir, Bihar. The tournament took place at the newly developed Rajgir Hockey Stadium. India won the gold medal by defeating China 1-0 in the final match. The Hockey Women’s Asian Champions Trophy is a premier field hockey tournament organized by the Asian Hockey Federation.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 129,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "The maximum limit of SLR in India is _______.",
+      "options": [
+        {
+          "text": "40%"
+        },
+        {
+          "text": "20%"
+        },
+        {
+          "text": "25%"
+        },
+        {
+          "text": "36%"
+        },
+        {
+          "text": "50%"
+        }
+      ],
+      "answer": 0,
+      "explanation": "The maximum limit of SLR in India is 40%. SLR is the minimum percentage of a commercial bank’s net demand and time liabilities that it should maintain in the form of liquid assets like cash, gold, or approved government securities. SLR is an important monetary tool to ensure the solvency of banks and control money supply in the economy.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 130,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "In India, what percentage is set as the Priority Sector Lending (PSL) goal for Small Finance Banks (SFBs)?",
+      "options": [
+        {
+          "text": "50%"
+        },
+        {
+          "text": "60%"
+        },
+        {
+          "text": "65%"
+        },
+        {
+          "text": "75%"
+        },
+        {
+          "text": "80%"
+        }
+      ],
+      "answer": 3,
+      "explanation": "In India, the percentage set as the Priority Sector Lending goal for Small Finance Banks is 75%. SFBs are required to allocate 75% of their lending to sectors categorized as priority by the Reserve Bank of India, such as agriculture, micro, small and medium enterprises, and others. This is higher than the target for other commercial banks, which is typically 40% of ANBC. ​ Priority Sector Lending is an important initiative by the Reserve Bank of India to ensure that vulnerable and under-served sections of the economy get adequate credit…",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 131,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "Which of the following banks has recently unveiled a research study named ‘Of the Women, By the Women, For the NATION’ highlighting the evolving dynamics of Self-Help Groups (SHGs) in India and delves into the patterns of credit utilisation and digital behaviours among SHGs, their members, and the emerging group known as ‘Lakhpati Didis’?",
+      "options": [
+        {
+          "text": "State Bank of India"
+        },
+        {
+          "text": "Indian Bank"
+        },
+        {
+          "text": "Union Bank of India"
+        },
+        {
+          "text": "Canara Bank"
+        },
+        {
+          "text": "Bank of Baroda"
+        }
+      ],
+      "answer": 0,
+      "explanation": "State Bank of India has recently unveiled a research study named ‘Of the Women, By the Women, For the NATION’. The study highlights the rise of ‘Lakhpati Didis’ - women SHG members whose income has reached or crossed ₹1 lakh annually. Over 65% of SHG women have transitioned to become ‘Lakhpati Didis’, indicating rising financial independence and economic empowerment. This study focuses on the transformative impact of SHGs on rural women and highlights SBI’s role in supporting financial inclusion.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 132,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "Railway Minister Ashwini Vaishnaw reviewed the trial of the Automatic Train Protection System, ‘Kavach’, and oversaw the upgrades made to the system. In how many different emergency situations did the Kavach system function as expected during the trial?",
+      "options": [
+        {
+          "text": "3"
+        },
+        {
+          "text": "5"
+        },
+        {
+          "text": "7"
+        },
+        {
+          "text": "10"
+        },
+        {
+          "text": "4"
+        }
+      ],
+      "answer": 2,
+      "explanation": "The Kavach system functioned as expected during the trial in 7 different emergency situations. The system functioned as expected, demonstrating its effectiveness in enhancing railway safety. Kavach uses an automatic train protection system that helps prevent collisions by automatically stopping the train if it detects an obstacle or if the train is about to breach signals. Kavach is integrated with the signaling system of Indian Railways, ensuring that trains receive alerts about signal violations or other critical safety issues.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 133,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "What action has the RBI instructed the four NBFCs—Asirvad Micro Finance Ltd, Arohan Financial Services Ltd, DMI Finance Pvt Ltd, and Navi Finserv Ltd— to take as part of the imposed restrictions?",
+      "options": [
+        {
+          "text": "Halt loan recovery operations"
+        },
+        {
+          "text": "Cease and desist from sanctioning and disbursing loans"
+        },
+        {
+          "text": "Shut down their operations permanently"
+        },
+        {
+          "text": "Reduce interest rates on existing loans"
+        },
+        {
+          "text": "Merge with larger NBFCs"
+        }
+      ],
+      "answer": 1,
+      "explanation": "The RBI instructed the four NBFCs to cease and desist from sanctioning and disbursing loans to take as part of the imposed restrictions. This action was taken due to concerns over their excessive interest rates and noncompliance with regulatory guidelines. The restrictions were effective from October 21, 2024, but the companies were allowed to continue servicing existing customers and conducting collection and recovery processes.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 134,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "What is the name of the new large language model (LLM) introduced by Meta at Meta Connect 2024?",
+      "options": [
+        {
+          "text": "Llama 3.0"
+        },
+        {
+          "text": "Llama 3.2"
+        },
+        {
+          "text": "Llama Vision"
+        },
+        {
+          "text": "Llama AI"
+        },
+        {
+          "text": "Meta Vision Llama"
+        }
+      ],
+      "answer": 1,
+      "explanation": "Llama 3.2 is the name of the new large language model (LLM) introduced by Meta at Meta Connect 2024. This model represents a significant advancement in AI, capable of processing both text and images. Llama 3.2 can interpret and generate both textual and visual content, facilitating applications such as real-time image analysis, visual search engines. Recognizing the importance of mobile platforms, Meta has optimized lighter versions of Llama 3.2.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 135,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "What is the new position limit for trading members in index futures and options as announced by SEBI?",
+      "options": [
+        {
+          "text": "`5,000 crore or 10% of total open interest, whichever is higher"
+        },
+        {
+          "text": "`7,500 crore or 15% of total open interest, whichever is higher"
+        },
+        {
+          "text": "`6,000 crore or 12% of total open interest, whichever is higher"
+        },
+        {
+          "text": "`7,000 crore or 14% of total open interest, whichever is higher"
+        },
+        {
+          "text": "`7,500 crore or 20% of total open interest, whichever is higher"
+        }
+      ],
+      "answer": 1,
+      "explanation": "The new position limit for trading members in index futures and options as announced by SEBI is ₹7,500 crore or 15% of total open interest, whichever is higher. This change aims to improve market stability and ensure a more orderly trading environment. Starting from April 1, 2025, SEBI will implement intraday monitoring of these position limits, though no penalties will be imposed for any breaches during this initial phase.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 136,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "India and which country signed a Memorandum of Implementation (MoI) for the co-development of the UNICORN (Unified Complex Radio Antenna) mast designed to enhance the stealth characteristics of warships and will be fitted on Indian Naval warships?",
+      "options": [
+        {
+          "text": "Japan"
+        },
+        {
+          "text": "Germany"
+        },
+        {
+          "text": "Australia"
+        },
+        {
+          "text": "Spain"
+        },
+        {
+          "text": "France"
+        }
+      ],
+      "answer": 0,
+      "explanation": "India and Japan signed a Memorandum of Implementation for the co-development of the UNICORN mast. This collaboration marks the first instance of co-development and co-production of defense equipment between the two countries. The UNICORN mast integrates multiple communication systems into a single, streamlined design, enhancing the stealth characteristics of naval platforms by reducing their radar cross-section.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 137,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "What is the loan amount provided by the International Finance Corporation (IFC) to Axis Bank for blue finance and green projects in India?",
+      "options": [
+        {
+          "text": "$300 million"
+        },
+        {
+          "text": "$400 million"
+        },
+        {
+          "text": "$500 million"
+        },
+        {
+          "text": "$600 million"
+        },
+        {
+          "text": "$700 million"
+        }
+      ],
+      "answer": 2,
+      "explanation": "The loan amount provided by the International Finance Corporation (IFC) to Axis Bank for blue finance and green projects in India was $500 million. This collaboration marks IFC’s first blue investment in India and represents the largest green financing initiative by IFC in the country to date. ​ The loan is designed to fund investments in areas such as water and wastewater management, reduction of marine plastic pollution and restoration of marine ecosystems. In addition to blue finance, the funding will support green projects, including the…",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 138,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "What is the total outlay approved by the Union Cabinet for the seven schemes aimed at improving farmers’ lives?",
+      "options": [
+        {
+          "text": "`10,500 crore"
+        },
+        {
+          "text": "`12,000 crore"
+        },
+        {
+          "text": "`14,235.30 crore"
+        },
+        {
+          "text": "`16,500 crore"
+        },
+        {
+          "text": "`20,000 crore"
+        }
+      ],
+      "answer": 2,
+      "explanation": "The total outlay approved by the Union Cabinet for the seven schemes aimed at improving farmers’ lives is Rs. 14235.30 crore. Allocated ₹2,817 crore, this mission leverages technology to improve farmers’ lives, focusing on creating an Agri Stack and a Krishi Decision Support System.​ EPFO is a statutory body under the Ministry of Labour and Employment, Government of India, and is not a financial sector regulator.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 140,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "The India Space Research Organization’s Pushpak mission is associated with _______.",
+      "options": [
+        {
+          "text": "Developing a manned lunar exploration program"
+        },
+        {
+          "text": "Establishing a space station"
+        },
+        {
+          "text": "Developing a reusable launch vehicle (RLV)"
+        },
+        {
+          "text": "Building interplanetary spacecraft"
+        },
+        {
+          "text": "Conducting Mars and Venus exploration"
+        }
+      ],
+      "answer": 2,
+      "explanation": "The India Space Research Organization’s Pushpak mission is associated with developing a reusable launch vehicle (RLV). The Pushpak mission is part of ISRO’s RLV Technology Demonstration Programme. The main focus of the mission is to demonstrate key technologies such as hypersonic flight and autonomous landing, which are crucial for the development of a reusable launch vehicle.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 141,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "As per the guidelines of the Reserve Bank of India, what is the ongoing minimum percentage for the Capital to Risk-weighted Assets Ratio (CRAR) that Cooperative Banks (UCBs) must uphold?",
+      "options": [
+        {
+          "text": "3 percent"
+        },
+        {
+          "text": "5 percent"
+        },
+        {
+          "text": "6 percent"
+        },
+        {
+          "text": "7 percent"
+        },
+        {
+          "text": "9 percent"
+        }
+      ],
+      "answer": 4,
+      "explanation": "As per the guidelines of the Reserve Bank of India, the ongoing minimum percentage for the Capital to Riskweighted Assets Ratio that Cooperative Banks need to hold is 9%. This requirement ensures financial stability and protects depositors by making sure banks maintain sufficient capital relative to their risk-weighted assets. Tier 2 to Tier 4 UCBs are required to maintain a minimum CRAR of 12%.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 142,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "Gross Merchandise Value (GMV) of the Government e-Marketplace (GeM) during the financial year FY24 was `4 trillion. What percentage of the total order value on GeM during FY24 was contributed by Micro and Small Enterprise (MSE) sellers?",
+      "options": [
+        {
+          "text": "25.63%"
+        },
+        {
+          "text": "35.71%"
+        },
+        {
+          "text": "45.82%"
+        },
+        {
+          "text": "49.37%"
+        },
+        {
+          "text": "55.24%"
+        }
+      ],
+      "answer": 3,
+      "explanation": "49.37% of the total order value on GeM during FY24 was contributed by Micro and Small Enterprise (MSE) sellers. This is nearly half the total procurement volume, which not only highlights the growing participation of small businesses but also the government’s push to empower MSEs through digital procurement. This significant contribution underscores the key role MSEs play in public procurement through the GeM platform.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 143,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "Which among the following is not one of the promoters of the National Centre for Financial Education (NCFE), created for the promotion of financial education across India as per the National Strategy of Financial Education?",
+      "options": [
+        {
+          "text": "Reserve Bank of India (RBI)"
+        },
+        {
+          "text": "Securities and Exchange Board of India (SEBI)"
+        },
+        {
+          "text": "Insurance Regulatory and Development Authority of India (IRDAI)"
+        },
+        {
+          "text": "Pension Fund Regulatory and Development Authority (PFRDA)"
+        },
+        {
+          "text": "Employees’ Provident Fund Organization."
+        }
+      ],
+      "answer": 4,
+      "explanation": "Employees’ Provident Fund Organization is not one of the promoters of the National Centre for Financial Education (NCFE). The National Centre for Financial Education (NCFE) is promoted by the following financial sector regulators Reserve Bank of India, Securities and Exchange Board of India, Insurance Regulatory and Development Authority of India and Pension Fund Regulatory and Development Authority.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 144,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "What company has received approval for its merger with North East Small Finance Bank (NESFB)?",
+      "options": [
+        {
+          "text": "Razorpay"
+        },
+        {
+          "text": "Paytm"
+        },
+        {
+          "text": "Slice"
+        },
+        {
+          "text": "PhonePe"
+        },
+        {
+          "text": "Zomato"
+        }
+      ],
+      "answer": 2,
+      "explanation": "Slice has received approval for its merger with North East Small Finance Bank. The merger was completed on October 27, 2024, following approvals from the Reserve Bank of India, the National Company Law Tribunal, and the Competition Commission of India. ​ This strategic move allows Slice, a Bengaluru-based fintech startup, to transition into a full-fledged banking institution.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 145,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "Which of the following is NOT one of the five pillars of the Reserve Bank of India’s (RBI) Payments Vision 2025?",
+      "options": [
+        {
+          "text": "Integrity"
+        },
+        {
+          "text": "Innovation"
+        },
+        {
+          "text": "Internationalization"
+        },
+        {
+          "text": "Incorporation"
+        },
+        {
+          "text": "Institutionalisation"
+        }
+      ],
+      "answer": 3,
+      "explanation": "Incorporation is not one of the five pillars of the Reserve Bank of India’s (RBI) Payments Vision 2025. The pillars aim to transform India into a global leader in digital payments by focusing on security, accessibility, technological advancement, strong institutional frameworks, and international reach. The Reserve Bank of India’s Payments Vision 2025 is a strategic framework released in June 2022, aiming to enhance the digital payment ecosystem in India.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 146,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "What is the expected launch timeline for India’s Venus Orbiter Mission (VOM) unofficially referred to as “Shukrayaan”?",
+      "options": [
+        {
+          "text": "March 2024"
+        },
+        {
+          "text": "March 2025"
+        },
+        {
+          "text": "March 2028"
+        },
+        {
+          "text": "June 2029"
+        },
+        {
+          "text": "September 2030"
+        }
+      ],
+      "answer": 2,
+      "explanation": "The expected launch date for India’s Venus Orbiter Mission (VOM) unofficially referred to as “Shukrayaan” is March 2028. The mission is expected to reach Venusian orbit on 19 July 2028, following a 112day interplanetary journey. The mission will be launched from Satish Dhawan Space Centre (SDSC), Sriharikota. Launch Vehicle Mark-3 (LVM3) will be the launch vehicle for the mission.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 147,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "As per the Reserve Bank of India (RBI) regulations, the minimum Net Owned Fund (NOF) requirement for NBFC-Micro Finance Institutions (NBFC-MFIs) is:",
+      "options": [
+        {
+          "text": "`2 Crore"
+        },
+        {
+          "text": "`3 Crore"
+        },
+        {
+          "text": "`5 Crore"
+        },
+        {
+          "text": "`7 Crore"
+        },
+        {
+          "text": "`10 Crore"
+        }
+      ],
+      "answer": 4,
+      "explanation": "As per the Reserve Bank of India (RBI) regulations, the minimum Net Owned Fund (NOF) requirement for NBFCMicro Finance Institutions (NBFC-MFIs) is ₹10 crore with effect from October 01, 2022. This change was made to strengthen the NBFC sector and align it more closely with evolving risks and financial stability concerns.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 148,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "Who is the director of the film “Laapataa Ladies”, India’s official entry for the Oscars?",
+      "options": [
+        {
+          "text": "Kiran Rao"
+        },
+        {
+          "text": "Amir Khan"
+        },
+        {
+          "text": "Karan Johar"
+        },
+        {
+          "text": "Rajkumar Hirani"
+        },
+        {
+          "text": "Frahan Akhtar"
+        }
+      ],
+      "answer": 0,
+      "explanation": "Kiran Rao is the director of the film “Laapataa Ladies”. This marks her return to directing after her debut with Dhobi Ghat in 2011. The movie has received critical acclaim and won multiple awards, including Best Picture and Best Direction at the 2025 International Indian Film Academy Awards. Born on November 7, 1973, in Bangalore, India, Kiran Rao is an Indian film director, screenwriter, and producer known for her significant contributions to Hindi cinema.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 149,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "Which has become the first foreign university to receive approval of the International Financial Services Centres Authority (IFSCA) to set up an International Branch Campus (IBC) in GIFT-IFSC, GIFT City, Gujarat?",
+      "options": [
+        {
+          "text": "Deakin University, Australia"
+        },
+        {
+          "text": "National University of Singapore (NUS)"
+        },
+        {
+          "text": "Tokyo University, Japan"
+        },
+        {
+          "text": "RMIT University"
+        },
+        {
+          "text": "Bandung Institute of Technology, Indonesia"
+        }
+      ],
+      "answer": 0,
+      "explanation": "Deakin University, Australia has become the first foreign university to receive approval of the International Financial Services Centres Authority. Deakin’s campus in GIFT City is set to offer the same degree programs as its Australian campuses, particularly in fields like science, technology, engineering, mathematics, and financial management. This initiative aligns with India’s broader strategy to attract top global universities to GIFT City.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 150,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "Which state is the top performer in terms of the number of micro, small, and medium enterprises (MSMEs) in India as of March 2024?",
+      "options": [
+        {
+          "text": "Uttar Pradesh"
+        },
+        {
+          "text": "Maharashtra"
+        },
+        {
+          "text": "Tamil Nadu"
+        },
+        {
+          "text": "Gujarat"
+        },
+        {
+          "text": "Rajasthan"
+        }
+      ],
+      "answer": 1,
+      "explanation": "Maharashtra is the top performer in terms of the number of micro, small, and medium enterprises (MSMEs) in India as of March 2024. With around 17% of the total MSMEs, Maharashtra is followed by Tamil Nadu. The Ministry of MSMEs manages various schemes in order to provide credit and financial assistance to MSMEs.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 151,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "Consider the following statements regarding budget allocation for Renewable Energy:",
+      "options": [
+        {
+          "text": "I and II only"
+        },
+        {
+          "text": "I and III only"
+        },
+        {
+          "text": "II and III only"
+        },
+        {
+          "text": "All I, II and III"
+        },
+        {
+          "text": "I only"
+        }
+      ],
+      "answer": 3,
+      "explanation": "Statements 1, 2 and 3 are correct. The Union Budget 2024-25 allocated ₹19,100 crore to the Ministry of New and Renewable Energy (MNRE), marking a significant increase from the previous year’s revised estimate of ₹7,928.89 crore. The 2024-25 Interim Budget provided for a budgetary allocation of ₹10,000 crore to solar power grid projects in FY2025 BE, which is a massive 110 per cent increase from ₹4,757 crore allocated in FY2024 Revised Estimates, according to the Expenditure Budget document for 202425 The PM Surya Ghar Muft Bijli Yojana was…",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 153,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "What does the “R” in LIDAR stand for?",
+      "options": [
+        {
+          "text": "Radar"
+        },
+        {
+          "text": "Reflection"
+        },
+        {
+          "text": "Recognition"
+        },
+        {
+          "text": "Remote"
+        },
+        {
+          "text": "Ranging"
+        }
+      ],
+      "answer": 4,
+      "explanation": "The “R” in LIDAR stand for ranging. LIDAR stands for Light Detection and Ranging. It’s a remote sensing method that uses laser light to measure distances to a target.   The term Ranging describes the process of calculating the distance between the sensor and an object based on the time it takes for the light to bounce back.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 154,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "What is the minimum capital requirement for setting up a Small Finance Bank (SFB) in India?",
+      "options": [
+        {
+          "text": "₹50 crore"
+        },
+        {
+          "text": "₹100 crore"
+        },
+        {
+          "text": "₹200 crore"
+        },
+        {
+          "text": "₹500 crore"
+        },
+        {
+          "text": "₹1000 crore"
+        }
+      ],
+      "answer": 2,
+      "explanation": "The Reserve Bank of India (RBI) has set the minimum paid-up capital requirement for establishing a Small Finance Bank (SFB) in India at ₹200 crore. The capital must be in the form of paid-up equity capital. Promoters must contribute at least 40% of the paid-up capital initially. This move aims to strengthen the foundation of new SFBs and ensure their long-term viability.",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    },
+    {
+      "number": 155,
+      "sectionId": "ga",
+      "sectionName": "General, Economy & Banking Awareness",
+      "stimulusId": null,
+      "text": "Which company has secured orders from two regional banks — Kerala Gramin Bank and Karnataka Gramin Bank — for its banking Superapp and digital transformation?",
+      "options": [
+        {
+          "text": "NASSCOM"
+        },
+        {
+          "text": "World Trade Organization (WTO)"
+        },
+        {
+          "text": "International Chamber of Commerce (ICC)   "
+        },
+        {
+          "text": "Wipro Limited"
+        },
+        {
+          "text": "HCL Technologies 152. ‘Incoterms’, the short form of International Commercial Terms, is a registered trademark of the _______, comprising a standardized set of terms/rules used in E-Commerce/Trade."
+        }
+      ],
+      "answer": 0,
+      "explanation": "Network People Services Technologies Limited (NPST) has secured orders from two Kerala Gramin Bank and Karnataka Gramin Bank for its banking Superapp and digital transformation. The SuperApp is designed to deliver modern, engaging banking and transactional experiences tailored to the needs of customers in rural and semiurban areas. NPST’s platform integrates a wide array of services, including onboarding, everyday banking and payment transactions and credit products. ",
+      "expectedTimeSec": 30,
+      "difficulty": "Moderate"
+    }
+  ],
+  "report": {
+    "detected": 154,
+    "imported": 147,
+    "withStimulus": 85,
+    "withExplanation": 147,
+    "fiveOption": 147,
+    "needsReview": 7,
+    "review": [
+      {
+        "number": 24,
+        "section": "Reasoning & Computer Aptitude",
+        "problems": [
+          "contains formula/diagram content that pdftotext mangles — re-enter by hand or attach an image"
+        ],
+        "stemPreview": "Which element is 7 to the left of 21 element from the left end after, applying step IV in "
+      },
+      {
+        "number": 45,
+        "section": "Reasoning & Computer Aptitude",
+        "problems": [
+          "contains formula/diagram content that pdftotext mangles — re-enter by hand or attach an image"
+        ],
+        "stemPreview": "Which of the following group/groups is/are seated between Red group and Violet group?"
+      },
+      {
+        "number": 83,
+        "section": "Data Analysis & Interpretation",
+        "problems": [
+          "only 2 options found",
+          "an option is empty",
+          "contains formula/diagram content that pdftotext mangles — re-enter by hand or attach an image"
+        ],
+        "stemPreview": "What is the value of largest root of equation 6x2 + 29x + P = 0?"
+      },
+      {
+        "number": 85,
+        "section": "Data Analysis & Interpretation",
+        "problems": [
+          "only 0 options found",
+          "key says (b) but that option was not parsed"
+        ],
+        "stemPreview": "The container X contains 140 liters pure milk."
+      },
+      {
+        "number": 96,
+        "section": "Data Analysis & Interpretation",
+        "problems": [
+          "an option is empty"
+        ],
+        "stemPreview": "If marked price of T is `80 less than cost price of R, which is sold  5L  after discount"
+      },
+      {
+        "number": 100,
+        "section": "Data Analysis & Interpretation",
+        "problems": [
+          "only 0 options found",
+          "an option is empty",
+          "key says (b) but that option was not parsed"
+        ],
+        "stemPreview": "In pouch B, 25% of candies are rotten in which one-third is caramel flavor. If two candies"
+      },
+      {
+        "number": 139,
+        "section": "General, Economy & Banking Awareness",
+        "problems": [
+          "contains formula/diagram content that pdftotext mangles — re-enter by hand or attach an image"
+        ],
+        "stemPreview": "What is the prize money for the Booker Prize 2024?"
+      }
+    ]
+  }
+}

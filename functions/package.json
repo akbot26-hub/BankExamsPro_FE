@@ -1,0 +1,16 @@
+{
+  "name": "bankexamspro-functions",
+  "private": true,
+  "type": "module",
+  "engines": { "node": "22" },
+  "main": "index.js",
+  "scripts": {
+    "sync": "node sync.mjs"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-functions": "^6.1.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
