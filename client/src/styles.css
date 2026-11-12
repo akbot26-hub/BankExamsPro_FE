@@ -444,5 +444,7 @@ body { background: #f5f7fb; color: #172033; }
 .login-form .field input,.login-form .ui-field input { background: #f8fafc; border-radius: 7px; }
 .login-form .primary,.login-form .ui-button-primary { border-radius: 7px; padding: 12px; }
 .login-form .hint { border-radius: 8px; }
+.demo-login-actions { display: flex; gap: 8px; margin: 8px 0; }
+.demo-login-actions .ui-button { flex: 1; padding: 8px 9px; }
 .login-page:after { content: 'Prepare with confidence\\A Real exam interface\\A Performance analytics\\A Distraction-free environment'; white-space: pre-line; position: absolute; left: calc(50% + 54px); top: 50%; transform: translateY(-38%); color: #40516e; line-height: 2.4; font-size: 14px; }
 @media(max-width:700px) { .login-pitch { display: none; } .login-page { padding: 24px 14px; } .login-form .inner { padding: 26px 20px; } .login-page:after { display: none; } }

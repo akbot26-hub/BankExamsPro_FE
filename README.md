@@ -36,11 +36,7 @@ Sign-in is **OTP-only** — there are no passwords anywhere on the platform. Ent
 email or mobile number, receive a 6-digit code, done. New identifiers register inline
 by adding a name.
 
-No SMS or email gateway is wired in this build, so the code is delivered in **dev
-mode**: printed on the server console and shown on the sign-in screen. The gateway
-seam is one function (`sendOtp()` in `server/src/routes/catalog.js`) — point it at
-MSG91, Twilio or SES and stop returning `devOtp` to go live. Codes expire in 5
-minutes, allow 5 wrong attempts, and resend after a 45-second cooldown.
+No SMS or email gateway is wired in this build. Local development uses the fixed demo OTP `123456` for the two seeded demo accounts below; other accounts receive a random code printed to the server console and shown on the sign-in screen. The fixed demo OTP is disabled when `NODE_ENV=production`. Connect the gateway seam in `sendOtp()` to an OTP provider before going live. Codes expire in 5 minutes, allow 5 wrong attempts, and resend after a 45-second cooldown.
 
 | Role    | Request an OTP for        | What you land in                         |
 |---------|---------------------------|-------------------------------------------|

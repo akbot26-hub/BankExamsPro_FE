@@ -13,6 +13,8 @@ export const authRouter = Router();
 const OTP_TTL_MS = 5 * 60 * 1000;
 const OTP_RESEND_MS = 45 * 1000;
 const OTP_MAX_TRIES = 5;
+const DEMO_OTP = '123456';
+const DEMO_EMAILS = new Set(['arjun@student.in', 'admin@bankexamspro.in']);
 
 const normalise = (v) => String(v || '').trim().toLowerCase();
 const isPhone = (v) => /^[0-9+\s-]{8,15}$/.test(v);
@@ -68,7 +70,9 @@ authRouter.post('/request-otp', (req, res) => {
     return res.status(429).json({ error: `An OTP was just sent. You can request another in ${wait} seconds.` });
   }
 
-  const code = String(Math.floor(100000 + Math.random() * 900000));
+  const isLocalDemoLogin = process.env.NODE_ENV !== 'production'
+    && DEMO_EMAILS.has(String(user.email || '').toLowerCase());
+  const code = isLocalDemoLogin ? DEMO_OTP : String(Math.floor(100000 + Math.random() * 900000));
   store.otps = store.otps.filter((o) => o.userId !== user.id);
   store.otps.push({
     userId: user.id,

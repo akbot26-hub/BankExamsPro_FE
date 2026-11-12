@@ -79,6 +79,22 @@ export default function Login() {
     }
   }
 
+  async function loginDemo(demoIdentifier) {
+    setBusy(true);
+    setError('');
+    try {
+      // Create the pending OTP first so this uses the same server auth flow.
+      await api('/auth/request-otp', { method: 'POST', body: { identifier: demoIdentifier } });
+      await signInWithOtp(demoIdentifier, '123456');
+      toast.success('Signed in successfully');
+      navigate('/');
+    } catch (err) {
+      setError(err.message || 'Could not sign in. Make sure the API is running and demo data is seeded.');
+    } finally {
+      setBusy(false);
+    }
+  }
+
   return (
     <div className="login-page">
       <section className="login-pitch">
@@ -120,12 +136,12 @@ export default function Login() {
                 </Button>
               </form>
               <div className="hint">
-                <b>Demo accounts</b> — request an OTP for either:<br />
-                <a href="#" onClick={(e) => { e.preventDefault(); setIdentifier('arjun@student.in'); setNeedsName(false); }}>
-                  <code>arjun@student.in</code></a> — student, 7 mocks submitted<br />
-                <a href="#" onClick={(e) => { e.preventDefault(); setIdentifier('admin@bankexamspro.in'); setNeedsName(false); }}>
-                  <code>admin@bankexamspro.in</code></a> — administrator<br />
-                No SMS gateway is connected in this build, so the code appears on screen.
+                <b>Demo login</b> (local development only)<br />
+                <div className="demo-login-actions">
+                  <Button disabled={busy} onClick={() => loginDemo('arjun@student.in')}>Login as Student</Button>
+                  <Button disabled={busy} onClick={() => loginDemo('admin@bankexamspro.in')}>Login as Admin</Button>
+                </div>
+                <span>Or enter <code>arjun@student.in</code> and use OTP <code>123456</code>.</span>
               </div>
             </>
           ) : (
