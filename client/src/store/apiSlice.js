@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import { getToken } from '../api.js';
+import { getToken, MOCK_API, mockApi } from '../api.js';
 
 const baseQuery = fetchBaseQuery({
   baseUrl: import.meta.env.VITE_API_URL || '/api',
@@ -11,9 +11,23 @@ const baseQuery = fetchBaseQuery({
   },
 });
 
+const appBaseQuery = async (args, api, extraOptions) => {
+  if (MOCK_API) {
+    try {
+      const url = typeof args === 'string' ? args : args.url;
+      const method = typeof args === 'string' ? 'GET' : args.method || 'GET';
+      const body = typeof args === 'string' ? undefined : args.body;
+      return { data: await mockApi(url, { method, body }) };
+    } catch (error) {
+      return { error: { status: error.status || 500, data: { error: error.message } } };
+    }
+  }
+  return baseQuery(args, api, extraOptions);
+};
+
 export const apiSlice = createApi({
   reducerPath: 'api',
-  baseQuery,
+  baseQuery: appBaseQuery,
   tagTypes: ['Exams', 'Exam', 'Attempt', 'Admin'],
   endpoints: (builder) => ({
     getExams: builder.query({ query: () => '/exams', providesTags: ['Exams'] }),

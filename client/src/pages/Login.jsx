@@ -8,11 +8,11 @@ import { api } from '../api.js';
 import { useAuth } from '../auth.jsx';
 import { FormField, Button } from '../components/ui.jsx';
 
-const identitySchema = yup.object({ identifier: yup.string().trim().required('Enter your email or mobile number').test('contact', 'Enter a valid email or 10 digit mobile number', (value) => !value || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) || /^[+\d][\d\s()-]{8,15}$/.test(value)), name: yup.string() });
+const identitySchema = yup.object({ identifier: yup.string().trim().required('Enter your email or mobile number').test('contact', 'Enter a valid email or 10 digit mobile number', (value) => !value || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) || /^[+\d][\d\s()-]{8,15}$/.test(value)), name: yup.string().when('$needsName', { is: true, then: (schema) => schema.trim().required('Enter your full name') }) });
 const codeSchema = yup.object({ code: yup.string().matches(/^\d{6}$/, 'Enter the 6 digit code').required('Enter the 6 digit code') });
 
 export default function Login() {
-  const { user, signInWithOtp } = useAuth();
+  const { user, signInWithOtp, enterPreview } = useAuth();
   const navigate = useNavigate();
 
   const [step, setStep] = useState('identify');       // identify → verify
@@ -89,10 +89,25 @@ export default function Login() {
       toast.success('Signed in successfully');
       navigate('/');
     } catch (err) {
-      setError(err.message || 'Could not sign in. Make sure the API is running and demo data is seeded.');
+      if (import.meta.env.DEV) {
+        enterPreview();
+        navigate('/');
+      } else {
+        setError(err.message || 'Could not sign in.');
+      }
     } finally {
       setBusy(false);
     }
+  }
+
+  function submitIdentity(event) {
+    const value = identityForm.getValues('identifier')?.trim();
+    if (import.meta.env.DEV && !value) {
+      event.preventDefault();
+      loginDemo('arjun@student.in');
+      return;
+    }
+    identityForm.handleSubmit(requestOtp)(event);
   }
 
   return (
@@ -126,13 +141,13 @@ export default function Login() {
                 No passwords on this platform.
               </p>
               {error && <div className="notice error">{error}</div>}
-              <form onSubmit={identityForm.handleSubmit(requestOtp)} style={{ marginTop: 16 }} noValidate>
+              <form onSubmit={submitIdentity} style={{ marginTop: 16 }} noValidate>
                 <FormField id="identifier" label="Email or mobile number" placeholder="you@example.com or 98765 43210" autoComplete="username" inputMode="email" {...identityForm.register('identifier', { onChange: (e) => { setIdentifier(e.target.value); setNeedsName(false); } })} error={identityForm.formState.errors.identifier?.message} />
                 {needsName && (
                   <FormField id="name" label="Your full name (new account)" placeholder="As it should appear on your admit card" autoComplete="name" {...identityForm.register('name')} error={identityForm.formState.errors.name?.message} />
                 )}
                 <Button type="submit" variant="primary" style={{ width: '100%', justifyContent: 'center' }} disabled={busy}>
-                  {busy ? 'Sending…' : needsName ? 'Register and send OTP' : 'Send OTP'}
+                  {busy ? 'Opening…' : !identifier.trim() && import.meta.env.DEV ? 'Open app preview' : needsName ? 'Register and send OTP' : 'Send OTP'}
                 </Button>
               </form>
               <div className="hint">
@@ -166,7 +181,7 @@ export default function Login() {
               <p className="muted" style={{ marginTop: 14, fontSize: 13 }}>
                 {cooldown > 0
                   ? `You can request a new code in ${cooldown}s.`
-                  : <a href="#" onClick={(e) => { e.preventDefault(); requestOtp(); }}>Send a new code</a>}
+                  : <a href="#" onClick={(e) => { e.preventDefault(); identityForm.handleSubmit(requestOtp)(); }}>Send a new code</a>}
                 {' · '}
                 <a href="#" onClick={(e) => { e.preventDefault(); setStep('identify'); setError(''); }}>Change email or number</a>
               </p>

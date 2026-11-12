@@ -5,7 +5,10 @@ const AuthContext = createContext(null);
 export const useAuth = () => useContext(AuthContext);
 
 export function AuthProvider({ children }) {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(() => {
+    if (!import.meta.env.DEV) return null;
+    try { return JSON.parse(sessionStorage.getItem('bxp_preview_user') || 'null'); } catch { return null; }
+  });
   const [loading, setLoading] = useState(Boolean(getToken()));
 
   useEffect(() => {
@@ -27,7 +30,22 @@ export function AuthProvider({ children }) {
     },
     signOut() {
       setToken(null);
+      try { sessionStorage.removeItem('bxp_preview_user'); } catch { /* noop */ }
       setUser(null);
+    },
+    enterPreview() {
+      if (!import.meta.env.DEV) throw new Error('Preview sign-in is only available in development.');
+      const previewUser = {
+        id: 'preview_student',
+        name: 'Arjun Sharma',
+        email: 'arjun@student.in',
+        role: 'student',
+        enrolledExamIds: [],
+      };
+      setToken(null);
+      setUser(previewUser);
+      try { sessionStorage.setItem('bxp_preview_user', JSON.stringify(previewUser)); } catch { /* noop */ }
+      return previewUser;
     },
   };
 
